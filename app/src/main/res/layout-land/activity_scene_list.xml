@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipChildren="false"
+    android:layout_marginTop="@dimen/status_bar_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:layout_width="match_parent"
+        android:clipChildren="false"
+        android:fadingEdge="none"
+        android:layout_height="wrap_content"/>
+
+    <com.zhpan.indicator.IndicatorView
+        android:id="@+id/indicator_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/lastPageIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/viewPager"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager"
+        android:layout_marginStart="@dimen/margin_30"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_left_arrow"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/nextPageIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/viewPager"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager"
+        android:layout_marginEnd="@dimen/margin_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_right_arrow"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/backTv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        style="@style/BackBtnStyle"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

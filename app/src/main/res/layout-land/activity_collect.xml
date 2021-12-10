@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:fadingEdge="none"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="300dp"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/backTv"
+        style="@style/BackBtnStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

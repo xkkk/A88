@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/idVersion"
+        style="@style/AboutBigTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mine_about_version"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/idAppVersion"
+        style="@style/AboutNormalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="@dimen/margin_15"
+        android:text="@string/mine_about_app_version"
+        app:layout_constraintStart_toStartOf="@id/idVersion"
+        app:layout_constraintTop_toBottomOf="@id/idVersion" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/idDataVersion"
+        style="@style/AboutNormalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mine_about_data_version"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="@id/idAppVersion"
+        app:layout_constraintTop_toBottomOf="@id/idAppVersion" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/idStatement"
+        style="@style/AboutBigTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:text="@string/mine_about_statement"
+        app:layout_constraintStart_toStartOf="@id/idVersion"
+        app:layout_constraintTop_toBottomOf="@id/idDataVersion" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/idStatement1"
+        style="@style/AboutNormalTextStyle"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:text="@string/mine_about_statement1"
+        app:layout_constraintStart_toStartOf="@id/idDataVersion"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idStatement" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/idStatement2"
+        style="@style/AboutNormalTextStyle"
+        android:layout_marginTop="@dimen/margin_15"
+        app:layout_constrainedWidth="true"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:layout_marginStart="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/mine_about_statement2"
+        app:layout_constraintStart_toStartOf="@id/idStatement1"
+        app:layout_constraintTop_toBottomOf="@id/idStatement1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/idStatement3"
+        style="@style/AboutNormalTextStyle"
+        android:layout_marginTop="@dimen/margin_15"
+        app:layout_constrainedWidth="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="@dimen/margin_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/mine_about_statement3"
+        app:layout_constraintStart_toStartOf="@id/idStatement1"
+        app:layout_constraintTop_toBottomOf="@id/idStatement2" />
+
+</LinearLayout>

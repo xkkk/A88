@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:ignore="MissingDefaultResource">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/idIcon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_baseline_feedback_24"
+        app:layout_constraintBottom_toBottomOf="@id/feedbackTypeTv"
+        app:layout_constraintEnd_toStartOf="@id/feedbackTypeTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/feedbackTypeTv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/feedbackTypeTv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_feedback_type"
+        android:padding="@dimen/margin_15"
+        android:text="售后服务"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_20"
+        android:layout_marginTop="200dp"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintStart_toEndOf="@id/idIcon1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/idIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_baseline_feedback_24"
+        app:layout_constraintBottom_toBottomOf="@id/feedbackEt"
+        app:layout_constraintStart_toStartOf="@id/idIcon1"
+        app:layout_constraintTop_toTopOf="@id/feedbackEt" />
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/idIcon3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:src="@drawable/ic_baseline_feedback_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/nameEt"-->
+<!--        app:layout_constraintStart_toStartOf="@id/idIcon1"-->
+<!--        app:layout_constraintTop_toTopOf="@id/nameEt" />-->
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/idIcon4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:src="@drawable/ic_baseline_feedback_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/phoneEt"-->
+<!--        app:layout_constraintStart_toStartOf="@id/idIcon1"-->
+<!--        app:layout_constraintTop_toTopOf="@id/phoneEt" />-->
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/idIcon5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:src="@drawable/ic_baseline_feedback_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/emailEt"-->
+<!--        app:layout_constraintStart_toStartOf="@id/idIcon1"-->
+<!--        app:layout_constraintTop_toTopOf="@id/emailEt" />-->
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/feedbackEt"
+        style="@style/FeedbackEditTextStyle"
+        android:hint="反馈内容*必填"
+        app:layout_constraintStart_toStartOf="@id/feedbackTypeTv"
+        app:layout_constraintTop_toBottomOf="@id/feedbackTypeTv" />
+
+<!--    <androidx.appcompat.widget.AppCompatEditText-->
+<!--        android:id="@+id/nameEt"-->
+<!--        style="@style/FeedbackEditTextStyle"-->
+<!--        android:hint="您的名字*选填"-->
+<!--        app:layout_constraintStart_toStartOf="@id/feedbackTypeTv"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/feedbackEt" />-->
+<!--    <androidx.appcompat.widget.AppCompatEditText-->
+<!--        android:id="@+id/phoneEt"-->
+<!--        style="@style/FeedbackEditTextStyle"-->
+<!--        android:hint="手机号码*选填"-->
+<!--        app:layout_constraintStart_toStartOf="@id/feedbackTypeTv"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/nameEt" />-->
+<!--    <androidx.appcompat.widget.AppCompatEditText-->
+<!--        android:id="@+id/emailEt"-->
+<!--        style="@style/FeedbackEditTextStyle"-->
+<!--        android:hint="电子邮箱*选填"-->
+<!--        app:layout_constraintStart_toStartOf="@id/feedbackTypeTv"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/phoneEt" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/idTips"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/emailEt"-->
+<!--        app:layout_constraintStart_toStartOf="@id/emailEt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/margin_10"-->
+<!--        android:textSize="@dimen/font_24"-->
+<!--        android:textColor="@color/search_icon_tint"-->
+<!--        android:text="留下您的联系方式以便我们了解问题后及时与您联系沟通"-->
+<!--        />-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/submitTv"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_24"
+        android:background="@drawable/btn_feedback_submit"
+        app:layout_constraintStart_toStartOf="@id/feedbackEt"
+        app:layout_constraintTop_toBottomOf="@id/feedbackEt"
+        android:layout_marginTop="@dimen/margin_50"
+        app:layout_constraintEnd_toEndOf="@id/feedbackEt"
+        android:text="提交"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

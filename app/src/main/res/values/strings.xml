@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">用户手册-A6V</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--    首页-->
+    <string name="home_tab_scene">场景</string>
+    <string name="home_tab_video">视频</string>
+    <string name="home_tab_guide">用户手册</string>
+    <string name="home_tab_indicator">指示灯</string>
+    <string name="home_tab_question">常见问题</string>
+    <string name="home_tab_warning">车辆告警</string>
+    <string name="home_tab_maintenance">维修保养</string>
+    <string name="home_tab_mine">我的</string>
+    <string name="home_tab_index">视觉索引</string>
+    <string name="home_tab_search">搜索</string>
+    <string name="home_tab_collect">收藏</string>
+
+
+    <!--    我的-->
+    <string name="mine_radio_feedback">意见反馈</string>
+    <string name="mine_radio_history">反馈历史</string>
+    <string name="mine_radio_questionnaire">问卷调查</string>
+    <string name="mine_radio_about">关于</string>
+    <string name="mine_about_version">版本</string>
+    <string name="mine_about_statement">免责声明</string>
+    <string name="mine_about_app_version">应用版本：%s</string>
+    <string name="mine_about_data_version">数据版本：%s</string>
+    <string name="mine_about_statement1">为了安全起见，不得在驾驶时使用本应用，以避免发生危险。使用本应用前请确保您的车辆处于静止状态，且未妨碍交通。本应用可帮助您快速了解车辆部分功能的使用。本应用不可代替印刷版手册，请您务必在使用车辆前认真阅读车辆随附提供的印刷版手册。</string>
+    <string name="mine_about_statement2">本应用描述了传祺汽车全新第二代GS8双擎车型的配置、功能、性能参数以及产品示意图等相关信息，但车辆的实际配置及功能应以具体交付的车辆为准，本应用内图片均为示意图，仅供参考，具体以实车为准。本应用中部分描述带有“*”，代表该部分描述只适用于某些特定车型或选装配置，具体以实车为准。</string>
+    <string name="mine_about_statement3">为提升用户体验，完善服务内容，广汽乘用车有限公司将不断努力开发新的服务，并为您不时提供软件更新（这些更新可能会采用软件替换、修改、数据更新、版本升级等形式）。本服务在使用过程中会访问网络，使用该服务产生的费用详询您的网络供应商。在法律允许范围内，广汽乘用车有限公司享有最终解释权。</string>
+    <string name="vision_typa_out">外观</string>
+    <string name="vision_type_in">内饰</string>
+
+
+    <string name="quit_app">再按一次退出应用</string>
+
+    <string name="indicator_choose_style">您选了%s指示灯</string>
+    <string name="mine_questionnaire_scan">手机扫描二维码进入问卷调查</string>
+    <string name="mine_feedback_type_car">汽车使用</string>
+    <string name="mine_feedback_type_sevice">售后服务</string>
+    <string name="mine_feedback_type_book">用户手册</string>
+    <string name="mine_feedback_type_advice">个人建议</string>
+</resources>

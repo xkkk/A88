@@ -1,0 +1,7 @@
+<resources>
+
+    <declare-styleable name="HomeTabWidgetView">
+        <attr name="icon" format="reference"/>
+        <attr name="text" format="reference|string"/>
+    </declare-styleable>
+</resources>

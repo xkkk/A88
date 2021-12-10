@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/status_bar_height"
+    android:gravity="center"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutLeft"
+        android:layout_width="520dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/layoutMiddle"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+            android:id="@+id/tabScene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/home_tab_margin"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:icon="@drawable/assets_images_home_1"
+            app:layout_constraintEnd_toStartOf="@id/tabMaintenance"
+            app:layout_constraintTop_toTopOf="parent"
+            app:text="@string/home_tab_scene" />
+        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+            android:id="@+id/tabIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_tab_margin"
+            android:onClick="onClick"
+            app:icon="@drawable/assets_images_home_2"
+            app:layout_constraintStart_toEndOf="@id/tabScene"
+            app:layout_constraintTop_toTopOf="@id/tabScene"
+            app:text="@string/home_tab_indicator" />
+        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+            android:id="@+id/tabGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_tab_margin"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:icon="@drawable/assets_images_home_5"
+            app:layout_constraintStart_toStartOf="@id/tabScene"
+            app:layout_constraintTop_toBottomOf="@id/tabScene"
+            app:text="@string/home_tab_guide" />
+
+        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+            android:id="@+id/tabMaintenance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            app:icon="@drawable/assets_images_home_4"
+            app:layout_constraintStart_toEndOf="@id/tabGuide"
+            app:layout_constraintStart_toStartOf="@id/tabIndicator"
+            app:layout_constraintTop_toBottomOf="@id/tabIndicator"
+            app:layout_constraintTop_toTopOf="@id/tabGuide"
+            app:text="@string/home_tab_maintenance" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/home_tab_margin"
+        android:clipChildren="false"
+        app:layout_constraintTop_toTopOf="@id/layoutLeft"
+        app:layout_constraintBottom_toBottomOf="@id/layoutLeft"
+        app:layout_constraintStart_toEndOf="@id/layoutLeft"
+        app:layout_constraintEnd_toStartOf="@id/layoutRight">
+
+        <LinearLayout
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_main_search"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tabVision"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_tab_search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_20" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/tabVision"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_home_main_module"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="onClick"
+            android:paddingStart="@dimen/margin_30"
+            android:paddingEnd="@dimen/margin_30"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchView"
+           >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/home360"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_30"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="@string/home_tab_index"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_20"
+            app:layout_constraintEnd_toEndOf="@id/tabVision"
+            app:layout_constraintStart_toStartOf="@id/tabVision"
+            app:layout_constraintTop_toTopOf="@id/tabVision" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutRight"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layoutMiddle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+            android:id="@+id/tabQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:icon="@drawable/assets_images_home_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:text="@string/home_tab_question" />
+
+        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+            android:id="@+id/tabWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_tab_margin"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:icon="@drawable/assets_images_home_6"
+            app:layout_constraintStart_toStartOf="@id/tabQuestion"
+            app:layout_constraintTop_toBottomOf="@id/tabQuestion"
+            app:text="@string/home_tab_warning" />
+
+        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+            android:id="@+id/tabCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_tab_margin"
+            android:onClick="onClick"
+            app:icon="@drawable/assets_images_home_7"
+            app:layout_constraintStart_toEndOf="@id/tabQuestion"
+            app:layout_constraintTop_toTopOf="@id/tabQuestion"
+            app:text="@string/home_tab_collect" />
+
+        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+            android:id="@+id/tabMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            app:icon="@drawable/assets_images_home_8"
+            app:layout_constraintStart_toEndOf="@id/tabWarning"
+            app:layout_constraintStart_toStartOf="@id/tabCollection"
+            app:layout_constraintTop_toBottomOf="@id/tabCollection"
+            app:layout_constraintTop_toTopOf="@id/tabWarning"
+            app:text="@string/home_tab_mine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backTv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/BackBtnStyle"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

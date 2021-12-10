@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="150dp"
+    android:paddingEnd="@dimen/margin_50"
+    tools:ignore="MissingDefaultResource">
+
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/margin_50"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/kilo"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTv"
+            style="@style/NormalTextStyle"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:gravity="center"
+            android:textSize="@dimen/font_25"
+            tools:text="40000公里" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/subTitleTv1Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/margin_30"
+      android:padding="@dimen/margin_15"
+        android:background="@drawable/bg_maintenance_subtitle"
+        app:layout_constraintBottom_toTopOf="@id/subTitleTv2Layout"
+        app:layout_constraintStart_toEndOf="@id/titleLayout"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/timeIv1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/time"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subTitleTv1"
+            style="@style/NormalTextStyle"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:textSize="@dimen/font_25"
+            android:gravity="center"
+            tools:text="45个月" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subTitleTv2Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_15"
+        android:layout_marginStart="@dimen/margin_30"
+        android:background="@drawable/bg_maintenance_subtitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/titleLayout"
+        app:layout_constraintTop_toBottomOf="@id/subTitleTv1Layout"
+        android:orientation="vertical"
+       >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_maintenance_subtitle"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/timeIv2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/time"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subTitleTv2"
+            style="@style/NormalTextStyle"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:textSize="@dimen/font_25"
+            android:gravity="center"
+            tools:text="45个月" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/dataLayout1"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_maintenance_data"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_15"
+        tools:visibility="visible"
+        android:layout_marginStart="@dimen/margin_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/subTitleTv1Layout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dataLayout1TitleTv"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_height="wrap_content"
+            android:text="检查项目"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@color/background_color" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dataLayout1List"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginStart="@dimen/margin_15"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_warn_list" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dataLayout2"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_maintenance_data"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_15"
+        android:visibility="visible"
+        android:layout_marginStart="@dimen/margin_50"
+        app:layout_constraintStart_toEndOf="@id/dataLayout1"
+        app:layout_constraintTop_toTopOf="@id/dataLayout1"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dataLayout2TitleTv"
+            style="@style/NormalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:text="更换项目"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@color/background_color" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dataLayout2List"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="@dimen/margin_15"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_warn_list" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/closeIv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_dialog_close"
+        app:layout_constraintEnd_toEndOf="@id/dataLayout2"
+        app:layout_constraintTop_toTopOf="@id/dataLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

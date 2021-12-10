@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingStart="@dimen/margin_10"
+    android:paddingEnd="@dimen/margin_20"
+    android:paddingBottom="@dimen/margin_5"
+    android:paddingTop="@dimen/margin_5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_item_feedback_history">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contentTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textSize="@dimen/font_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/deleteIv"
+        android:layout_marginEnd="@dimen/margin_20"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constrainedWidth="true"
+        tools:text="asddalksjdaklsjd"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/typeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_20"
+        tools:text="汽车使用"
+        app:layout_constraintStart_toStartOf="@id/contentTv"
+        app:layout_constraintTop_toBottomOf="@id/contentTv"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textColor="@color/search_icon_tint"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/typeTv"
+        app:layout_constraintTop_toTopOf="@id/typeTv"
+        android:textSize="@dimen/font_20"
+        tools:text="201808039"
+        android:textColor="@color/search_icon_tint"/>
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/deleteIv"
+        app:layout_constraintStart_toStartOf="@id/typeTv"
+        android:layout_marginEnd="@dimen/margin_20"
+        app:layout_constraintTop_toBottomOf="@id/typeTv"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/replyTv"
+        app:layout_constraintTop_toBottomOf="@id/typeTv"
+        app:layout_constraintStart_toStartOf="@id/typeTv"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textSize="@dimen/font_24"
+        android:textColor="@color/btn_color"
+        tools:text="谢谢您的反馈"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/replyTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/replyTv"
+        app:layout_constraintStart_toStartOf="@id/replyTv"
+        android:textSize="@dimen/font_20"
+        tools:text="201808039"
+        android:textColor="@color/search_icon_tint"/>
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/replyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="line,replyTv,replyTimeTv"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/deleteIv"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:src="@drawable/ic_collect_delete"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

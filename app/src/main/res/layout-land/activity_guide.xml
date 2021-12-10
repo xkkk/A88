@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbarThumbVertical="@drawable/bar_scrollview"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toEndOf="@id/backTv"
+        android:layout_marginStart="@dimen/margin_50"
+        app:layout_constraintTop_toTopOf="@id/backTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constrainedHeight="true"
+        android:layout_marginBottom="@dimen/margin_10"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_warn_list" />
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="1200dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="50dp"
+        android:fadingEdge="none"
+        app:layout_constrainedWidth="true"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/recyclerView"
+        app:layout_constraintTop_toTopOf="@id/recyclerView" />
+
+    <include
+        android:id="@+id/collectLayout"
+        layout="@layout/include_search_collect_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/webView"
+        app:layout_constraintStart_toEndOf="@id/webView"
+        app:layout_constraintTop_toTopOf="@id/webView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/backTv"
+        style="@style/BackBtnStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

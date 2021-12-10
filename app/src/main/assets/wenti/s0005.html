@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>常见问题</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/img_weiti_d5_1.png" alt=""></div>
+							<div class="text">
+								<h4>如何切换驾驶模式？</h4>
+								<p><span class="span-number">1.</span><span
+										class="span-content">将整车电源置于“ON”挡位，通过上/下拨动驾驶模式拨钮，可以在“节能模式-舒适模式-运动模式-越野模式*-节能模式”之间循环切换驾驶模式。</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/img_weiti_d5_2.png" alt=""></div>
+							<div class="text">
+								<h4>如何切换驾驶模式？</h4>
+								<p><span class="span-number">2.</span><span
+										class="span-content">通过音响系统界面，点击底部工具栏驾控面板键<img src="../public/img/img70.png" style="width: 40px;">，查看当前驾驶模式或选择相应驾驶模式。</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

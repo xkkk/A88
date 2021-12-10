@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minWidth="800dp"
+    android:minHeight="250dp"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_15">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:text="选择其中一项"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_24" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/rb1"
+            style="@style/FeedbackDialogTextStyle"
+            android:text="@string/mine_feedback_type_car" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            style="@style/FeedbackDialogTextStyle"
+            android:text="@string/mine_feedback_type_sevice" />
+
+
+        <RadioButton
+            android:id="@+id/rb3"
+            style="@style/FeedbackDialogTextStyle"
+            android:text="@string/mine_feedback_type_book" />
+
+
+        <RadioButton
+            android:id="@+id/rb4"
+            style="@style/FeedbackDialogTextStyle"
+            android:text="@string/mine_feedback_type_advice" />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id "org.jetbrains.kotlin.kapt" version "1.6.0"
+}
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.baorun.handbook.a6v"
+        minSdk 28
+        targetSdk 30
+        versionCode 100
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'arm64-v8a','armeabi-v7a','x86_64','x86'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+    implementation rootProject.ext.dependencies.core_ktx
+    implementation rootProject.ext.dependencies.activity_ktx
+    implementation rootProject.ext.dependencies.fragment_ktx
+    implementation rootProject.ext.dependencies.material
+    implementation rootProject.ext.dependencies.constraintlayout
+
+    implementation rootProject.ext.dependencies.kt_ext_runtime
+    implementation rootProject.ext.dependencies.coroutine_core
+    implementation rootProject.ext.dependencies.coroutine_android
+    implementation rootProject.ext.dependencies.utilcodex
+    implementation rootProject.ext.dependencies.divider
+    implementation rootProject.ext.dependencies.lottie
+    implementation rootProject.ext.dependencies.room_runtime
+    implementation rootProject.ext.dependencies.room_ktx
+    implementation rootProject.ext.dependencies.glide
+//    implementation rootProject.ext.dependencies.lifecycle_runtime
+//    implementation rootProject.ext.dependencies.brvah
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+    kapt rootProject.ext.dependencies.glide_compiler
+    kapt rootProject.ext.dependencies.room_compiler
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    implementation 'com.github.zhpanvip:viewpagerindicator:1.2.1'
+
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.retrofit_gson
+    api rootProject.ext.dependencies.retrofit_adapter
+
+    api rootProject.ext.dependencies.okhttp3
+    api rootProject.ext.dependencies.okhttp3_log
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
