@@ -1,3 +1,5 @@
 package com.baorun.handbook.a6v.network.request
 
-data class DeviceId(val userId:String)
+import com.baorun.handbook.a6v.App
+
+data class DeviceId(val userId:String = App.userId)

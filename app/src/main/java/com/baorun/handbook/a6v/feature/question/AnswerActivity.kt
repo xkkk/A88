@@ -3,10 +3,12 @@ package com.baorun.handbook.a6v.feature.question
 
 import android.view.ViewGroup
 import androidx.activity.viewModels
+import com.baorun.handbook.a6v.App
 import com.task.utils.observe
 
 import com.baorun.handbook.a6v.BaseActivity
 import com.baorun.handbook.a6v.Constant
+import com.baorun.handbook.a6v.data.DataManager
 import com.baorun.handbook.a6v.databinding.ActivityAnswerBinding
 import com.baorun.handbook.a6v.feature.collect.CollectionViewModel
 import com.baorun.handbook.a6v.feature.search.SearchActivity
@@ -77,6 +79,10 @@ class AnswerActivity: BaseActivity<ActivityAnswerBinding>() {
     }
 
     private fun loadUrl(url:String){
-        viewBinding.webView.loadUrl("file:///android_asset/wenti$url")
+        if(DataManager.isMaster){
+            viewBinding.webView.loadUrl("file:///android_asset/wenti-master$url")
+        }else{
+            viewBinding.webView.loadUrl("file:///android_asset/wenti$url")
+        }
     }
 }

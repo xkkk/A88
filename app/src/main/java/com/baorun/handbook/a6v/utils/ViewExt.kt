@@ -1,12 +1,22 @@
 package com.baorun.handbook.a6v.utils
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.graphics.drawable.Drawable
+import android.view.View
+import android.view.ViewGroup
 import android.webkit.WebView
+import android.widget.FrameLayout
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
+import com.baorun.handbook.a6v.Constant
+import com.baorun.handbook.a6v.R
+import com.baorun.handbook.a6v.data.Hotspots
+import com.baorun.handbook.a6v.feature.vision.ImageActivity
 import com.zhpan.indicator.IndicatorView
+import kotlin.math.roundToInt
 
 /**
  * 功能：
@@ -32,19 +42,27 @@ fun ViewPager2.next(){
     setCurrentItem(this.currentItem+1,true)
 }
 
-
-/**
- * Apply
- *  setSliderColor(resources.getColor(R.color.indicator_scene_nor,null), resources.getColor(R.color.indicator_scene_sel,null))
-setSliderWidth(resources.getDimension(R.dimen.margin_10),resources.getDimension(R.dimen.margin_20),)
-setSliderGap(resources.getDimension(R.dimen.margin_20))
-setSliderHeight(resources.getDimension(R.dimen.margin_5))
-setSlideMode(IndicatorSlideMode.SCALE)
-setIndicatorStyle(IndicatorStyle.CIRCLE)
-setupWithViewPager(viewBinding.viewPager)
- */
-fun IndicatorView.apply(){
-    this.apply {
-
+fun addImageViewHotspot(context: Activity,hotspot: Hotspots,viewGroup: ViewGroup,click:()->Unit){
+    val lottie = AppCompatImageView(context)
+    val lp = FrameLayout.LayoutParams(hotspot.point.radius * 2, hotspot.point.radius * 2)
+    lp.leftMargin = hotspot.point.x - hotspot.point.radius
+    lp.topMargin = hotspot.point.y - hotspot.point.radius
+    lottie.setImageResource(R.drawable.hotspot)
+    lottie.layoutParams = lp
+    lottie.setOnClickListener {
+        click.invoke()
     }
+    viewGroup.addView(lottie, lp)
+}
+
+fun addHotspot(context: Activity,hotspot: Hotspots,viewGroup: ViewGroup,click:()->Unit){
+    val lottie = View(context)
+    val lp = FrameLayout.LayoutParams(hotspot.point.radius * 2, hotspot.point.radius * 2)
+    lp.leftMargin = hotspot.point.x - hotspot.point.radius
+    lp.topMargin = hotspot.point.y - hotspot.point.radius
+    lottie.layoutParams = lp
+    lottie.setOnClickListener {
+        click.invoke()
+    }
+    viewGroup.addView(lottie, lp)
 }

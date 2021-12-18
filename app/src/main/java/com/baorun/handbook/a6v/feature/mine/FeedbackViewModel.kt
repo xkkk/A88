@@ -3,12 +3,8 @@ package com.baorun.handbook.a6v.feature.mine
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.baorun.handbook.a6v.App
-import com.baorun.handbook.a6v.data.api
+import com.baorun.handbook.a6v.data.DataManager
 import com.baorun.handbook.a6v.network.FeedbackDataResponse
-import com.baorun.handbook.a6v.network.request.ClientAddBody
-import com.baorun.handbook.a6v.network.request.DeviceId
-import com.baorun.handbook.a6v.network.request.FeedbackDeleteBody
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -24,7 +20,7 @@ class FeedbackViewModel:ViewModel() {
     fun submit(type:String,content:String){
         viewModelScope.launch(Dispatchers.IO){
             runCatching {
-                val response = api.postFeedback(ClientAddBody(type, content,App.userId))
+                val response = DataManager.postFeedback(type, content)
                 if(!response.result){
                     throw IllegalArgumentException()
                 }else{
@@ -43,7 +39,7 @@ class FeedbackViewModel:ViewModel() {
 //        feedbackList.value = emptyList()
         viewModelScope.launch(Dispatchers.IO){
             runCatching {
-                val response = api.postFeedbackList(DeviceId(App.userId))
+                val response = DataManager.postFeedbackList()
                 if(response.result){
                     feedbackList.postValue(response.listData)
                 }else{
@@ -61,7 +57,7 @@ class FeedbackViewModel:ViewModel() {
     fun deleteFeedback(id:Int){
         viewModelScope.launch(Dispatchers.IO) {
             runCatching {
-                val response = api.postFeedbackDelete(FeedbackDeleteBody(id, App.userId))
+                val response = DataManager.postFeedbackDelete(id)
                 if(response.result){
                     deleteResult.postValue(true)
                 }else{

@@ -20,7 +20,7 @@ class UserGuideViewModel : ViewModel() {
     val sceneTreeDataLiveData = MutableLiveData<List<BaseNode>>()
     fun getData() {
         viewModelScope.launch(Dispatchers.IO) {
-            DataManager.getGNListFromJson().collect {
+            DataManager.getGNList(1).collect {
                 val firstList = parseData(it)
                 treeDataLiveData.postValue(firstList)
             }
@@ -30,7 +30,7 @@ class UserGuideViewModel : ViewModel() {
 
     fun getSceneDataById(belong: String) {
         viewModelScope.launch(Dispatchers.IO) {
-            val list = DataManager.getCJFromJson(belong)
+            val list = DataManager.getSceneDetail(belong)
             val firstList = parseData(list)
             sceneTreeDataLiveData.postValue(firstList)
         }

@@ -60,7 +60,7 @@ class SearchActivity : BaseActivity<ActivitySearchBinding>() {
                     searchResultList.isVisible = true
                     mViewModel.search(key)
                 } else {
-                    mViewModel.searchResultList.value = emptyList()
+//                    mViewModel.searchResultList.value = emptyList()
                     searchResultList.isVisible = false
                     closeIv.visibility = View.GONE
                 }

@@ -4,6 +4,7 @@ import android.graphics.drawable.Drawable
 import android.view.View
 import android.widget.FrameLayout
 import androidx.annotation.DrawableRes
+import androidx.core.view.isVisible
 import com.baorun.handbook.a6v.data.*
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy
@@ -14,6 +15,7 @@ import com.baorun.handbook.a6v.BaseActivity
 import com.baorun.handbook.a6v.R
 import com.baorun.handbook.a6v.data.*
 import com.baorun.handbook.a6v.databinding.ActivityIndicatorBinding
+import com.baorun.handbook.a6v.utils.addHotspot
 import com.baorun.handbook.a6v.widget.GlideApp
 import kotlin.math.roundToInt
 
@@ -96,28 +98,6 @@ class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
             })
     }
 
-
-
-
-    /**
-     * 将热点区域设置的和图片一样大小
-     */
-    private fun setBgSize() {
-
-        with(viewBinding) {
-            val width = rootView.width
-            val height = rootView.height
-            val lp = background.layoutParams
-            lp.width = width
-            lp.height = height
-            background.layoutParams = lp
-            hotspotLayoutWidth = width
-            hotspotLayoutHeight = height
-        }
-
-    }
-
-
     fun loadLayer(layout: FrameLayout, @DrawableRes res: Int) {
         GlideApp.with(this).load(res).apply(options).override(hotspotLayoutWidth,hotspotLayoutHeight)
             .into(object : CustomViewTarget<FrameLayout, Drawable>(layout) {
@@ -142,30 +122,20 @@ class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
 
     private fun resetView(style: IndicatorStyle) {
         viewBinding.background.removeAllViews()
-        when (style) {
-            IndicatorStyle.RED -> {
-                redIndicatorHotspotList.forEach {
-                    addHotspot(style, it)
-                }
-            }
-            IndicatorStyle.YELLOW -> {
-                yellowIndicatorHotspotList.forEach {
-                    addHotspot(style, it)
-                }
-            }
-            IndicatorStyle.GREEN -> {
-                greenIndicatorHotspotList.forEach {
-                    addHotspot(style, it)
-                }
-            }
-            IndicatorStyle.BLUE -> {
-                blueIndicatorHotspotList.forEach {
-                    addHotspot(style, it)
-                }
-            }
-
+        val hotSpotWrapper = when (style) {
+            IndicatorStyle.RED ->
+                DataManager.getRedIndicatorHotspotList()
+            IndicatorStyle.YELLOW ->
+                DataManager.getYellowIndicatorHotspotList()
+            IndicatorStyle.GREEN ->
+                DataManager.getGreenIndicatorHotspotList()
+            IndicatorStyle.BLUE ->
+                DataManager.getBlueIndicatorHotspotList()
         }
+        addHotspot(style.name,hotSpotWrapper)
+
     }
+
 
 
     override fun onDestroy() {
@@ -174,13 +144,26 @@ class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
         viewBinding.background.removeAllViews()
     }
 
+    private fun addHotspot(type:String,hotSpotWrapper: HotSpotWrapper){
+        hotSpotWrapper.let {
+            val scaleX = hotspotLayoutWidth * 1.0f / it.baseWidth
+            val scaleY = hotspotLayoutHeight * 1.0f / it.baseHeight
+            it.hotspots.forEach {
+                it.point.radius = 60
+                addHotspot(this, it.scale(scaleX, scaleY), viewBinding.background) {
+                    val dialog = TipsDialog.newInstance(type, it.description)
+                    dialog.showDialog(supportFragmentManager)
+                }
+            }
+        }
+    }
+
     private fun addHotspot(style: IndicatorStyle, hotspot: Hotspot) {
         val radius = 60
         val view = View(this)
         val lp = FrameLayout.LayoutParams(radius, radius)
         lp.leftMargin = (hotspot.scaleX * hotspotLayoutWidth).roundToInt() - radius/2
         lp.topMargin = (hotspot.scaleY * hotspotLayoutHeight).roundToInt() - radius/2
-        view.layoutParams = lp
         view.layoutParams = lp
 //        view.setBackgroundColor(Color.RED)
 //        view.alpha = 0.2f

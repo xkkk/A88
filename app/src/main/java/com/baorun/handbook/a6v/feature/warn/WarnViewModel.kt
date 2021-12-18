@@ -25,7 +25,7 @@ class WarnViewModel:ViewModel() {
 
     fun getWarnList(){
         viewModelScope.launch(Dispatchers.IO) {
-            DataManager.getWarnListFromJson().collect {
+            DataManager.getWarnList(1).collect {
                 warnListLiveData.postValue(it)
             }
         }

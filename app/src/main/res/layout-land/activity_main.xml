@@ -215,4 +215,22 @@
         style="@style/BackBtnStyle"
         />
 
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/getMasterInfoBtn"
+        style="@style/BackBtnStyle"
+        app:layout_constraintTop_toBottomOf="@id/backTv"
+        app:layout_constraintStart_toStartOf="@id/backTv"
+        android:visibility="visible"
+        android:text="查询大师版接口"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/switchMasterBtn"
+        style="@style/BackBtnStyle"
+        app:layout_constraintTop_toBottomOf="@id/getMasterInfoBtn"
+        app:layout_constraintStart_toStartOf="@id/backTv"
+        android:visibility="visible"
+        android:text="模拟切换"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

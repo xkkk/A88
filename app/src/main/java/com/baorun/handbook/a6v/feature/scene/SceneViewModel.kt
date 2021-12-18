@@ -21,7 +21,7 @@ class SceneViewModel:ViewModel() {
 
     fun getSceneList(page:Int){
         viewModelScope.launch(Dispatchers.IO){
-            DataManager.getSceneListFromJson(page).collect {
+            DataManager.getSceneList(page).collect {
                 sceneListLiveDataNew.postValue(it)
             }
         }
@@ -29,7 +29,7 @@ class SceneViewModel:ViewModel() {
 
     fun getQuestionList(page: Int){
         viewModelScope.launch(Dispatchers.IO){
-            DataManager.getQuestionListFromJson(page).collect {
+            DataManager.getQuestionList(page).collect {
                 sceneListLiveDataNew.postValue(it)
             }
         }

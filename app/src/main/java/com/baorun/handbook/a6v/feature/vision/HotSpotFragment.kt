@@ -12,10 +12,10 @@ import androidx.fragment.app.viewModels
 
 import com.baorun.handbook.a6v.Constant
 import com.baorun.handbook.a6v.R
-import com.baorun.handbook.a6v.data.Hotspot
-import com.baorun.handbook.a6v.data.ORIGIN_HEIGHT
-import com.baorun.handbook.a6v.data.ORIGIN_WIDTH
+import com.baorun.handbook.a6v.data.*
 import com.baorun.handbook.a6v.databinding.FragmentHotspotBinding
+import com.baorun.handbook.a6v.utils.addHotspot
+import com.baorun.handbook.a6v.utils.addImageViewHotspot
 import kotlin.math.roundToInt
 
 
@@ -68,7 +68,7 @@ class HotSpotFragment : Fragment() {
     }
 
 
-    private fun initView(hotspots: List<Hotspot>, @DrawableRes backgroundRes: Int) {
+    private fun initView(hotSpotWrapper: HotSpotWrapper, @DrawableRes backgroundRes: Int) {
 
             with(viewBinding) {
 //            loadBackground(requireActivity(),backgroundRes,background)
@@ -76,8 +76,12 @@ class HotSpotFragment : Fragment() {
                 background.setBackgroundResource(backgroundRes)
                 background.post {
                     setBgSize()
-                    hotspots.forEach {
-                        addHotspot(it)
+                    val scaleX = hotspotLayoutWidth*1.0f/hotSpotWrapper.baseWidth
+                    val scaleY = hotspotLayoutHeight*1.0f/hotSpotWrapper.baseHeight
+                    hotSpotWrapper.hotspots.forEach {
+                        addImageViewHotspot(requireActivity(),it.scale(scaleX, scaleY),viewBinding.hotspotLayout){
+                           ImageActivity.startImageActivity(requireActivity(), it.drawableRes)
+                       }
                     }
                 }
             }
@@ -96,23 +100,20 @@ class HotSpotFragment : Fragment() {
         hotspotLayout.layoutParams = lp
         hotspotLayoutWidth = width
         hotspotLayoutHeight = height
-
-//        ToastUtils.showLong("$hotspotLayoutWidth,$hotspotLayoutHeight")
-
     }
 
-    private fun addHotspot(hotspot: Hotspot) {
-        val lottie = AppCompatImageView(requireActivity())
-        val lp = FrameLayout.LayoutParams(Constant.RADIUS * 2, Constant.RADIUS * 2)
-        lp.leftMargin = (hotspot.scaleX * hotspotLayoutWidth).roundToInt() - Constant.RADIUS
-        lp.topMargin = (hotspot.scaleY * hotspotLayoutHeight).roundToInt() - Constant.RADIUS
-        lottie.setImageResource(R.drawable.hotspot)
-        lottie.layoutParams = lp
-        lottie.setOnClickListener {
-            ImageActivity.startImageActivity(requireActivity(), hotspot.drawableRes)
-        }
-        viewBinding.hotspotLayout.addView(lottie, lp)
-    }
+//    private fun addHotspot(hotspot: Hotspots) {
+//        val lottie = AppCompatImageView(requireActivity())
+//        val lp = FrameLayout.LayoutParams(Constant.RADIUS * 2, Constant.RADIUS * 2)
+//        lp.leftMargin = (hotspot.point.x*scaleX).roundToInt() - Constant.RADIUS
+//        lp.topMargin = (hotspot.point.y*scaleY).roundToInt() - Constant.RADIUS
+//        lottie.setImageResource(R.drawable.hotspot)
+//        lottie.layoutParams = lp
+//        lottie.setOnClickListener {
+//            ImageActivity.startImageActivity(requireActivity(), hotspot.drawableRes)
+//        }
+//        viewBinding.hotspotLayout.addView(lottie, lp)
+//    }
 
     override fun onDestroyView() {
         super.onDestroyView()

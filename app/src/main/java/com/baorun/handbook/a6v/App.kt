@@ -3,6 +3,7 @@ package com.baorun.handbook.a6v
 import android.app.Application
 import android.content.ContextWrapper
 import android.provider.Settings
+import android.util.PlatformUtil
 import com.blankj.utilcode.util.LogUtils
 import com.bumptech.glide.Glide
 
@@ -14,14 +15,12 @@ class App: Application() {
         super.onCreate()
         mApp = this
         userId = Settings.System.getString(contentResolver, Settings.Secure.ANDROID_ID)
-        vehicleType = Settings.System.getInt(contentResolver,"com.ts.platformutil.vehicle_type",0)
-        LogUtils.i("vehicleType=$vehicleType")
     }
 
     companion object{
 
         var userId:String = ""
-        var vehicleType:Int = 0
+        var isMaster:Boolean = false
     }
 
     override fun onLowMemory() {

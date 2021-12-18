@@ -50,9 +50,12 @@ class TipsDialog:DialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
        lifecycleScope.launchWhenCreated {
-           val pair = DataManager.getTipsPairData(type, id)
-           viewBinding.titleTv.text = pair?.first
-           viewBinding.contentTv.text = pair?.second
+           val pair = DataManager.getIndicatorData(type, id)
+           pair?.let {
+               viewBinding.titleTv.text = it.title
+               viewBinding.contentTv.text = it.content.text
+           }
+
        }
     }
 

@@ -5,19 +5,17 @@ import android.view.View
 import android.widget.FrameLayout
 import androidx.core.view.isVisible
 
-import com.blankj.utilcode.util.LogUtils
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.CustomViewTarget
 import com.bumptech.glide.request.transition.Transition
 import com.baorun.handbook.a6v.BaseActivity
-import com.baorun.handbook.a6v.Constant
 import com.baorun.handbook.a6v.R
-import com.baorun.handbook.a6v.data.Hotspot
-import com.baorun.handbook.a6v.data.maintenanceHotspotList
+import com.baorun.handbook.a6v.data.DataManager
+
 import com.baorun.handbook.a6v.databinding.ActivityMaintenanceBinding
-import kotlin.math.roundToInt
+import com.baorun.handbook.a6v.utils.addHotspot
 
 class MaintenanceActivity : BaseActivity<ActivityMaintenanceBinding>() {
 
@@ -47,11 +45,19 @@ class MaintenanceActivity : BaseActivity<ActivityMaintenanceBinding>() {
                     viewBinding.hotspotLayout.background = resource
                     hotspotLayoutWidth = viewBinding.hotspotLayout.measuredWidth
                     hotspotLayoutHeight = viewBinding.hotspotLayout.measuredHeight
-                    LogUtils.i(hotspotLayoutWidth,hotspotLayoutHeight)
-//                    hotspotLayoutHeight  = (hotspotLayoutHeight*0.2f).roundToInt()
-//                    LogUtils.i(hotspotLayoutWidth,hotspotLayoutHeight)
-                    maintenanceHotspotList.forEach {
-                        addHotspot(it)
+
+                    DataManager.getMaintenanceHotspotList().let {
+                        val scaleX = hotspotLayoutWidth*1.0f/it.baseWidth
+                        val scaleY = hotspotLayoutHeight*1.0f/it.baseHeight
+                        it.hotspots.forEach {
+                        addHotspot(this@MaintenanceActivity,it.scale(scaleX, scaleY),viewBinding.hotspotLayout){
+                            viewBinding.backTv.isVisible = false
+                            val dialog =  MaintenanceDetailDialog.newInstance(it.id){
+                                viewBinding.backTv.isVisible = true
+                            }
+                            dialog.show(supportFragmentManager,"MaintenanceDetailDialog")
+                        }
+                    }
                     }
                 }
 
@@ -65,33 +71,6 @@ class MaintenanceActivity : BaseActivity<ActivityMaintenanceBinding>() {
         super.onDestroy()
         viewBinding.hotspotLayout.background = null
         viewBinding.hotspotLayout.removeAllViews()
-    }
-
-    private fun addHotspot(hotspot: Hotspot){
-        val view = View(this)
-        val lp = FrameLayout.LayoutParams((Constant.RADIUS)*2, (Constant.RADIUS ) *2)
-        lp.leftMargin = (hotspot.scaleX * hotspotLayoutWidth).roundToInt()- Constant.RADIUS
-        lp.topMargin = (hotspot.scaleY * hotspotLayoutHeight).roundToInt()- Constant.RADIUS
-        view.layoutParams = lp
-//        view.setBackgroundColor(Color.RED)
-        view.setOnClickListener {
-            viewBinding.backTv.isVisible = false
-           val dialog =  MaintenanceDetailDialog.newInstance(hotspot.description){
-               viewBinding.backTv.isVisible = true
-           }
-//            dialog.onDismiss(object :DialogInterface{
-//                override fun cancel() {
-//                    viewBinding.backTv.isVisible = true
-//                }
-//
-//                override fun dismiss() {
-//                    viewBinding.backTv.isVisible = true
-//                }
-//
-//            })
-            dialog.show(supportFragmentManager,"MaintenanceDetailDialog")
-        }
-        viewBinding.hotspotLayout.addView(view,lp)
     }
 
     override fun initViewBinding(): ActivityMaintenanceBinding = ActivityMaintenanceBinding.inflate(layoutInflater)

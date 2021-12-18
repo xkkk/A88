@@ -13,7 +13,7 @@ class MaintenanceViewModel:ViewModel() {
     val maintenanceLiveData = MutableLiveData<ChildrenData>()
     fun getData(id:String){
         viewModelScope.launch(Dispatchers.IO){
-            DataManager.getMaintenanceDataFromJson(id).collect {
+            DataManager.getMaintenanceDetail(id).collect {
                 it?.let {
                     maintenanceLiveData.postValue(it)
                 }

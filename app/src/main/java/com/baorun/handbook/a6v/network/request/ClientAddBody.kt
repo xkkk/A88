@@ -1,5 +1,7 @@
 package com.baorun.handbook.a6v.network.request
 
+import com.baorun.handbook.a6v.App
+
 data class ClientAddBody(
     var type:String,
     var content:String,
@@ -9,5 +11,5 @@ data class ClientAddBody(
     var vehicleId:Int,
     var userId:String
 ){
-    constructor(type:String,content: String,deviceId:String):this(type,content,"","","",6,deviceId)
+    constructor(type:String,content: String):this(type,content,"","","",6,App.userId)
 }

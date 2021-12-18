@@ -4,7 +4,7 @@ import androidx.room.Room
 import com.baorun.handbook.a6v.AppContext
 
 
-private const val DB_NAME = "handbook.db"
+private const val DB_NAME = "a6v.db"
 
 
 val room =
