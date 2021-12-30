@@ -3,6 +3,7 @@ package com.baorun.handbook.a6v.utils
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
+import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.view.View
 import android.view.ViewGroup
@@ -61,6 +62,8 @@ fun addHotspot(context: Activity,hotspot: Hotspots,viewGroup: ViewGroup,click:()
     lp.leftMargin = hotspot.point.x - hotspot.point.radius
     lp.topMargin = hotspot.point.y - hotspot.point.radius
     lottie.layoutParams = lp
+    lottie.setBackgroundColor(Color.RED)
+    lottie.alpha=0.2f
     lottie.setOnClickListener {
         click.invoke()
     }

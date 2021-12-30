@@ -26,8 +26,13 @@ data class HotSpotWrapper(val baseWidth: Int,val baseHeight: Int,val hotspots: L
 
 data class Hotspots(val id: String,val point:Point,val description: String,val drawableRes: ArrayList<Int>){
 
-    //维修保养、指示器
-    constructor( id: String,point: Point):this(id, point, "", arrayListOf())
+    //维修保养
+    constructor( id: String,point: Point,description: String=""):this(id, point, description, arrayListOf())
+    //指示器
+    constructor(x: Int,y: Int,id: String,description: String):this(id,
+        Point(x,y),description,
+        arrayListOf())
+
     //兼容之前的写法
     constructor(x: Int,y: Int,id: String):this(id,Point(x,y))
 

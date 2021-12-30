@@ -12,6 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import com.baorun.handbook.a6v.Constant
 import com.baorun.handbook.a6v.data.DataManager
 import com.baorun.handbook.a6v.databinding.DialogTipsBinding
+import com.baorun.handbook.a6v.utils.getResource
 
 /**
  * 功能：
@@ -52,6 +53,7 @@ class TipsDialog:DialogFragment() {
        lifecycleScope.launchWhenCreated {
            val pair = DataManager.getIndicatorData(type, id)
            pair?.let {
+               viewBinding.iconIv.setImageResource(requireActivity().getResource(it.name))
                viewBinding.titleTv.text = it.title
                viewBinding.contentTv.text = it.content.text
            }

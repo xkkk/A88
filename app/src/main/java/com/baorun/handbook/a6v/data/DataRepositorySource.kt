@@ -23,16 +23,16 @@ interface DataRepositorySource {
      */
     fun getMaintenanceHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            892, 440, listOf(
-                Hotspots("wx_1", Hotspots.Point(439, 344)),
-                Hotspots("wx_2", Hotspots.Point(285, 290)),
-                Hotspots("wx_3", Hotspots.Point(163, 228)),
-                Hotspots("wx_4", Hotspots.Point(239, 128)),
-                Hotspots("wx_5", Hotspots.Point(370, 161)),
-                Hotspots("wx_6", Hotspots.Point(496, 239)),
-                Hotspots("wx_7", Hotspots.Point(637, 265)),
-                Hotspots("wx_8", Hotspots.Point(729, 190)),
-                Hotspots("wx_9", Hotspots.Point(640, 70))
+            936, 460, listOf(
+                Hotspots("wx_1", Hotspots.Point(76, 93)),
+                Hotspots("wx_2", Hotspots.Point(175, 93)),
+                Hotspots("wx_3", Hotspots.Point(272, 93)),
+                Hotspots("wx_4", Hotspots.Point(370, 93)),
+                Hotspots("wx_5", Hotspots.Point(470, 93)),
+                Hotspots("wx_6", Hotspots.Point(568, 93)),
+                Hotspots("wx_7", Hotspots.Point(666, 93)),
+                Hotspots("wx_8", Hotspots.Point(765, 93)),
+                Hotspots("wx_9", Hotspots.Point(862, 93))
             )
         )
     }
@@ -73,19 +73,20 @@ interface DataRepositorySource {
      */
     fun getRedIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1057, 550, listOf(
-                Hotspots("1", Hotspots.Point(127, 133)),
-                Hotspots("2", Hotspots.Point(179, 133)),
-                Hotspots("3", Hotspots.Point(241, 464)),
-                Hotspots("4", Hotspots.Point(269, 131)),
-                Hotspots("5", Hotspots.Point(939, 130)),
-                Hotspots("6", Hotspots.Point(756, 132)),
-                Hotspots("7", Hotspots.Point(796, 131)),
-                Hotspots("8", Hotspots.Point(225, 132)),
-                Hotspots("9", Hotspots.Point(976, 132)),
-                Hotspots("10", Hotspots.Point(718, 131)),
-                Hotspots("11", Hotspots.Point(313, 133)),
-                Hotspots("12", Hotspots.Point(852, 133))
+            1051, 547, listOf(
+                Hotspots( "1", Hotspots.Point(55, 274), "r_cdxt",),
+                Hotspots("2", Hotspots.Point(73, 132),"r_jyyld"),
+                Hotspots("3",Hotspots.Point(165, 132),"r_fdjlqy", ),
+                Hotspots("4", Hotspots.Point(204, 132),"r_srs"),
+                Hotspots("5", Hotspots.Point(936, 132),"r_cdplzt"),
+                Hotspots("6", Hotspots.Point(748, 132),"r_epb"),
+                Hotspots("7", Hotspots.Point(787, 132),"r_ebd"),
+                Hotspots("8", Hotspots.Point(123, 132),"r_eps"),
+                Hotspots("9", Hotspots.Point(993, 161),"r_qpzyj"),
+                Hotspots("10", Hotspots.Point(708, 132),"r_qckzy"),
+                Hotspots("11", Hotspots.Point(312, 132),"r_jsyzy"),
+                Hotspots("12", Hotspots.Point(842, 133),"r_depzy"),
+                Hotspots("13", Hotspots.Point(56, 329),"r_xtgz")
             )
         )
     }
@@ -97,24 +98,27 @@ interface DataRepositorySource {
      */
     fun getYellowIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1056, 550, listOf(
-                Hotspots(55, 235, "1"),
-                Hotspots(55, 199, "2"),
-                Hotspots(757, 460, "3"),
-                Hotspots(999, 301, "4"),
-                Hotspots(999, 159, "5"),
-                Hotspots(999, 196, "6"),
-                Hotspots(999, 233, "7"),
-                Hotspots(55, 160, "8"),
-                Hotspots(154, 131, "9"),
-                Hotspots(190, 130, "10"),
-                Hotspots(975, 131, "11"),
-                Hotspots(117, 135, "12"),
-                Hotspots(82, 132, "13"),
-                Hotspots(230, 132, "14"),
-                Hotspots(999, 266, "15"),
-                Hotspots(999, 360, "16"),
-                Hotspots(907, 132, "17")
+            1051, 547, listOf(
+                Hotspots("1",Hotspots.Point(57,234),"y_fdjgz"),
+                Hotspots("2",Hotspots.Point(55,198),"y_pfgz"),
+                Hotspots("3",Hotspots.Point(754,462),"y_ryd"),
+                Hotspots("4",Hotspots.Point(996,346),"y_epb"),
+                Hotspots("5",Hotspots.Point(996,201),"y_esp"),
+                Hotspots("6",Hotspots.Point(996,233),"y_espoff"),
+                Hotspots("7",Hotspots.Point(996,271),"y_abs"),
+                Hotspots("8",Hotspots.Point(57,159),"y_hhdlbsq"),
+                Hotspots("9",Hotspots.Point(153,131),"y_tpms"),
+                Hotspots("10",Hotspots.Point(191,131),"y_zsyxh"),
+                Hotspots("11",Hotspots.Point(992,159),"y_qpzyj"),
+                Hotspots("12",Hotspots.Point(117,131),"y_sffxp"),
+                Hotspots("13",Hotspots.Point(82,131),"y_hxkz"),
+                Hotspots("14",Hotspots.Point(230,131),"y_hwd"),
+                Hotspots("15",Hotspots.Point(996,309),"y_xpfz"),
+                Hotspots("18",Hotspots.Point(239,459),"y_dldc"),
+                Hotspots("19",Hotspots.Point(57,358),"y_jglxs"),
+
+
+
             )
         )
     }
@@ -126,18 +130,19 @@ interface DataRepositorySource {
      */
     fun getGreenIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1054, 550, listOf(
-                Hotspots(350, 129, "1"),
-                Hotspots(703, 129, "2"),
-                Hotspots(797, 129, "3"),
-                Hotspots(217, 134, "4"),
-                Hotspots(285, 131, "5"),
-                Hotspots(942, 132, "6"),
-                Hotspots(110, 135, "7"),
-                Hotspots(999, 360, "8"),
-                Hotspots(999, 396, "9"),
-                Hotspots(902, 133, "10"),
-                Hotspots(248, 134, "11")
+            1051, 548, listOf(
+                Hotspots("1",Hotspots.Point(348,131),"g_zzxxh"),
+                Hotspots("2",Hotspots.Point(701,131),"g_yzxxh"),
+                Hotspots("3",Hotspots.Point(796,131),"g_epb"),
+                Hotspots("5",Hotspots.Point(284,131),"g_wzd"),
+                Hotspots("6",Hotspots.Point(934,131),"g_cdplzt"),
+                Hotspots("7",Hotspots.Point(117,134),"g_sffxp"),
+                Hotspots("9",Hotspots.Point(996,394),"g_xlys"),
+                Hotspots("10",Hotspots.Point(888,131),"g_mqjczt"),
+                Hotspots("11",Hotspots.Point(250,131),"g_qwd"),
+                Hotspots("12",Hotspots.Point(291,461),"g_ready"),
+                Hotspots("13",Hotspots.Point(525,378),"g_qzev"),
+                Hotspots("14",Hotspots.Point(843,130),"g_evksx"),
             )
         )
     }
@@ -149,19 +154,18 @@ interface DataRepositorySource {
      */
     fun getBlueIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1054, 550, listOf(
-                Hotspots(65, 131, "1"),
-                Hotspots(164, 131, "2"),
-                Hotspots(225, 130, "3"),
-                Hotspots(320, 130, "4"),
-                Hotspots(355, 130, "5"),
-                Hotspots(260, 132, "6"),
-                Hotspots(99, 131, "7"),
-                Hotspots(194, 131, "8"),
-                Hotspots(131, 131, "9"),
-                Hotspots(941, 131, "10"),
-                Hotspots(870, 131, "11"),
-                Hotspots(290, 131, "12")
+            1050, 548, listOf(
+                Hotspots("1",Hotspots.Point(66,130),"b_hxkzzt"),
+                Hotspots("2",Hotspots.Point(184,131),"b_zsyyc"),
+                Hotspots("3",Hotspots.Point(241,131),"b_zsywc"),
+                Hotspots("4",Hotspots.Point(324,131),"b_ygd"),
+                Hotspots("5",Hotspots.Point(355,131),"b_znygd"),
+                Hotspots("7",Hotspots.Point(95,130),"h_hxkzzt"),
+                Hotspots("8",Hotspots.Point(211,131),"h_zsywc"),
+                Hotspots("9",Hotspots.Point(153,131),"h_zsyyc"),
+                Hotspots("10",Hotspots.Point(938,131),"w_cdplzt"),
+                Hotspots("11",Hotspots.Point(842,132),"w_depzy"),
+                Hotspots("12",Hotspots.Point(291,131),"w_znygd"),
             )
         )
     }

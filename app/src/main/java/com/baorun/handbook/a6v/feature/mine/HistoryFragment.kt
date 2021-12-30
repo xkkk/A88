@@ -12,6 +12,7 @@ import com.fondesa.recyclerviewdivider.dividerBuilder
 import com.baorun.handbook.a6v.R
 import com.baorun.handbook.a6v.databinding.FragmentHistoryBinding
 import com.baorun.handbook.a6v.databinding.IncludeEmptyLayoutBinding
+import com.baorun.handbook.a6v.utils.showToast
 
 /**
  * 功能：
@@ -76,6 +77,12 @@ class HistoryFragment:Fragment() {
 
         mViewModel.refreshData.observe(viewLifecycleOwner){
             mViewModel.feedbackList()
+        }
+
+        mViewModel.deleteResult.observe(viewLifecycleOwner){
+            if(!it.first) {
+                showToast(it.second)
+            }
         }
     }
 

@@ -5,44 +5,47 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.baorun.handbook.a6v.data.DataManager
 import com.baorun.handbook.a6v.network.FeedbackDataResponse
+import com.blankj.utilcode.util.NetworkUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class FeedbackViewModel:ViewModel() {
+class FeedbackViewModel : ViewModel() {
 
-    val result = MutableLiveData<Boolean>()
+    val result = MutableLiveData<Pair<Boolean, String>>()
 
     val feedbackList = MutableLiveData<List<FeedbackDataResponse>>()
 
-    val deleteResult = MutableLiveData<Boolean>()
+    val deleteResult = MutableLiveData<Pair<Boolean, String>>()
 
     val refreshData = MutableLiveData<Boolean>()
-    fun submit(type:String,content:String){
-        viewModelScope.launch(Dispatchers.IO){
-            runCatching {
-                val response = DataManager.postFeedback(type, content)
-                if(!response.result){
-                    throw IllegalArgumentException()
-                }else{
-                    refreshData.postValue(true)
-                    result.postValue(true)
+    fun submit(type: String, content: String) {
+        if (NetworkUtils.isConnected()) {
+            viewModelScope.launch(Dispatchers.IO) {
+                runCatching {
+                    val response = DataManager.postFeedback(type, content)
+                    if (!response.result) {
+                        throw IllegalArgumentException("提交失败")
+                    } else {
+                        refreshData.postValue(true)
+                        result.postValue(Pair(true, "提交成功"))
+                    }
+                }.onFailure {
+                    result.postValue(Pair(false, it.message ?: "提交失败"))
                 }
-            }.onFailure {
-                result.postValue(false)
             }
-
+        } else {
+            result.postValue(Pair(false, "网络链接异常"))
         }
     }
 
 
-    fun feedbackList(){
-//        feedbackList.value = emptyList()
-        viewModelScope.launch(Dispatchers.IO){
+    fun feedbackList() {
+        viewModelScope.launch(Dispatchers.IO) {
             runCatching {
                 val response = DataManager.postFeedbackList()
-                if(response.result){
+                if (response.result) {
                     feedbackList.postValue(response.listData)
-                }else{
+                } else {
                     throw IllegalArgumentException()
                 }
             }.onFailure {
@@ -54,19 +57,23 @@ class FeedbackViewModel:ViewModel() {
         }
     }
 
-    fun deleteFeedback(id:Int){
-        viewModelScope.launch(Dispatchers.IO) {
-            runCatching {
-                val response = DataManager.postFeedbackDelete(id)
-                if(response.result){
-                    deleteResult.postValue(true)
-                }else{
-                    throw IllegalArgumentException()
+    fun deleteFeedback(id: Int) {
+        if(NetworkUtils.isConnected()) {
+            viewModelScope.launch(Dispatchers.IO) {
+                runCatching {
+                    val response = DataManager.postFeedbackDelete(id)
+                    if (response.result) {
+                        deleteResult.postValue(Pair(true, "删除成功"))
+                    } else {
+                        throw IllegalArgumentException()
+                    }
+                }.onFailure {
+                    deleteResult.postValue(Pair(false, "删除失败"))
                 }
-            }.onFailure {
-                deleteResult.postValue(false)
             }
-        }
 
+        }else{
+            deleteResult.postValue(Pair(false,"网络链接异常"))
+        }
     }
 }

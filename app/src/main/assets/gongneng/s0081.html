@@ -1,79 +1,246 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="format-detection" content="telephone=no" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>A60</title>
-		<link rel="stylesheet" type="text/css" href="../public/iconfont/iconfont.css" />
-		<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
-	</head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>A6V</title>
+	<link rel="stylesheet" type="text/css" href="../public/iconfont/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
+</head>
 
-	<body>
-		<div id="shanghua">
-			<h4>5.4.7 影子车手</h4>
-			<!-- <p class="spaceKey">&nbsp;</p>
-			<h5>驾驶员及行驶工况识别</h5>
-			<p class="textindent">AVDC识别驾驶员类型及风格：对不同驾驶员，其控制参数不同，依据驾驶员的制动、油门及转向操作，根据车辆纵向及侧向加速度来判断。</p>
-			<p class="textindent">AVDC识别行驶工况：首先需要判断车辆弯道状态，需要识别常规转弯、连续转弯、蛇形、紧急避让、换道等；AVDC识别坡道及路面附着系数，以便实现最优控制。</p>
-			<p class="spaceKey">&nbsp;</p>
-			<h5>激活时机</h5>
-			<p class="textindent">在低速转向及高速方向盘微调时，车辆侧向冲击较小时，不激活。当检测到驾驶员有明显的加速意图及较强减速意图时，也不激活。当侧向加速度及侧向加速度变化率达到一定程度才激活。</p>
-			<p class="spaceKey">&nbsp;</p>
-			<h5>弯道动态控制</h5> -->
-			<div class="imageText clear align">
-				<div class="img"><img src="../public/img/OMA60-0339.png"></div>
-				<div class="text">
-					<div class="wenzi1">
-						<!-- <p class="textindent">通过对车辆施加轻微的纵向加/减速度干预，避免车辆产生过度的侧向加速度变化，以最大程度减少驾驶员身体的不必要晃动及方向修正，从而实现平顺、安全的转向。</p> -->
-						<p class="textindent">影子车手是一种过弯道辅助控制技术，英文简称AVDC，主要在转向时对车辆施加轻微的纵向加/减速度干预，减小车辆的侧向加速度及侧倾，降低驾驶员对油门、方向盘的操作负荷，提升过弯的稳定性及驾乘舒适性。</p>
-					</div>
-				</div>
-			</div>
-			<p class="spaceKey">&nbsp;</p>
-			<div class="imageText clear align">
-				<div class="img"><img src="../public/img/OMA60-0352.png"></div>
-				<div class="text">
-					<div class="wenzi1">
-						<p class="textindent">影子车手有五种模式：关闭、稳健、激进、冰雪及自适应模式，通过音响主机“驾驶模式-当前驾驶模式”界面，选择“影子车手”相应模式。</p>
-					</div>
-				</div>
-			</div>
-			<p class="line clear"><span class="heng">–</span><span class="neirong">"关闭"模式：影子车手关闭。</span></p>
-			<p class="line clear"><span class="heng">–</span><span class="neirong">"稳健"模式：影子车手控制的强度中等，适合常规驾驶。</span></p>
-			<p class="line clear"><span class="heng">–</span><span class="neirong">"激进"模式：影子车手控制的强度变弱，以减少对驾驶员操作的干预。</span></p>
-			<p class="line clear"><span class="heng">–</span><span class="neirong">"冰雪"模式：影子车手的控制强度最强，该模式应在冰雪路面上使用，在常规路面行驶，可能对驾驶员的操作干预过多。</span></p>
-			<p class="line clear"><span class="heng">–</span><span class="neirong">"自适应"模式：根据驾驶员的操作，自动调节影子车手的强度。该模式下车辆根据车辆状态及驾驶员操作自动调整油门灵敏度。</span></p>
-			<div class="switch-tab">
-				<a href="javaScript:;" class="btnhref">
-					<div class="tips zhuyi">
-						<i class="icon icon-eye"></i>注意
-						<span class="fuhao">+</span>
-					</div>
-				</a>
-				<div class="switch-drop btnshow">
-					<p class="line clear"><span class="heng">–</span><span class="neirong">在“自适应”模式下，驾驶员不可以调整油门灵敏度。</span></p>
-					<p class="line clear"><span class="heng">–</span><span class="neirong">对于四驱车辆，在“雪地模式*”、“泥地模式*”或“沙地模式*”，影子车手功能关闭，主机界面置灰，不可以调整影子车手模式。</span></p>
-				</div>
-			</div>
-			<p class="spaceKey">&nbsp;</p>
-			<h5>油门灵敏度的调节</h5>
-			<p class="textindent">油门灵敏度是调整油门影响的一种方式，油门灵敏度越高，发动机扭矩响应越快。一般来说，低速、拥堵路况适合较低油门灵敏度，高速及山路等需要较大功率输出时，适合较高的油门灵敏度。</p>
-			<p class="line clear"><span class="heng">–</span><span class="neirong">当影子车手不处于“自适应”模式时，用户可以在“驾驶模式-当前驾驶模式”界面来设置油门灵敏度。</span></p>
-			<p class="line clear"><span class="heng">–</span><span class="neirong">也可以通过方向盘左侧多功能“OK”按键，上拨/下拨来调整油门灵敏度。</span></p>
-				
-			<p class="spaceKey">&nbsp;</p>
-			<p class="spaceKey">&nbsp;</p>
-			<p class="spaceKey">&nbsp;</p>
-			<div style="width:100%;">
-				<p class="dibu">— 页面到底了 —</p>
+<body>
+	<div id="shanghua">
+		<h4>6.4.5 车道偏离系统</h4>
+		<p class="textindent">车道偏离系统是为了减少由于无意识的车道偏离而导致的事故发生。</p>
+		<p class="textindent">
+			车道偏离系统通过安装在前挡风玻璃上的智能前向摄像头探测道路上的车道标志线和道路边沿，通过安装在车身前部的毫米波雷达传感器探测道路护栏等。同时对驾驶员驾车行为及车辆运动状态进行分析，在驾驶员因疲劳、走神或打电话等而导致车辆无意识地偏离车道时发出警告或干预方向盘进行纠偏辅助。通常在前轮越过车道标线或将越过/撞上路沿时给予警告或干预方向盘。
+		</p>
+		<p class="textindent">在驾驶员选择辅助模式为“转向”或“转向和警告”并达到车道偏离系统工作条件时，系统会监测方向盘上的力矩。当驾驶员较长时间双手脱离方向盘时，系统将向驾驶员发出报警。</p>
+		<p class="spaceKey">&nbsp;</p>
+		<h5>开启和关闭</h5>
+		<!-- <img src="../public/img/OMA60-0320.png" class="imgBig"> -->
+		<p class="textindent">通过音响系统“设置→ADiGO智能驾驶→ADiGO主动安全”界面，点击“车道偏离辅助”右侧<img style="width:31px;margin:0px 4px;"
+				src="../public/img/0133.png" />软按键开启或关闭。</p>
+		<p class="textindent">功能开启时，可以看到按钮变为开启状态，仪表亮起车道偏离系统指示灯<img style="width:28px;margin:-6px 4px;"
+				src="../public/img/img29.png" />；功能关闭时，可以看到按钮变为关闭状态，仪表的车道偏离系统指示灯熄灭。</p>
+		<p class="textindent">系统具有开关状态记忆功能，车辆启动后，开关状态将与上次车辆熄火时的状态相同。</p>
+		<p class="spaceKey">&nbsp;</p>
+		<h5>选择车道辅助模式</h5>
+		<p class="textindent">整车电源在“ON”挡位，进入音响系统“设置→ADiGO智能驾驶→ADiGO主动安全”功能中选择车道偏离辅助模式。</p>
+		<p>1.转向辅助</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">选择“转向”时，系统仅干预方向盘进行纠偏辅助。</span></p>
+		<p>2.警告</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">选择“警告”时系统仅发出警告。</span></p>
+		<p>3.转向和警告</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">选择“转向和警告”时，系统既会发出警告，也会干预方向盘进行纠偏辅助。</span>
+		</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="textindent">系统具有车道偏离辅助模式记忆功能，车辆启动后，车道偏离辅助模式将与上次车辆熄火时的选择相同。</p>
 			</div>
 		</div>
-	</body>
-	<script src="../public/js/jquery.min.js" type="text/javascript"></script>
-	<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
-	<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
+		<p class="spaceKey">&nbsp;</p>
+		<h5>报警提示</h5>
+		<p class="textindent">车道偏离报警提示仅在辅助模式为“警告”或“转向和警告”时触发。</p>
+		<!--update by lwj 20200909<p class="line clear"><span class="heng">–</span><span class="neirong">当仪表显示车速大于60km/h且系统至少检测到一侧有效的车道线时，组合仪表的<img style="width:28px;margin:-6px 4px;" src="../public/img/0133.png" />指示灯绿色点亮。表明此时系统可能发出车道偏移报警。仅有一侧车道线时，系统只对有车道线一侧报警。</p>-->
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">当仪表显示车速≥65km/h且系统至少检测到一侧有效的车道线时，组合仪表的状态指示灯<img style="width:28px;margin:-6px 4px;"
+					src="../public/img/img31.png" />绿色点亮。表明此时系统可能发出车道偏离报警。仅有一侧车道线时，系统只对该侧报警。</span></p>
+		<!-- <p class="textindent">当系统发出报警提示时，组合仪表<img style="width:28px;margin:-6px 4px;"                                src="../public/img/0100.png" />指示灯黄色闪烁。                </p> -->
+		<p class="textindent">当<img style="width:28px;margin:-6px 4px;"
+				src="../public/img/img31.png" />指示灯为绿色，若车辆在下列情况之一偏离车道，系统不会发出报警，指示灯变为白色。</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">快速踩油门踏板加速。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">较大制动力踩制动踏板减速。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">开启相应侧的转向信号灯。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">开启危险警告灯。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">快速转动方向盘。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">距上次报警时间较短。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">持续压线行驶。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">系统因驾驶员脱手提示驾驶员接管。</span></p>
+		<p class="textindent">当<img style="width:28px;margin:-6px 4px;"
+				src="../public/img/img31.png" />指示灯为绿色时，若没有上述提及的动作，且车辆偏离车道（如驾驶员因疲劳、走神或打电话等而导致车辆意外偏离车道），系统向驾驶员发出警告，通过组合仪表显示红色车道线提示，同时伴有报警音。
+		</p>
+		<p class="spaceKey">&nbsp;</p>
+		<h5>转向辅助</h5>
+		<p class="textindent">车道偏离的纠偏辅助提示仅在辅助模式为“转向”或“转向和警告”时触发。</p>
+		<p class="textindent">当仪表显示车速大于65km/h且系统至少检测到一侧有效的车道线时。组合仪表的<img style="width:28px;margin:-6px 4px;"
+				src="../public/img/img31.png" />指示灯绿色点亮。表明此时系统可能干预方向盘进行纠偏辅助。仅识别到一侧车道边沿时，系统只对该侧进行纠偏。</p>
+		<p class="textindent">当<img style="width:28px;margin:-6px 4px;"
+				src="../public/img/img31.png" />指示灯为绿色，若车辆在下列情况之一偏离车道，系统不会干预方向盘进行纠偏辅助。</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">快速踩油门踏板加速。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">较大制动力踩制动踏板减速。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">开启相应侧的转向信号灯。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">开启危险警告灯。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">快速转动方向盘。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">距上次报警时间较短。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">持续压线行驶。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">系统因驾驶员脱手提示驾驶员接管。</span></p>
+		<p class="textindent">系统干预方向盘进行纠偏辅助时，驾驶员能感受到系统在方向盘上施加力矩，且组合仪表显示蓝色车道线提示。</span>
+		</p>
+		<p class="spaceKey">&nbsp;</p>
+		<h5>接管提示</h5>
+		<div class="imageText clear align">
+			<div class="img"><img src="" class="lazy" width="100" height="100"
+					data-original="../public/img/OMA6V-0129.png" alt="loading"></div>
+			<div class="text">
+				<div class="wenzi1">
+					<p class="textindent">当车道偏离系统监测到驾驶员较长时间双手脱离方向盘时，系统将发出接管提示，组合仪表显示上图并伴随报警音。</p>
+					<p class="textindent">
+						驾驶员接收到接管提示时，应立即手握方向盘。请勿惊慌，避免不必要地猛打方向盘。车道偏离系统监测到施加在方向盘上的手力矩时，即能识别到驾驶员手握方向盘，接管提示取消。车道偏离系统自动重新激活。
+					</p>
+				</div>
+			</div>
+		</div>
+		<p class="spaceKey">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="textindent">
+					系统可能将驾驶员手轻放在方向盘上的情况误判为双手脱离方向盘。此情况下系统发出方向盘接管提示，驾驶员只需将方向盘稍稍握紧或轻微晃动方向盘，系统即能探测到方向盘上的力矩，接管提示即会取消。</p>
+			</div>
+		</div>
+		<p class="spaceKey1">&nbsp;</p>
+		<h5>其它提示</h5>
+		<p class="textindent">系统检测到摄像头失明时，会在组合仪表弹出“前摄像头视线受阻”信息。</p>
+		<p class="textindent">通常情况下，这是由于挡风玻璃脏污或摄像头被低矮的太阳光直射等导致。车道偏离系统不会因此损坏，亦不必进行检修。</p>
+		<p class="textindent">驾驶员可尝试前挡风玻璃喷水刮洗。</p>
+		<p class="textindent">当系统检测到故障时，会在组合仪表弹出“请检查车道偏离系统”信息，且<img style="width:28px;margin:-6px 4px;"
+				src="../public/img/img30.png" />指示灯红色点亮。请尽快前往广汽传祺特约店进行检修。</p>
+		<!-- <div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="textindent">若组合仪表弹出“请检查车道偏离辅助系统”信息，表明系统出现故障，请及时前往广汽传祺特约店进行检修。</p>
+			</div>
+		</div> -->
+		<p class="spaceKey">&nbsp;</p>
+		<h5>功能局限性</h5>
+		<p class="textindent1">即使车道偏离系统已开启并工作，由于不可避免的环境因素和条件，其可能会错误地探测或根本探测不到车道标线。在以下情况，系统可能会受影响或不起作用：</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">视线不佳，例如下雪、下雨、有雾或水花等。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">风窗玻璃脏污、起雾或风窗玻璃摄像头前方有遮挡物。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">阳光直射导致摄像头周围温度过高。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">由于阳光直射、迎面来车、道路积水反射光等造成眩光。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">室外亮度突然变化，如进/出隧道。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">在夜间或在隧道内光线弱时，没有打开前大灯。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">没有车道标线，或难以区分车道标线颜色和路面颜色。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">车道标线不明显，过细、磨损、模糊或被污垢/积雪覆盖。</span></p>
+		<!-- <p class="line clear"><span class="heng">–</span><span class="neirong">车道过宽或过窄。</span></p> -->
+		<p class="line clear"><span class="heng">–</span><span class="neirong">车道数增多或减少，或者车道标线穿行复杂。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">车辆行驶的左右两侧车道标线超过两条。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">道路上有类似车道标线的标记或物体。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">隔离带或其它物体在车道标线上投下了阴影。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">短时变换标线，如匝道或高速公路出口。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">行驶在陡坡或弯曲道路上。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">与前车距离过近或前车行驶挡住了车道标线。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">车辆严重摇晃。</span></p>
+		<p class="spaceKey1">&nbsp;</p>
+		<p class="textindent1">在以下情况，系统干预方向盘进行纠偏辅助时的性能可能会受影响：</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">车辆超载。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">轮胎气压异常。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">路面不平。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">强烈的侧风。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">驾驶员对车辆操控相关零部件进行改装。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">将车辆操控相关零部件换装为非原厂匹配的零部件。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">车辆操控相关零部件装配不当。</span></p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="textindent">车道偏离系统在干预方向盘进行纠偏辅助时，驾驶员仍可转动方向盘操控车辆。在驾驶员感觉系统所施加的纠偏力矩不当时，可随时控制车辆按驾驶员意图行驶。</p>
+			</div>
+		</div>
+		<p class="spaceKey1">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips zhuyi"><i class="icon icon-eye"></i>注意<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">车道偏离系统在监测到无意识的偏离车道时，会发出警告，或干预方向盘进行纠偏辅助。切莫慌张或不必要地猛打方向。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">车道偏离系统监测到驾驶员双手较长时间脱离方向盘时，会发出警告，切莫慌张、不必要地猛打方向或不必要地晃动方向盘。驾驶员保持双手紧握方向盘进行正常驾驶即可。</span>
+				</p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">当您选择车道偏离辅助模式为“警告”时，系统不会发出转向干预，选择模式为“转向”时，系统不会发出图文和声音报警。</span></p>
+			</div>
+		</div>
+		<p class="spaceKey1">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">车道偏离系统仅是辅助性系统，不能主动控制车辆进行变道或保持车道。驾驶员有责任始终注意路况并主动控制车辆，请务必始终手握方向盘，主动控制车辆。</span>
+				</p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">车道偏离系统使用不当或疏忽大意可能引发事故，切勿依赖车道偏离系统，或借助车道偏离系统尝试危险驾驶。</span></p>
+				<!-- <p class="line clear"><span class="heng">–</span><span class="neirong">车道偏离系统并非总能识别车道线和车道边沿。因恶劣天气、不良的夜间照明、路面积水积雪、车道线破损模糊、投射到路面的阴影等可能漏识别或误识别车道线或车道边沿。</span></p> -->
+			</div>
+		</div>
+		<p class="spaceKey1">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">车道偏离系统并非总能识别车道线和车道边沿。因恶劣天气、不良的夜间照明、路面积水积雪、车道线破损模糊、投射到路面的阴影等可能漏识别或误识别车道线或车道边沿。由此可能产生功能的漏触发与误触发，故驾驶员须集中精力观察道路及交通状况，小心驾驶。
+					</span></p>
+			</div>
+		</div>
+		<p class="spaceKey1">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">避免系统智能前向摄像头受到强烈冲击、受潮受热，禁止自行拆装部件。请勿在仪表板上放置会反射光线的物品，因这些物品不仅容易令驾驶员炫目，而且可能会将光线反射到智能前向摄像头视野内，影响功能正常工作。</span>
+				</p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">请勿在车辆前挡风玻璃着色、增加不符合规范的图层，任何影响系统摄像头视线的外加物品都有可能影响系统正常工作。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">带有路沿识别的车道偏离系统还会使用毫米波雷达传感器的信号，注意保险杠或车身避免撞击或改装，否则可能影响车道偏离系统的正常工作。</span></p>
+			</div>
+		</div>
+		<p class="spaceKey1">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">当系统不能检测车道线，判断驾驶员故意偏离车道（如检测到较快的方向盘转动）或车速≥130km/h或车速≤60km/h等，即使车辆偏离或离开车道，系统也不发出警告或转向干预。</span>
+				</p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">系统仅能使用有限的转向能力，故并不能保证在任何情况下都将车辆纠正回车道内行驶。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">车内的声音或车外噪声可能使您无法听到警告蜂鸣声，故并不能保证在任何情况下都能提醒您注意到车道偏离系统发出的报警。</span></p>
+			</div>
+		</div>
+
+		<p class="spaceKey">&nbsp;</p>
+		<p class="spaceKey">&nbsp;</p>
+		<p class="spaceKey">&nbsp;</p>
+		<div style="width:100%;">
+			<p class="dibu">— 页面到底了 —</p>
+		</div>
+	</div>
+</body>
+<script src="../public/js/jquery.min.js" type="text/javascript"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
 
 </html>

@@ -149,9 +149,9 @@ class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
             val scaleX = hotspotLayoutWidth * 1.0f / it.baseWidth
             val scaleY = hotspotLayoutHeight * 1.0f / it.baseHeight
             it.hotspots.forEach {
-                it.point.radius = 60
+                it.point.radius =30
                 addHotspot(this, it.scale(scaleX, scaleY), viewBinding.background) {
-                    val dialog = TipsDialog.newInstance(type, it.description)
+                    val dialog = TipsDialog.newInstance(type, it.id)
                     dialog.showDialog(supportFragmentManager)
                 }
             }

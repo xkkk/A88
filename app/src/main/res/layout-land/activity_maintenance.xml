@@ -9,7 +9,6 @@
     <FrameLayout
         android:id="@+id/hotspotLayout"
         android:layout_width="match_parent"
-        android:layout_marginTop="@dimen/status_bar_height"
         android:layout_gravity="center"
         android:layout_height="match_parent"/>
 

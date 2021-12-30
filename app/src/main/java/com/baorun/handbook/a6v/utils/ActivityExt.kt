@@ -1,6 +1,7 @@
 package com.baorun.handbook.a6v.utils
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 
@@ -21,4 +22,8 @@ fun Activity.goActivity(clazz: Class<out AppCompatActivity>, finish:Boolean = fa
             this.finish()
         }
     }
+}
+
+fun Context.getResource(name:String):Int{
+   return resources.getIdentifier(name, "drawable", this.packageName)
 }

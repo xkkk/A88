@@ -47,25 +47,16 @@ class FeedbackFragment:Fragment() {
                 return@setOnClickListener
             }else{
                 val type = viewBinding.feedbackTypeTv.text.toString()
-//                val name = viewBinding.nameEt.text.toString()
-//                val phone = viewBinding.phoneEt.text.toString()
-//                if(phone.isNotEmpty()&&!RegexUtils.isMobileSimple(phone)){
-//                    showToast("输入的手机号格式错误")
-//                    return@setOnClickListener
-//                }
-//                val email = viewBinding.emailEt.text.toString()
-//                if(email.isNotEmpty()&&!RegexUtils.isEmail(email)){
-//                    showToast("输入的邮箱格式错误")
-//                    return@setOnClickListener
-//                }
                 mViewModel.submit(type, content)
             }
         }
 
 
         mViewModel.result.observe(viewLifecycleOwner){
-            showToast(if(it)"提交成功" else "提交失败")
-            viewBinding.feedbackEt.setText("")
+            showToast(it.second)
+            if(it.first) {
+                viewBinding.feedbackEt.setText("")
+            }
         }
     }
 }
