@@ -15,6 +15,7 @@ class App: Application() {
         super.onCreate()
         mApp = this
         userId = Settings.System.getString(contentResolver, Settings.Secure.ANDROID_ID)
+        isMaster =  PlatformUtil.getInstance(AppContext).isMasterCarType
     }
 
     companion object{

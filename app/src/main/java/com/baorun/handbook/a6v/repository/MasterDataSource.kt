@@ -117,57 +117,6 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
     }
 
 
-    override fun getVisionIn1HotspotList(): HotSpotWrapper {
-        return HotSpotWrapper(
-            1055, 519, listOf(
-                Hotspots(
-                    286,
-                    263,
-                    "方向盘",
-                    arrayListOf(
-                        R.drawable.img_vision_v3_1_m,
-                        R.drawable.img_vision_v3_2_m,
-                        R.drawable.img_vision_v3_3_m,
-                        R.drawable.img_vision_v3_4_m,
-                        R.drawable.img_vision_v3_5_m
-                    )
-                ),
-                Hotspots(
-                    241,
-                    305,
-                    "仪表盘左侧开关",
-                    arrayListOf(
-                        R.drawable.img_vision_v1_1_m,
-                        R.drawable.img_vision_v1_2_m,
-                        R.drawable.img_vision_v1_3_m,
-                    )
-                ),
-                Hotspots(
-                    107,
-                    328,
-                    "左前门开关",
-                    arrayListOf(
-                        R.drawable.img_vision_v2_1_m,
-                        R.drawable.img_vision_v2_2_m,
-                        R.drawable.img_vision_v2_3_m
-                    )
-                ),
-                Hotspots(528, 315, "空调控制面板", arrayListOf(R.drawable.img_vision_v4_1)),
-                Hotspots(
-                    483,
-                    418,
-                    "换挡控制面板",
-                    arrayListOf(
-                        R.drawable.img_vision_v5_1_m,
-                        R.drawable.img_vision_v5_2_m,
-                        R.drawable.img_vision_v5_3_m,
-                        R.drawable.img_vision_v5_4_m,
-                        R.drawable.img_vision_v5_5_m
-                    )
-                )
-            )
-        )
-    }
 
     /**
      * Get cj cover res by id

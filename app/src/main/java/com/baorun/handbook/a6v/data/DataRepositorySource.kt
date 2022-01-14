@@ -23,16 +23,16 @@ interface DataRepositorySource {
      */
     fun getMaintenanceHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            936, 460, listOf(
-                Hotspots("wx_1", Hotspots.Point(76, 93)),
-                Hotspots("wx_2", Hotspots.Point(175, 93)),
-                Hotspots("wx_3", Hotspots.Point(272, 93)),
-                Hotspots("wx_4", Hotspots.Point(370, 93)),
-                Hotspots("wx_5", Hotspots.Point(470, 93)),
-                Hotspots("wx_6", Hotspots.Point(568, 93)),
-                Hotspots("wx_7", Hotspots.Point(666, 93)),
-                Hotspots("wx_8", Hotspots.Point(765, 93)),
-                Hotspots("wx_9", Hotspots.Point(862, 93))
+            1045, 514, listOf(
+                Hotspots("wx_1", Hotspots.Point(131, 116)),
+                Hotspots("wx_2", Hotspots.Point(234, 116)),
+                Hotspots("wx_3", Hotspots.Point(336, 116)),
+                Hotspots("wx_4", Hotspots.Point(438, 116)),
+                Hotspots("wx_5", Hotspots.Point(542, 116)),
+                Hotspots("wx_6", Hotspots.Point(643, 116)),
+                Hotspots("wx_7", Hotspots.Point(744, 116)),
+                Hotspots("wx_8", Hotspots.Point(848, 116)),
+                Hotspots("wx_9", Hotspots.Point(950, 116))
             )
         )
     }

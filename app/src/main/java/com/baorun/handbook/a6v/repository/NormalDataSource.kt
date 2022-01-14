@@ -237,6 +237,7 @@ class NormalDataSource : DataRepositorySource {
                     arrayListOf(
                         R.drawable.img_vision_v1_1,
                         R.drawable.img_vision_v1_2,
+                        R.drawable.img_vision_v1_3
                     )
                 ),
                 Hotspots(

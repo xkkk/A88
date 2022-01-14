@@ -34,8 +34,11 @@ class MainActivity: BaseActivity<ActivityMainBinding>(),View.OnClickListener{
     override fun initView() {
         with(viewBinding){
 
-            getMasterInfoBtn.text = "查询大师版接口 ${DataManager.isMaster}"
+            getMasterInfoBtn.text = "查询大师版接口 ${App.isMaster}"
+
+
             switchMasterBtn.setOnClickListener {
+                App.isMaster = App.isMaster.not()
                 DataManager.initDataSource()
                 loadDrawableRes(this@MainActivity,DataManager.getHome360Res(), home360,426,236)
             }

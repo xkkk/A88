@@ -199,7 +199,7 @@
         android:id="@+id/closeIv"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/ic_dialog_close"
+        android:background="@drawable/ic_dialog_close"
         app:layout_constraintEnd_toEndOf="@id/dataLayout2"
         app:layout_constraintTop_toTopOf="@id/dataLayout2" />
 

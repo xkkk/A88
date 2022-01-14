@@ -57,11 +57,11 @@ class HotSpotFragment : Fragment() {
             TYPE_IN_2 -> initView(mViewModel.getVisionIn2HotspotList(), R.drawable.img_vision_in_2)
             TYPE_OUT_1 -> initView(
                 mViewModel.getVisionOut1HotspotList(),
-                R.drawable.img_vision_out_1
+                DataManager.getVisionOut()[0]
             )
             TYPE_OUT_2 -> initView(
                 mViewModel.getVisionOut2HotspotList(),
-                R.drawable.img_vision_out_2
+                DataManager.getVisionOut()[1]
             )
         }
 

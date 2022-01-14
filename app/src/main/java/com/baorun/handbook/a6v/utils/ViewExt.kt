@@ -62,8 +62,8 @@ fun addHotspot(context: Activity,hotspot: Hotspots,viewGroup: ViewGroup,click:()
     lp.leftMargin = hotspot.point.x - hotspot.point.radius
     lp.topMargin = hotspot.point.y - hotspot.point.radius
     lottie.layoutParams = lp
-    lottie.setBackgroundColor(Color.RED)
-    lottie.alpha=0.2f
+//    lottie.setBackgroundColor(Color.RED)
+//    lottie.alpha=0.2f
     lottie.setOnClickListener {
         click.invoke()
     }

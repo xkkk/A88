@@ -10,13 +10,10 @@ import com.baorun.handbook.a6v.R
 import com.baorun.handbook.a6v.data.*
 import com.baorun.handbook.a6v.db.collectDao
 import com.baorun.handbook.a6v.db.historyDao
-import com.baorun.handbook.a6v.network.Api
 import com.baorun.handbook.a6v.network.BaseResponse
 import com.baorun.handbook.a6v.network.FeedbackDataResponse
-import com.baorun.handbook.a6v.network.RetrofitManager
 import com.baorun.handbook.a6v.repository.MasterDataSource
 import com.baorun.handbook.a6v.repository.NormalDataSource
-import com.baorun.handbook.a6v.utils.getDataJson
 import com.blankj.utilcode.util.LogUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -29,9 +26,13 @@ import kotlinx.coroutines.withContext
 object DataManager : DataRepositorySource {
 
 
-    val isMaster: Boolean by lazy {
-        PlatformUtil.getInstance(AppContext).isMasterCarType
-    }
+//    val isMaster: Boolean by lazy {
+//        PlatformUtil.getInstance(AppContext).isMasterCarType
+//        App.isMaster
+//    }
+
+    val isMaster: Boolean
+        get() = App.isMaster
     private lateinit var dataSource: DataRepositorySource
 
     fun initDataSource() {
@@ -41,6 +42,13 @@ object DataManager : DataRepositorySource {
 
     fun getHome360Res(): Int {
         return if (isMaster) R.drawable.assets_images_home_360_m else R.drawable.assets_images_home_360
+    }
+
+    fun getVisionOut(): Array<Int> {
+        return if (isMaster) arrayOf(
+            R.drawable.img_vision_out_1_m,
+            R.drawable.img_vision_out_2_m
+        ) else arrayOf(R.drawable.img_vision_out_1, R.drawable.img_vision_out_2)
     }
 
     override fun getVisionOut1HotspotList(): HotSpotWrapper {
@@ -98,7 +106,7 @@ object DataManager : DataRepositorySource {
     }
 
 
-   suspend fun search():List<ChildrenData>{
+    suspend fun search(): List<ChildrenData> {
         return dataSource.getSceneList(1).first()
     }
 

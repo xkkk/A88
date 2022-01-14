@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.lifecycleScope
@@ -13,6 +15,7 @@ import com.baorun.handbook.a6v.Constant
 import com.baorun.handbook.a6v.data.DataManager
 import com.baorun.handbook.a6v.databinding.DialogTipsBinding
 import com.baorun.handbook.a6v.utils.getResource
+import com.blankj.utilcode.util.SizeUtils
 
 /**
  * 功能：
@@ -53,6 +56,12 @@ class TipsDialog:DialogFragment() {
        lifecycleScope.launchWhenCreated {
            val pair = DataManager.getIndicatorData(type, id)
            pair?.let {
+               if(it.name.contains("depzy")){
+                   val lp = viewBinding.iconIv.layoutParams as ConstraintLayout.LayoutParams
+                   lp.width = SizeUtils.px2dp(211f)/2
+                   lp.height = SizeUtils.px2dp(84f)/2
+                   viewBinding.iconIv.layoutParams = lp
+               }
                viewBinding.iconIv.setImageResource(requireActivity().getResource(it.name))
                viewBinding.titleTv.text = it.title
                viewBinding.contentTv.text = it.content.text
