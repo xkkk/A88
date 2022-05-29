@@ -86,7 +86,8 @@ interface DataRepositorySource {
                 Hotspots("10", Hotspots.Point(708, 132),"r_qckzy"),
                 Hotspots("11", Hotspots.Point(312, 132),"r_jsyzy"),
                 Hotspots("12", Hotspots.Point(842, 133),"r_depzy"),
-                Hotspots("13", Hotspots.Point(56, 329),"r_xtgz")
+                Hotspots("13", Hotspots.Point(56, 329),"r_xtgz"),
+                Hotspots("14", Hotspots.Point(898, 132),"r_cmkq")
             )
         )
     }
@@ -116,6 +117,7 @@ interface DataRepositorySource {
                 Hotspots("15",Hotspots.Point(996,309),"y_xpfz"),
                 Hotspots("18",Hotspots.Point(239,459),"y_dldc"),
                 Hotspots("19",Hotspots.Point(57,358),"y_jglxs"),
+                Hotspots("20",Hotspots.Point(57,267),"y_gpf")
 
 
 
@@ -166,6 +168,7 @@ interface DataRepositorySource {
                 Hotspots("10",Hotspots.Point(938,131),"w_cdplzt"),
                 Hotspots("11",Hotspots.Point(842,132),"w_depzy"),
                 Hotspots("12",Hotspots.Point(291,131),"w_znygd"),
+                Hotspots("13",Hotspots.Point(55,157),"w_gpf")
             )
         )
     }
