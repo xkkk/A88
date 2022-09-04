@@ -27,7 +27,7 @@ object DataManager : DataRepositorySource {
 
 
 //    val isMaster: Boolean by lazy {
-//        PlatformUtil.getInstance(AppContext).isMasterCarType
+//        PlatformUtil.getInstance(AppContext).vehicleType
 //        App.isMaster
 //    }
 

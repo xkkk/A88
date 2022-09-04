@@ -11,8 +11,8 @@ android {
         applicationId "com.baorun.handbook.a6v"
         minSdk 27
         targetSdk 30
-        versionCode 101
-        versionName "1.0.1"
+        versionCode 100
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {
@@ -45,7 +45,9 @@ android {
 
 dependencies {
 
-    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: ['PlatformUtil.jar'])
+
+    implementation project(path: ':library')
     implementation rootProject.ext.dependencies.core_ktx
     implementation rootProject.ext.dependencies.activity_ktx
     implementation rootProject.ext.dependencies.fragment_ktx
