@@ -238,10 +238,10 @@ class NormalDataSource : DataRepositorySource {
     }
     override fun getVisionIn1HotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1055, 519, listOf(
+            1920, 894, listOf(
                 Hotspots(
-                    286,
-                    263,
+                    603,
+                    418,
                     "方向盘",
                     arrayListOf(
                         R.drawable.img_vision_v3_1,
@@ -252,8 +252,8 @@ class NormalDataSource : DataRepositorySource {
                     )
                 ),
                 Hotspots(
-                    241,
-                    305,
+                    291,
+                    500,
                     "仪表盘左侧开关",
                     arrayListOf(
                         R.drawable.img_vision_v1_1,
@@ -262,8 +262,8 @@ class NormalDataSource : DataRepositorySource {
                     )
                 ),
                 Hotspots(
-                    107,
-                    328,
+                    523,
+                    506,
                     "左前门开关",
                     arrayListOf(
                         R.drawable.img_vision_v2_1,
@@ -271,10 +271,10 @@ class NormalDataSource : DataRepositorySource {
                         R.drawable.img_vision_v2_3
                     )
                 ),
-                Hotspots(528, 315, "空调控制面板", arrayListOf(R.drawable.img_vision_v4_1)),
+                Hotspots(960, 495, "空调控制面板", arrayListOf(R.drawable.img_vision_v4_1)),
                 Hotspots(
-                    483,
-                    418,
+                    917,
+                    615,
                     "换挡控制面板",
                     arrayListOf(
                         R.drawable.img_vision_v5_1,
@@ -289,10 +289,10 @@ class NormalDataSource : DataRepositorySource {
     }
 
     override fun getVisionIn2HotspotList(): HotSpotWrapper {
-        return HotSpotWrapper(1055,519,listOf(
+        return HotSpotWrapper(1920,894,listOf(
             Hotspots(
-                521,
-                127,
+                950,
+                353,
                 "顶灯",
                 arrayListOf(
                     R.drawable.img_vision_v7_1,
@@ -307,8 +307,8 @@ class NormalDataSource : DataRepositorySource {
                 )
             ),
             Hotspots(
-                330,
-                200,
+                623,
+                417,
                 "主驾座椅",
                 arrayListOf(
                     R.drawable.img_vision_v6_1,
@@ -320,8 +320,8 @@ class NormalDataSource : DataRepositorySource {
                 )
             ),
             Hotspots(
-                181,
-                181,
+                414,
+                435,
                 "安全带调整",
                 arrayListOf(
                     R.drawable.img_vision_v8_1

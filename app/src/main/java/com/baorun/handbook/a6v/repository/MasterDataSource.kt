@@ -46,16 +46,16 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
     }
 
     override fun getVisionOut1HotspotList(): HotSpotWrapper {
-        return HotSpotWrapper(1398,687, listOf(
+        return HotSpotWrapper(1920,1064, listOf(
             Hotspots(
-                525,
-                306,
+                750,
+                434,
                 "前雨刷",
                 arrayListOf(R.drawable.img_vision_2_1_m),
             ),
             Hotspots(
-                571,
-                379,
+                813,
+                532,
                 "前大灯",
                 arrayListOf(
                     R.drawable.img_vision_3_1_m,
@@ -65,8 +65,8 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                 )
             ),
             Hotspots(
-                392,
-                358,
+                563,
+                507,
                 "发动机仓盖",
                 arrayListOf(
                     R.drawable.img_vision_1_1_m,
@@ -76,8 +76,8 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                 )
             ),
             Hotspots(
-                949,
-                326,
+                1335,
+                497,
                 "儿童安全锁",
                 arrayListOf(R.drawable.img_vision_4_1_m),
             )
@@ -85,16 +85,16 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
     }
 
     override fun getVisionOut2HotspotList(): HotSpotWrapper {
-        return HotSpotWrapper(1398,687, listOf(
+        return HotSpotWrapper(1920,1080, listOf(
             Hotspots(
-                402,
-                275,
+                636,
+                303,
                 "后雨刷",
                 arrayListOf(R.drawable.img_vision_5_1_m)
             ),
             Hotspots(
-                381,
-                364,
+                605,
+                603,
                 "掀背门",
                 arrayListOf(
                     R.drawable.img_vision_6_1_m,
@@ -104,8 +104,8 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                 )
             ),
             Hotspots(
-                666,
-                330,
+                995,
+                552,
                 "油箱盖板",
                 arrayListOf(
                     R.drawable.img_vision_7_1_m,

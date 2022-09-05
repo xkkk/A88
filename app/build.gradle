@@ -8,7 +8,7 @@ android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.baorun.handbook.a6v"
+        applicationId "com.baorun.handbook.a88hybrid"
         minSdk 27
         targetSdk 30
         versionCode 100

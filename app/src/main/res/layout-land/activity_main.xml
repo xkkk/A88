@@ -28,19 +28,19 @@
             android:gravity="center"
             android:onClick="onClick"
             app:icon="@drawable/assets_images_home_1"
-            app:layout_constraintEnd_toStartOf="@id/tabMaintenance"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:text="@string/home_tab_scene" />
         <com.baorun.handbook.a6v.widget.HomeTabWidgetView
-            android:id="@+id/tabIndicator"
+            android:id="@+id/tabVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/home_tab_margin"
             android:onClick="onClick"
-            app:icon="@drawable/assets_images_home_2"
+            app:icon="@drawable/assets_images_home_video"
             app:layout_constraintStart_toEndOf="@id/tabScene"
             app:layout_constraintTop_toTopOf="@id/tabScene"
-            app:text="@string/home_tab_indicator" />
+            app:text="@string/home_tab_video" />
         <com.baorun.handbook.a6v.widget.HomeTabWidgetView
             android:id="@+id/tabGuide"
             android:layout_width="wrap_content"
@@ -54,16 +54,16 @@
             app:text="@string/home_tab_guide" />
 
         <com.baorun.handbook.a6v.widget.HomeTabWidgetView
-            android:id="@+id/tabMaintenance"
+            android:id="@+id/tabIndicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            app:icon="@drawable/assets_images_home_4"
+            app:icon="@drawable/assets_images_home_2"
             app:layout_constraintStart_toEndOf="@id/tabGuide"
-            app:layout_constraintStart_toStartOf="@id/tabIndicator"
-            app:layout_constraintTop_toBottomOf="@id/tabIndicator"
+            app:layout_constraintStart_toStartOf="@id/tabVideo"
+            app:layout_constraintTop_toBottomOf="@id/tabVideo"
             app:layout_constraintTop_toTopOf="@id/tabGuide"
-            app:text="@string/home_tab_maintenance" />
+            app:text="@string/home_tab_indicator" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -84,9 +84,10 @@
             android:background="@drawable/bg_home_main_search"
             android:gravity="center"
             android:onClick="onClick"
+            app:layout_constraintEnd_toStartOf="@id/collectView"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@id/tabVision"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -103,6 +104,35 @@
                 android:layout_gravity="end|center_vertical"
                 android:layout_marginStart="20dp"
                 android:src="@drawable/ic_search" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/collectView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_30"
+            android:background="@drawable/bg_home_main_search"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/searchView"
+            app:layout_constraintTop_toTopOf="@id/searchView">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/home_tab_collect"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_20" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_gravity="end|center"
+                android:layout_marginStart="@dimen/margin_20"
+                android:src="@drawable/ic_collect" />
         </LinearLayout>
 
         <FrameLayout
@@ -183,15 +213,15 @@
             app:text="@string/home_tab_warning" />
 
         <com.baorun.handbook.a6v.widget.HomeTabWidgetView
-            android:id="@+id/tabCollection"
+            android:id="@+id/tabMaintenance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/home_tab_margin"
             android:onClick="onClick"
-            app:icon="@drawable/assets_images_home_7"
+            app:icon="@drawable/assets_images_home_4"
             app:layout_constraintStart_toEndOf="@id/tabQuestion"
             app:layout_constraintTop_toTopOf="@id/tabQuestion"
-            app:text="@string/home_tab_collect" />
+            app:text="@string/home_tab_maintenance" />
 
         <com.baorun.handbook.a6v.widget.HomeTabWidgetView
             android:id="@+id/tabMine"
@@ -200,8 +230,8 @@
             android:onClick="onClick"
             app:icon="@drawable/assets_images_home_8"
             app:layout_constraintStart_toEndOf="@id/tabWarning"
-            app:layout_constraintStart_toStartOf="@id/tabCollection"
-            app:layout_constraintTop_toBottomOf="@id/tabCollection"
+            app:layout_constraintStart_toStartOf="@id/tabMaintenance"
+            app:layout_constraintTop_toBottomOf="@id/tabMaintenance"
             app:layout_constraintTop_toTopOf="@id/tabWarning"
             app:text="@string/home_tab_mine" />
 
@@ -220,7 +250,7 @@
         style="@style/BackBtnStyle"
         app:layout_constraintTop_toBottomOf="@id/backTv"
         app:layout_constraintStart_toStartOf="@id/backTv"
-        android:visibility="visible"
+        android:visibility="gone"
         android:text="查询大师版接口"
         />
     <com.google.android.material.button.MaterialButton
@@ -228,7 +258,7 @@
         style="@style/BackBtnStyle"
         app:layout_constraintTop_toBottomOf="@id/getMasterInfoBtn"
         app:layout_constraintStart_toStartOf="@id/backTv"
-        android:visibility="visible"
+        android:visibility="gone"
         android:text="模拟切换"
         />
 

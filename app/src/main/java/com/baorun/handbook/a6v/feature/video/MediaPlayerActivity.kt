@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.annotation.DrawableRes
 import cn.jzvd.JZUtils
 import cn.jzvd.Jzvd
-import com.baorun.handbook.a55.feature.video.PlayerActivity
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_BELONG
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_ID
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_PATH
