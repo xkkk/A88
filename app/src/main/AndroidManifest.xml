@@ -50,9 +50,8 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="myapp"/>
-                <data android:scheme="com.baorun.handbook.a6v"/>
-                <data android:scheme="a6v"/>
+                <data android:scheme="com.baorun.handbook.a88hybrid"/>
+                <data android:scheme="com.baorun.handbook.a88"/>
             </intent-filter>
         </activity>
         <activity android:name=".feature.maintenance.MaintenanceActivity"
