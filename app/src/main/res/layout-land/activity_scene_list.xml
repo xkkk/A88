@@ -37,6 +37,7 @@
         app:layout_constraintTop_toTopOf="@id/viewPager"
         app:layout_constraintBottom_toBottomOf="@id/viewPager"
         android:layout_marginStart="@dimen/margin_30"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         android:src="@drawable/ic_left_arrow"/>
 
@@ -48,6 +49,7 @@
         app:layout_constraintBottom_toBottomOf="@id/viewPager"
         android:layout_marginEnd="@dimen/margin_30"
         app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
         android:src="@drawable/ic_right_arrow"/>
 
 

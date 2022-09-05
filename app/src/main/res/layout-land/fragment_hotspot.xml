@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        tools:background="@drawable/img_vision_out_1"/>
+        tools:background="@drawable/img_vision_out_1_m"/>
 
     <FrameLayout
         android:id="@+id/hotspotLayout"

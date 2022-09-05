@@ -65,6 +65,12 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".feature.vision.ImageActivity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".feature.video.VideoActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".feature.video.MediaPlayerActivity"
+            android:screenOrientation="landscape"/>
+
     </application>
 
 </manifest>

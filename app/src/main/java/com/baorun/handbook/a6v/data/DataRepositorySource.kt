@@ -2,6 +2,7 @@ package com.baorun.handbook.a6v.data
 
 
 import com.baorun.handbook.a6v.AppContext
+import com.baorun.handbook.a6v.R
 import com.baorun.handbook.a6v.network.Api
 import com.baorun.handbook.a6v.network.BaseResponse
 import com.baorun.handbook.a6v.network.FeedbackDataResponse
@@ -179,6 +180,8 @@ interface DataRepositorySource {
 
     fun getQuestionList(page: Int):Flow<List<ChildrenData>>
 
+    fun getVideoList(page: Int):Flow<List<ChildrenData>>
+
     fun getGNList(page: Int):Flow<List<ChildrenData>>
 
     fun getWarnList(page: Int):Flow<List<ChildrenData>>
@@ -200,5 +203,7 @@ interface DataRepositorySource {
     suspend fun postFeedbackDelete(id:Int):BaseResponse<Any>
 
     fun test()
+
+
 
 }

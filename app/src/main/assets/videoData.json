@@ -1,0 +1,204 @@
+{
+  "dataType": "视频模块",
+  "data": [
+    {
+      "parentId": "sp_A",
+      "belong": "sp_A",
+      "id": "sp_1",
+      "name": "驾驶模式",
+      "htmlUrl": "/1.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_B",
+      "belong": "sp_B",
+      "id": "sp_2",
+      "name": "360全景影像",
+      "htmlUrl": "/2.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_C",
+      "belong": "sp_C",
+      "id": "sp_3",
+      "name": "ACC自适应巡航",
+      "htmlUrl": "/3.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_D",
+      "belong": "sp_D",
+      "id": "sp_4",
+      "name": "集成式巡航辅助系统",
+      "htmlUrl": "/4.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_E",
+      "belong": "sp_E",
+      "id": "sp_5",
+      "name": "OTA升级",
+      "htmlUrl": "/5.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_F",
+      "belong": "sp_F",
+      "id": "sp_6",
+      "name": "唱吧k歌",
+      "htmlUrl": "/6.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_G",
+      "belong": "sp_G",
+      "id": "sp_7",
+      "name": "车道偏离辅助",
+      "htmlUrl": "/7.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_H",
+      "belong": "sp_H",
+      "id": "sp_8",
+      "name": "打开和关闭车速上锁",
+      "htmlUrl": "/8.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_I",
+      "belong": "sp_I",
+      "id": "sp_9",
+      "name": "打开和关闭发动机舱盖",
+      "htmlUrl": "/9.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_J",
+      "belong": "sp_J",
+      "id": "sp_10",
+      "name": "打开和关闭行李箱",
+      "htmlUrl": "/10.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_K",
+      "belong": "sp_K",
+      "id": "sp_11",
+      "name": "方向盘自定义按键操作",
+      "htmlUrl": "/11.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_L",
+      "belong": "sp_L",
+      "id": "sp_12",
+      "name": "更换备胎",
+      "htmlUrl": "/12.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_M",
+      "belong": "sp_M",
+      "id": "sp_13",
+      "name": "盲区监测系统",
+      "htmlUrl": "/13.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_N",
+      "belong": "sp_N",
+      "id": "sp_14",
+      "name": "前碰撞预警系统",
+      "htmlUrl": "/14.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_O",
+      "belong": "sp_O",
+      "id": "sp_15",
+      "name": "手机APP远程控制",
+      "htmlUrl": "/15.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_P",
+      "belong": "sp_P",
+      "id": "sp_16",
+      "name": "手机无线充电",
+      "htmlUrl": "/16.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_Q",
+      "belong": "sp_Q",
+      "id": "sp_17",
+      "name": "胎压监测系统",
+      "htmlUrl": "/17.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_R",
+      "belong": "sp_R",
+      "id": "sp_18",
+      "name": "语音助手",
+      "htmlUrl": "/18.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_S",
+      "belong": "sp_S",
+      "id": "sp_19",
+      "name": "智能远光灯",
+      "htmlUrl": "/19.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_T",
+      "belong": "sp_T",
+      "id": "sp_20",
+      "name": "主动制动辅助",
+      "htmlUrl": "/20.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_U",
+      "belong": "sp_U",
+      "id": "sp_21",
+      "name": "驻车辅助",
+      "htmlUrl": "/21.mp4",
+      "description": "",
+      "children": []
+    },
+    {
+      "parentId": "sp_V",
+      "belong": "sp_V",
+      "id": "sp_22",
+      "name": "手机蓝牙钥匙",
+      "htmlUrl": "/22.mp4",
+      "description": "",
+      "children": []
+    }
+  ]
+}
+

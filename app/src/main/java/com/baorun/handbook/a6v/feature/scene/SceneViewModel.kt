@@ -19,6 +19,8 @@ class SceneViewModel:ViewModel() {
 
     val sceneListLiveDataNew = MutableLiveData<List<ChildrenData>>()
 
+    val videoListLivaDataNew = MutableLiveData<List<ChildrenData>>()
+
     fun getSceneList(page:Int){
         viewModelScope.launch(Dispatchers.IO){
             DataManager.getSceneList(page).collect {
@@ -31,6 +33,14 @@ class SceneViewModel:ViewModel() {
         viewModelScope.launch(Dispatchers.IO){
             DataManager.getQuestionList(page).collect {
                 sceneListLiveDataNew.postValue(it)
+            }
+        }
+    }
+
+    fun getVideoList(page: Int){
+        viewModelScope.launch(Dispatchers.IO) {
+            DataManager.getVideoList(page).collect {
+                videoListLivaDataNew.postValue(it)
             }
         }
     }

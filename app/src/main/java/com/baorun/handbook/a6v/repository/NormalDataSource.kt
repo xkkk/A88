@@ -47,6 +47,10 @@ class NormalDataSource : DataRepositorySource {
         readJson("weixiuData.json")
     }
 
+    private val videoData:List<ChildrenData> by lazy{
+        readJson("videoData.json")
+    }
+
     private val indicatorData: Indicator by lazy {
         readIndicatorJson()
     }
@@ -104,6 +108,23 @@ class NormalDataSource : DataRepositorySource {
             val list = when (page) {
                 1 -> wentiData.take(Constant.PAGE_SIZE)
                 2 -> wentiData.takeLast(wentiData.size - Constant.PAGE_SIZE)
+                else -> emptyList()
+            }
+            emit(list)
+        }.flowOn(Dispatchers.IO)
+
+        return flow
+    }
+
+    override fun getVideoList(page: Int): Flow<List<ChildrenData>> {
+        val flow = flow {
+            videoData.forEach {
+                it.coverRes = getVideoCoverResById(it.id)
+            }
+            val list = when (page) {
+                1 -> videoData.take(8)
+//                2 -> videoData.subList(App.PAGE_SIZE, App.PAGE_SIZE + App.PAGE_SIZE)
+//                3 -> videoData.takeLast(videoData.size - App.PAGE_SIZE * 2)
                 else -> emptyList()
             }
             emit(list)
@@ -420,8 +441,25 @@ class NormalDataSource : DataRepositorySource {
             "wt_6" -> R.drawable.img_wenti_cover_06
             "wt_7" -> R.drawable.img_wenti_cover_07
             "wt_8" -> R.drawable.img_wenti_cover_08
-            "wt_9" -> R.drawable.img_wenti_cover_09
-            "wt_10" -> R.drawable.img_wenti_cover_10
+            else -> -1
+        }
+    }
+    /**
+     * Get cj cover res by id
+     * 获取视频模块的封面图
+     * @param id
+     * @return
+     */
+    private fun getVideoCoverResById(id: String): Int {
+        return when (id) {
+            "sp_1" -> R.drawable.assets_video_preview_1
+            "sp_2" -> R.drawable.assets_video_preview_2
+            "sp_3" -> R.drawable.assets_video_preview_3
+            "sp_4" -> R.drawable.assets_video_preview_4
+            "sp_5" -> R.drawable.assets_video_preview_5
+            "sp_6" -> R.drawable.assets_video_preview_6
+            "sp_7" -> R.drawable.assets_video_preview_7
+            "sp_8" -> R.drawable.assets_video_preview_8
             else -> -1
         }
     }

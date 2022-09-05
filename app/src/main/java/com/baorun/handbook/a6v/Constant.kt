@@ -11,6 +11,16 @@ object Constant {
     const val KEY_URL = "key_url"
     const val KEY_RES = "key_res"
 
+    const val KEY_BUNDLE_TYPE = "key_type"
+    const val KEY_BUNDLE_RES = "key_res"
+    const val KEY_BUNDLE_PATH = "key_path"
+    const val KEY_BUNDLE_URL = "key_url"
+    const val KEY_BUNDLE_ID = "key_id"
+    const val KEY_BUNDLE_BELONG = "key_belong"
+    const val KEY_BUNDLE_CHILDREN = "key_children_id"
+    const val KEY_BUNDLE_PARENT = "key_parent_id"
+    const val KEY_BUNDLE_TITLE = "key_parent_title"
+    const val KEY_BUNDLE_CONTENT = "key_bundle_content"
 
     const val KEY_TYPE_SCENE = 0
     const val KEY_TYPE_QUESTION = 1

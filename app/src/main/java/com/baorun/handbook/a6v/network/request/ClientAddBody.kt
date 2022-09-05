@@ -11,5 +11,5 @@ data class ClientAddBody(
     var vehicleId:Int,
     var userId:String
 ){
-    constructor(type:String,content: String):this(type,content,"","","",6,App.userId)
+    constructor(type:String,content: String):this(type,content,"","","",12,App.userId)
 }

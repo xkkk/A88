@@ -155,8 +155,6 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
             "wt_6" -> R.drawable.img_wenti_cover_06_m
             "wt_7" -> R.drawable.img_wenti_cover_07_m
             "wt_8" -> R.drawable.img_wenti_cover_08_m
-            "wt_9" -> R.drawable.img_wenti_cover_09_m
-            "wt_10" -> R.drawable.img_wenti_cover_10_m
             else -> -1
         }
     }

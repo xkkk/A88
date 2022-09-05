@@ -1,13 +1,7 @@
 package com.baorun.handbook.a6v.data
 
-import android.util.PlatformUtil
-import com.baorun.handbook.a6v.data.*
-import com.blankj.utilcode.util.GsonUtils
 import com.baorun.handbook.a6v.App
-import com.baorun.handbook.a6v.AppContext
-import com.baorun.handbook.a6v.Constant
 import com.baorun.handbook.a6v.R
-import com.baorun.handbook.a6v.data.*
 import com.baorun.handbook.a6v.db.collectDao
 import com.baorun.handbook.a6v.db.historyDao
 import com.baorun.handbook.a6v.network.BaseResponse
@@ -48,7 +42,7 @@ object DataManager : DataRepositorySource {
         return if (isMaster) arrayOf(
             R.drawable.img_vision_out_1_m,
             R.drawable.img_vision_out_2_m
-        ) else arrayOf(R.drawable.img_vision_out_1, R.drawable.img_vision_out_2)
+        ) else arrayOf(R.drawable.img_vision_out_1_m, R.drawable.img_vision_out_2_m)
     }
 
     override fun getVisionOut1HotspotList(): HotSpotWrapper {
@@ -78,6 +72,10 @@ object DataManager : DataRepositorySource {
 
     override fun getQuestionList(page: Int): Flow<List<ChildrenData>> {
         return dataSource.getQuestionList(page)
+    }
+
+    override fun getVideoList(page: Int): Flow<List<ChildrenData>> {
+        return dataSource.getVideoList(page)
     }
 
     override fun getGNList(page: Int): Flow<List<ChildrenData>> {
