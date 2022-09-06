@@ -35,7 +35,7 @@ object DataManager : DataRepositorySource {
     }
 
     fun getHome360Res(): Int {
-        return if (isMaster) R.drawable.assets_images_home_360_m else R.drawable.assets_images_home_360
+        return if (isMaster) R.drawable.assets_images_home_360_m else R.drawable.assets_images_home_360_m
     }
 
     fun getVisionOut(): Array<Int> {
