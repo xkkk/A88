@@ -40,20 +40,7 @@ open abstract class PlayerActivity : AppCompatActivity() {
     protected lateinit var viewBinding: ActivityPlayerBinding
     private lateinit var am: AudioManager
     private lateinit var audioFocus: AudioFocusRequest
-    private var screenSaveStateListener: IGearCallback = object : IGearCallback {
-        override fun asBinder(): IBinder? {
-            return null;
-        }
 
-        override fun onGearChanged(p0: Int) {
-        }
-
-        override fun onSpeedChanged(p0: Int) {
-        }
-
-        override fun onBackaccChanged(p0: Int) {
-        }
-    }
     private val receiver: ScreenSaverReceiver by lazy {
         ScreenSaverReceiver()
     }
@@ -124,8 +111,6 @@ open abstract class PlayerActivity : AppCompatActivity() {
             viewBinding.collectLayout.collectIv.isSelected = it
         }
 
-        PlatformUtil.getInstance(this).registerSpeedChangedListener(screenSaveStateListener)
-
         val intentFilter = IntentFilter()
         intentFilter.apply {
             addAction(ACTION)
@@ -187,8 +172,6 @@ open abstract class PlayerActivity : AppCompatActivity() {
             intent?.let {
 
                 val key = intent.getStringExtra("action")
-                val key2 = intent.extras?.getString("action")
-                showToast("action is ${it.action},value1 is $key,value2 is $key2")
                 // 进入屏保
                 if ("enter" == key) {
                     runOnUiThread {
