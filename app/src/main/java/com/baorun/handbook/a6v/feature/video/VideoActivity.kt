@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
+import com.baorun.handbook.a6v.BaseActivity
 import com.baorun.handbook.a6v.R
 import com.baorun.handbook.a6v.databinding.ActivitySceneListBinding
 import com.baorun.handbook.a6v.utils.last
@@ -19,14 +20,13 @@ import com.zhpan.indicator.enums.IndicatorStyle
  * 描述：
  * Created by xukun on 2021/8/15.
  */
-class VideoActivity : AppCompatActivity() {
+class VideoActivity : BaseActivity<ActivitySceneListBinding>() {
 
-    private lateinit var viewBinding: ActivitySceneListBinding
+    override fun initViewBinding(): ActivitySceneListBinding {
+        return  ActivitySceneListBinding.inflate(layoutInflater)
+    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        viewBinding = ActivitySceneListBinding.inflate(layoutInflater)
-        setContentView(viewBinding.root)
+    override fun initView() {
         viewBinding.viewPager.apply {
 //            offscreenPageLimit = 3
             val fragments = listOf(
@@ -70,6 +70,9 @@ class VideoActivity : AppCompatActivity() {
         viewBinding.nextPageIv.setOnClickListener {
             viewBinding.viewPager.next()
         }
+    }
+
+    override fun initData() {
     }
 
 }
