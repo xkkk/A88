@@ -182,6 +182,8 @@ interface DataRepositorySource {
 
     fun getVideoList(page: Int):Flow<List<ChildrenData>>
 
+    fun getVoiceById(id:String):Flow<ChildrenData?>
+
     fun getGNList(page: Int):Flow<List<ChildrenData>>
 
     fun getWarnList(page: Int):Flow<List<ChildrenData>>

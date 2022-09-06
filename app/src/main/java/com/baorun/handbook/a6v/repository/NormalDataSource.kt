@@ -51,6 +51,10 @@ class NormalDataSource : DataRepositorySource {
         readJson("videoData.json")
     }
 
+    private val voiceData:List<ChildrenData> by lazy{
+        readJson("voiceData.json")
+    }
+
     private val indicatorData: Indicator by lazy {
         readIndicatorJson()
     }
@@ -151,6 +155,13 @@ class NormalDataSource : DataRepositorySource {
     override fun getWarnById(id: String): Flow<ChildrenData?> {
         return flow {
             val data = warnData.find { it.id == "gj_$id" }
+            emit(data)
+        }.flowOn(Dispatchers.IO)
+    }
+
+    override fun getVoiceById(id: String): Flow<ChildrenData?> {
+        return flow {
+            val data = voiceData.find { it.id == id }
             emit(data)
         }.flowOn(Dispatchers.IO)
     }

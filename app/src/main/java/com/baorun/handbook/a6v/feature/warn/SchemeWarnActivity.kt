@@ -59,7 +59,7 @@ class SchemeWarnActivity: AppCompatActivity() {
                     val id = split.last().trim()
                     if(split.contains("voice")) {
                         type=2
-//                        viewModel.getVoiceById("yy_$id")
+                        viewModel.getVoiceData("yy_$id")
                     }else{
                         type=1
                         viewModel.getWarnById("gj_$id")

@@ -39,4 +39,12 @@ class WarnViewModel:ViewModel() {
         }
     }
 
+    fun getVoiceData(id:String){
+        viewModelScope.launch(Dispatchers.IO) {
+            DataManager.getVoiceById(id).collect {
+                warnData.postValue(it)
+            }
+        }
+    }
+
 }

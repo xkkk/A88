@@ -45,6 +45,10 @@ object DataManager : DataRepositorySource {
         ) else arrayOf(R.drawable.img_vision_out_1_m, R.drawable.img_vision_out_2_m)
     }
 
+    /**
+     * 语音搜索
+     */
+
     override fun getVisionOut1HotspotList(): HotSpotWrapper {
         return dataSource.getVisionOut1HotspotList()
     }
@@ -88,6 +92,10 @@ object DataManager : DataRepositorySource {
 
     override fun getWarnById(id: String): Flow<ChildrenData?> {
         return dataSource.getWarnById(id)
+    }
+
+    override fun getVoiceById(id: String): Flow<ChildrenData?> {
+        return dataSource.getVoiceById(id)
     }
 
     override fun getSceneDetail(belong: String): List<ChildrenData> {
