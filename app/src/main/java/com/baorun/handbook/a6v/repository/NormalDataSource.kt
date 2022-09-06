@@ -171,10 +171,15 @@ class NormalDataSource : DataRepositorySource {
 
     override fun search(key: String): Flow<List<ChildrenData>> {
         return flow {
-                val totalList = changjingData.plus(gongnengData)
-                val result = mutableListOf<ChildrenData>()
+            val totalList = changjingData.plus(gongnengData)
+            val result = mutableListOf<ChildrenData>()
 
-                totalList.forEach {
+            totalList.forEach {
+                if (it.name.contains(key, true)) {
+                    if (it.htmlUrl.isNotEmpty())
+                        result.add(it)
+                }
+                it.children.forEach {
                     if (it.name.contains(key, true)) {
                         if (it.htmlUrl.isNotEmpty())
                             result.add(it)
@@ -184,14 +189,18 @@ class NormalDataSource : DataRepositorySource {
                             if (it.htmlUrl.isNotEmpty())
                                 result.add(it)
                         }
-                        val third = it.children.filter { it.name.contains(key, true) }
-                        if (third.isNotEmpty()) {
-                            result.addAll(third)
+                        it.children.forEach {
+                            if (it.name.contains(key, true)) {
+                                if (it.htmlUrl.isNotEmpty())
+                                    result.add(it)
+                            }
                         }
-
                     }
-                emit(result)
+
+                }
             }
+                emit(result)
+
         }.flowOn(Dispatchers.IO)
     }
 
