@@ -9,14 +9,17 @@ import android.media.AudioFocusRequest
 import android.media.AudioManager
 import android.os.Bundle
 import android.os.IBinder
+import android.util.PlatformUtil
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import cn.jzvd.Jzvd
 import cn.jzvd.JzvdStd
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_BELONG
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_ID
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_PATH
+import com.baorun.handbook.a6v.R
 import com.baorun.handbook.a6v.databinding.ActivityPlayerBinding
 import com.baorun.handbook.a6v.feature.collect.CollectionViewModel
 import com.baorun.handbook.a6v.feature.search.SearchActivity
@@ -77,6 +80,16 @@ open abstract class PlayerActivity : AppCompatActivity() {
         viewBinding = ActivityPlayerBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
 
+        viewBinding.backTv.apply {
+            val drawable =  ContextCompat.getDrawable(this@PlayerActivity, R.drawable.ic_back)!!
+            drawable.setBounds(0,0,30,30)
+            compoundDrawablePadding = 10
+            setCompoundDrawables(drawable,null,null,null)
+            setOnClickListener {
+                finish()
+            }
+        }
+
         initPlayer()
 
         viewBinding.player.setUp(
@@ -111,7 +124,7 @@ open abstract class PlayerActivity : AppCompatActivity() {
             viewBinding.collectLayout.collectIv.isSelected = it
         }
 
-//        PlatformUtil.getInstance(this).registerSpeedChangedListener(screenSaveStateListener)
+        PlatformUtil.getInstance(this).registerSpeedChangedListener(screenSaveStateListener)
 
         val intentFilter = IntentFilter()
         intentFilter.apply {
