@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.baorun.handbook.a6v.R
 import com.baorun.handbook.a6v.databinding.ActivitySchemeWarnBinding
 import com.baorun.handbook.a6v.utils.toSupportJavaScript
 
@@ -23,6 +25,17 @@ class SchemeWarnActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewBinding = ActivitySchemeWarnBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+
+        viewBinding.backTv.apply {
+            val drawable =  ContextCompat.getDrawable(this@SchemeWarnActivity, R.drawable.ic_back)!!
+            drawable.setBounds(0,0,30,30)
+            compoundDrawablePadding = 10
+            setCompoundDrawables(drawable,null,null,null)
+            setOnClickListener {
+                finish()
+            }
+        }
+
         viewBinding.webView.toSupportJavaScript()
 
         parserData(intent)

@@ -91,10 +91,16 @@ object DataManager : DataRepositorySource {
     }
 
     override fun getWarnById(id: String): Flow<ChildrenData?> {
+        if(!this::dataSource.isInitialized){
+            initDataSource()
+        }
         return dataSource.getWarnById(id)
     }
 
     override fun getVoiceById(id: String): Flow<ChildrenData?> {
+        if(!this::dataSource.isInitialized){
+            initDataSource()
+        }
         return dataSource.getVoiceById(id)
     }
 

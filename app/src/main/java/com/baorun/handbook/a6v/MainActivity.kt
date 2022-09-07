@@ -98,7 +98,7 @@ class MainActivity: BaseActivity<ActivityMainBinding>(),View.OnClickListener{
     }
 
     private fun testVoiceScheme() {
-        val uri = "com.baorun.handbook.a88hybrid://app/voice/adaptive_cruise"
+        val uri = "com.baorun.handbook.a88hybrid://app/voice/cruise_control"
         val intent = Intent(
             Intent.ACTION_VIEW,
             Uri.parse(uri)
