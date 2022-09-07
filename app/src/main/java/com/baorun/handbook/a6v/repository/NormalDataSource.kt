@@ -154,7 +154,7 @@ class NormalDataSource : DataRepositorySource {
 
     override fun getWarnById(id: String): Flow<ChildrenData?> {
         return flow {
-            val data = warnData.find { it.id == "gj_$id" }
+            val data = warnData.find { it.id == id }
             emit(data)
         }.flowOn(Dispatchers.IO)
     }
