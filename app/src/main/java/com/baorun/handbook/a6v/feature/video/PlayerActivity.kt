@@ -26,6 +26,8 @@ import com.baorun.handbook.a6v.feature.search.SearchActivity
 import com.baorun.handbook.a6v.utils.goActivity
 import com.baorun.handbook.a6v.utils.showToast
 import com.baorun.handbook.a6v.widget.JZMediaSystemAssertFolder
+import com.blankj.utilcode.util.LogUtils
+import com.blankj.utilcode.util.ThreadUtils
 import com.blankj.utilcode.util.ThreadUtils.runOnUiThread
 import com.gxa.lib.platformadapter.supplierconfigsdk.common.IGearCallback
 
@@ -111,11 +113,26 @@ open abstract class PlayerActivity : AppCompatActivity() {
             viewBinding.collectLayout.collectIv.isSelected = it
         }
 
+        // 监听屏保
         val intentFilter = IntentFilter()
         intentFilter.apply {
             addAction(ACTION)
         }
         registerReceiver(receiver, intentFilter)
+
+        PlatformUtil.getInstance(this).registerScreenMuteStatusChanged {
+            if(it){
+                runOnUiThread {
+                    Jzvd.goOnPlayOnPause()
+                }
+            }else{
+                runOnUiThread {
+                    Jzvd.goOnPlayOnPause()
+                }
+            }
+            showToast("屏幕状态：$it")
+        }
+
     }
 
     private fun registerAudioFocus() {

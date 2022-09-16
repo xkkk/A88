@@ -45,7 +45,7 @@ android {
 
 dependencies {
 
-    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: ['PlatformUtil.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'])
 
     implementation project(path: ':library')
     implementation rootProject.ext.dependencies.core_ktx
