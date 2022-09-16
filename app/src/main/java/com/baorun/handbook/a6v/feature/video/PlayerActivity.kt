@@ -130,7 +130,6 @@ open abstract class PlayerActivity : AppCompatActivity() {
                     Jzvd.goOnPlayOnPause()
                 }
             }
-            showToast("屏幕状态：$it")
         }
 
     }
