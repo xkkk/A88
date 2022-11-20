@@ -74,21 +74,21 @@ interface DataRepositorySource {
      */
     fun getRedIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1051, 547, listOf(
-                Hotspots( "1", Hotspots.Point(55, 274), "r_cdxt",),
-                Hotspots("2", Hotspots.Point(73, 132),"r_jyyld"),
-                Hotspots("3",Hotspots.Point(165, 132),"r_fdjlqy", ),
-                Hotspots("4", Hotspots.Point(204, 132),"r_srs"),
-                Hotspots("5", Hotspots.Point(936, 132),"r_cdplzt"),
-                Hotspots("6", Hotspots.Point(748, 132),"r_epb"),
-                Hotspots("7", Hotspots.Point(787, 132),"r_ebd"),
-                Hotspots("8", Hotspots.Point(123, 132),"r_eps"),
-                Hotspots("9", Hotspots.Point(993, 161),"r_qpzyj"),
-                Hotspots("10", Hotspots.Point(708, 132),"r_qckzy"),
-                Hotspots("11", Hotspots.Point(312, 132),"r_jsyzy"),
-                Hotspots("12", Hotspots.Point(842, 133),"r_depzy"),
-                Hotspots("13", Hotspots.Point(56, 329),"r_xtgz"),
-                Hotspots("14", Hotspots.Point(898, 132),"r_cmkq")
+            1054, 491, listOf(
+                Hotspots( "1", Hotspots.Point(57, 271), "r_cdxt",),
+                Hotspots("2", Hotspots.Point(83, 99),"r_jyyld"),
+                Hotspots("3",Hotspots.Point(249, 99),"r_fdjlqy", ),
+                Hotspots("4", Hotspots.Point(213, 99),"r_srs"),
+                Hotspots("5", Hotspots.Point(793, 99),"r_epb"),
+                Hotspots("6", Hotspots.Point(831, 99),"r_ebd"),
+                Hotspots("7", Hotspots.Point(171, 99),"r_eps"),
+                Hotspots("8", Hotspots.Point(973, 99),"r_qpzyj"),
+                Hotspots("9", Hotspots.Point(712, 99),"r_qckzy"),
+                Hotspots("10", Hotspots.Point(313, 99),"r_jsyzy"),
+                Hotspots("11", Hotspots.Point(893, 99),"r_depzy"),
+                Hotspots("12", Hotspots.Point(57, 313),"r_xtgz"),
+                Hotspots("13", Hotspots.Point(750, 99),"r_cmkq"),
+                Hotspots("14", Hotspots.Point(126, 99),"r_sffxp"),
             )
         )
     }
@@ -100,28 +100,26 @@ interface DataRepositorySource {
      */
     fun getYellowIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1051, 547, listOf(
-                Hotspots("1",Hotspots.Point(57,234),"y_fdjgz"),
-                Hotspots("2",Hotspots.Point(55,198),"y_pfgz"),
-                Hotspots("3",Hotspots.Point(754,462),"y_ryd"),
-                Hotspots("4",Hotspots.Point(996,346),"y_epb"),
-                Hotspots("5",Hotspots.Point(996,201),"y_esp"),
-                Hotspots("6",Hotspots.Point(996,233),"y_espoff"),
-                Hotspots("7",Hotspots.Point(996,271),"y_abs"),
-                Hotspots("8",Hotspots.Point(57,159),"y_hhdlbsq"),
-                Hotspots("9",Hotspots.Point(153,131),"y_tpms"),
-                Hotspots("10",Hotspots.Point(191,131),"y_zsyxh"),
-                Hotspots("11",Hotspots.Point(992,159),"y_qpzyj"),
-                Hotspots("12",Hotspots.Point(117,131),"y_sffxp"),
-                Hotspots("13",Hotspots.Point(82,131),"y_hxkz"),
-                Hotspots("14",Hotspots.Point(230,131),"y_hwd"),
-                Hotspots("15",Hotspots.Point(996,309),"y_xpfz"),
-                Hotspots("18",Hotspots.Point(239,459),"y_dldc"),
-                Hotspots("19",Hotspots.Point(57,358),"y_jglxs"),
-                Hotspots("20",Hotspots.Point(57,267),"y_gpf")
-
-
-
+            1054, 490, listOf(
+                Hotspots("1",Hotspots.Point(57,203),"y_fdjgz"),
+                Hotspots("2",Hotspots.Point(57,164),"y_pfgz"),
+                Hotspots("3",Hotspots.Point(755,430),"y_ryd"),
+                Hotspots("4",Hotspots.Point(998,264),"y_epb"),
+                Hotspots("5",Hotspots.Point(998,129),"y_esp"),
+                Hotspots("6",Hotspots.Point(998,163),"y_espoff"),
+                Hotspots("7",Hotspots.Point(998,192),"y_abs"),
+                Hotspots("8",Hotspots.Point(57,126),"y_hhdlbsq"),
+                Hotspots("9",Hotspots.Point(154,99),"y_tpms"),
+                Hotspots("10",Hotspots.Point(194,99),"y_zsyxh"),
+                Hotspots("11",Hotspots.Point(973,95),"y_qpzyj"),
+                Hotspots("12",Hotspots.Point(903,99),"y_mqjc"),
+                Hotspots("13",Hotspots.Point(82,99),"y_hxkz"),
+                Hotspots("14",Hotspots.Point(229,99),"y_hwd"),
+                Hotspots("15",Hotspots.Point(996,229),"y_xpfz"),
+                Hotspots("16",Hotspots.Point(938,99),"y_cdpl"),
+                Hotspots("17",Hotspots.Point(998,353),"y_gpf"),
+                Hotspots("18",Hotspots.Point(239,426),"y_dldc"),
+                Hotspots("19",Hotspots.Point(57,320),"y_jglxs")
             )
         )
     }
@@ -133,19 +131,16 @@ interface DataRepositorySource {
      */
     fun getGreenIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1051, 548, listOf(
-                Hotspots("1",Hotspots.Point(348,131),"g_zzxxh"),
-                Hotspots("2",Hotspots.Point(701,131),"g_yzxxh"),
-                Hotspots("3",Hotspots.Point(796,131),"g_epb"),
-                Hotspots("5",Hotspots.Point(284,131),"g_wzd"),
-                Hotspots("6",Hotspots.Point(934,131),"g_cdplzt"),
-                Hotspots("7",Hotspots.Point(117,134),"g_sffxp"),
-                Hotspots("9",Hotspots.Point(996,394),"g_xlys"),
-                Hotspots("10",Hotspots.Point(888,131),"g_mqjczt"),
-                Hotspots("11",Hotspots.Point(250,131),"g_qwd"),
-                Hotspots("12",Hotspots.Point(291,461),"g_ready"),
-                Hotspots("13",Hotspots.Point(525,378),"g_qzev"),
-                Hotspots("14",Hotspots.Point(843,130),"g_evksx"),
+            1054, 490, listOf(
+                Hotspots("1",Hotspots.Point(351,95),"g_zzxxh"),
+                Hotspots("2",Hotspots.Point(704,95),"g_yzxxh"),
+                Hotspots("3",Hotspots.Point(797,95),"g_epb"),
+                Hotspots("4",Hotspots.Point(284,95),"g_wzd"),
+                Hotspots("5",Hotspots.Point(998,361),"g_xlys"),
+                Hotspots("6",Hotspots.Point(901,95),"g_mqjczt"),
+                Hotspots("7",Hotspots.Point(291,429),"g_ready"),
+                Hotspots("8",Hotspots.Point(526,346),"g_qzev"),
+                Hotspots("9",Hotspots.Point(58,283),"g_evksx")
             )
         )
     }
@@ -157,19 +152,21 @@ interface DataRepositorySource {
      */
     fun getBlueIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
-            1050, 548, listOf(
-                Hotspots("1",Hotspots.Point(66,130),"b_hxkzzt"),
-                Hotspots("2",Hotspots.Point(184,131),"b_zsyyc"),
-                Hotspots("3",Hotspots.Point(241,131),"b_zsywc"),
-                Hotspots("4",Hotspots.Point(324,131),"b_ygd"),
-                Hotspots("5",Hotspots.Point(355,131),"b_znygd"),
-                Hotspots("7",Hotspots.Point(95,130),"h_hxkzzt"),
-                Hotspots("8",Hotspots.Point(211,131),"h_zsywc"),
-                Hotspots("9",Hotspots.Point(153,131),"h_zsyyc"),
-                Hotspots("10",Hotspots.Point(938,131),"w_cdplzt"),
-                Hotspots("11",Hotspots.Point(842,132),"w_depzy"),
-                Hotspots("12",Hotspots.Point(291,131),"w_znygd"),
-                Hotspots("13",Hotspots.Point(55,157),"w_gpf")
+            1054, 491, listOf(
+                Hotspots("1",Hotspots.Point(66,95),"b_hxkzzt"),
+                Hotspots("2",Hotspots.Point(195,95),"b_zsyyc"),
+                Hotspots("3",Hotspots.Point(248,95),"b_zsywc"),
+                Hotspots("4",Hotspots.Point(323,95),"b_ygd"),
+                Hotspots("5",Hotspots.Point(353,95),"b_znygd"),
+                Hotspots("6",Hotspots.Point(939,95),"w_cdplzt"),
+                Hotspots("7",Hotspots.Point(130,95),"w_sffxp"),
+                Hotspots("8",Hotspots.Point(98,95),"h_hxkzzt"),
+                Hotspots("9",Hotspots.Point(226,95),"h_zsywc"),
+                Hotspots("10",Hotspots.Point(163,95),"h_zsyyc"),
+                Hotspots("11",Hotspots.Point(967,95),"w_cdplzt"),
+                Hotspots("12",Hotspots.Point(852,95),"w_depzy"),
+                Hotspots("13",Hotspots.Point(288,95),"w_znygd"),
+                Hotspots("14",Hotspots.Point(997,352),"w_gpf")
             )
         )
     }

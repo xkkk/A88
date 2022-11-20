@@ -27,8 +27,8 @@ import kotlin.math.roundToInt
 class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
 
 
-    private var hotspotLayoutWidth: Int = 1918
-    private var hotspotLayoutHeight: Int = 943
+    private var hotspotLayoutWidth: Int = 1920
+    private var hotspotLayoutHeight: Int = 894
 
 
     val options = RequestOptions()
@@ -87,7 +87,6 @@ class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
                     viewBinding.rootView.background = resource
                     hotspotLayoutWidth = viewBinding.rootView.measuredWidth
                     hotspotLayoutHeight = viewBinding.rootView.measuredHeight
-                    resetView(IndicatorStyle.RED)
 
                 }
 
@@ -99,7 +98,7 @@ class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
     }
 
     fun loadLayer(layout: FrameLayout, @DrawableRes res: Int) {
-        GlideApp.with(this).load(res).apply(options).override(hotspotLayoutWidth,hotspotLayoutHeight)
+        GlideApp.with(this).load(res).apply(options)
             .into(object : CustomViewTarget<FrameLayout, Drawable>(layout) {
                 override fun onLoadFailed(errorDrawable: Drawable?) {
 
