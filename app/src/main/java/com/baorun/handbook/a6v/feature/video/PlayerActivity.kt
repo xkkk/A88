@@ -183,6 +183,7 @@ open abstract class PlayerActivity : AppCompatActivity() {
     abstract fun isRegisterAudio(): Boolean
 
 
+
     class ScreenSaverReceiver : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
             intent?.let {
