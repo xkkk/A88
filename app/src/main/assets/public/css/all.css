@@ -10,7 +10,7 @@ body {
 }
 
 body {
-	/*background: #1e1e1e;*/
+	 /* background: #1e1e1e; */
 	overflow-x: hidden;
 	-webkit-tap-highlight-color: transparent
 }
@@ -61,6 +61,7 @@ table {
 	font-size: 22px;
 	/* color: #a6a6a6 */
 	color: #d8d8d8;
+	text-indent: 0;
 }
 
 .lazy {
@@ -114,9 +115,6 @@ p {
 	word-wrap: break-word;
 	white-space: normal;
 	word-break: break-all;
-
-	/*文本文字全部对齐*/
-	text-align: justify;
 }
 
 div {

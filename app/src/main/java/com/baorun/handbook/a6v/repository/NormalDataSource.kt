@@ -51,6 +51,10 @@ class NormalDataSource : DataRepositorySource {
         readJson("videoData.json")
     }
 
+    private val voiceData:List<ChildrenData> by lazy{
+        readJson("voiceData.json")
+    }
+
     private val indicatorData: Indicator by lazy {
         readIndicatorJson()
     }
@@ -150,7 +154,14 @@ class NormalDataSource : DataRepositorySource {
 
     override fun getWarnById(id: String): Flow<ChildrenData?> {
         return flow {
-            val data = warnData.find { it.id == "gj_$id" }
+            val data = warnData.find { it.id == id }
+            emit(data)
+        }.flowOn(Dispatchers.IO)
+    }
+
+    override fun getVoiceById(id: String): Flow<ChildrenData?> {
+        return flow {
+            val data = voiceData.find { it.id == id }
             emit(data)
         }.flowOn(Dispatchers.IO)
     }
@@ -171,10 +182,15 @@ class NormalDataSource : DataRepositorySource {
 
     override fun search(key: String): Flow<List<ChildrenData>> {
         return flow {
-                val totalList = changjingData.plus(gongnengData)
-                val result = mutableListOf<ChildrenData>()
+            val totalList = changjingData.plus(gongnengData)
+            val result = mutableListOf<ChildrenData>()
 
-                totalList.forEach {
+            totalList.forEach {
+                if (it.name.contains(key, true)) {
+                    if (it.htmlUrl.isNotEmpty())
+                        result.add(it)
+                }
+                it.children.forEach {
                     if (it.name.contains(key, true)) {
                         if (it.htmlUrl.isNotEmpty())
                             result.add(it)
@@ -184,14 +200,18 @@ class NormalDataSource : DataRepositorySource {
                             if (it.htmlUrl.isNotEmpty())
                                 result.add(it)
                         }
-                        val third = it.children.filter { it.name.contains(key, true) }
-                        if (third.isNotEmpty()) {
-                            result.addAll(third)
+                        it.children.forEach {
+                            if (it.name.contains(key, true)) {
+                                if (it.htmlUrl.isNotEmpty())
+                                    result.add(it)
+                            }
                         }
-
                     }
-                emit(result)
+
+                }
             }
+                emit(result)
+
         }.flowOn(Dispatchers.IO)
     }
 

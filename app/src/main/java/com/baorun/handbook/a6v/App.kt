@@ -21,7 +21,7 @@ class App: Application() {
     companion object{
 
         var userId:String = ""
-        var isMaster:Boolean = false
+        var isMaster:Boolean = true
     }
 
     override fun onLowMemory() {

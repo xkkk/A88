@@ -35,7 +35,7 @@ object DataManager : DataRepositorySource {
     }
 
     fun getHome360Res(): Int {
-        return if (isMaster) R.drawable.assets_images_home_360_m else R.drawable.assets_images_home_360
+        return if (isMaster) R.drawable.assets_images_home_360_m else R.drawable.assets_images_home_360_m
     }
 
     fun getVisionOut(): Array<Int> {
@@ -44,6 +44,10 @@ object DataManager : DataRepositorySource {
             R.drawable.img_vision_out_2_m
         ) else arrayOf(R.drawable.img_vision_out_1_m, R.drawable.img_vision_out_2_m)
     }
+
+    /**
+     * 语音搜索
+     */
 
     override fun getVisionOut1HotspotList(): HotSpotWrapper {
         return dataSource.getVisionOut1HotspotList()
@@ -87,7 +91,17 @@ object DataManager : DataRepositorySource {
     }
 
     override fun getWarnById(id: String): Flow<ChildrenData?> {
+        if(!this::dataSource.isInitialized){
+            initDataSource()
+        }
         return dataSource.getWarnById(id)
+    }
+
+    override fun getVoiceById(id: String): Flow<ChildrenData?> {
+        if(!this::dataSource.isInitialized){
+            initDataSource()
+        }
+        return dataSource.getVoiceById(id)
     }
 
     override fun getSceneDetail(belong: String): List<ChildrenData> {

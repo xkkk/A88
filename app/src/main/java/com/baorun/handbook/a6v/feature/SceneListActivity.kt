@@ -33,7 +33,7 @@ class SceneListActivity:BaseActivity<ActivitySceneListBinding>() {
         val fragments = if(pageType == KEY_TYPE_SCENE){
             listOf(SceneFragment.newInstance(pageType,1),SceneFragment.newInstance(pageType,2))
         }else{
-            listOf(SceneFragment.newInstance(pageType,1),SceneFragment.newInstance(pageType,2))
+            listOf(SceneFragment.newInstance(pageType,1))
         }
         with(viewBinding){
 

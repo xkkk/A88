@@ -47,11 +47,9 @@
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="com.baorun.handbook.a88hybrid"/>
-                <data android:scheme="com.baorun.handbook.a88"/>
             </intent-filter>
         </activity>
         <activity android:name=".feature.maintenance.MaintenanceActivity"

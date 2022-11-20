@@ -76,7 +76,7 @@ class MainActivity: BaseActivity<ActivityMainBinding>(),View.OnClickListener{
                 }.run {
                     startActivity(this)
                 }
-//                testScheme()
+//            testVoiceScheme()
             }
             R.id.tabQuestion->{
                 Intent(this,SceneListActivity::class.java).apply {
@@ -84,6 +84,7 @@ class MainActivity: BaseActivity<ActivityMainBinding>(),View.OnClickListener{
                 }.run {
                     startActivity(this)
                 }
+//                testWarnScheme()
             }
             R.id.tabGuide->goActivity<GuideActivity>()
             R.id.collectView->goActivity<CollectionActivity>()
@@ -96,10 +97,16 @@ class MainActivity: BaseActivity<ActivityMainBinding>(),View.OnClickListener{
         }
     }
 
-
-
-    private fun testScheme() {
-        val uri = "a6v://app/warn/5"
+    private fun testVoiceScheme() {
+        val uri = "com.baorun.handbook.a88hybrid://app/voice/cruise_control"
+        val intent = Intent(
+            Intent.ACTION_VIEW,
+            Uri.parse(uri)
+        )
+        startActivity(intent)
+    }
+    private fun testWarnScheme() {
+        val uri = "com.baorun.handbook.a88hybrid://app/warn/1"
         val intent = Intent(
             Intent.ACTION_VIEW,
             Uri.parse(uri)

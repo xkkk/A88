@@ -124,11 +124,10 @@ abstract class AbstractDetailActivity : BaseActivity<ActivityGuideBinding>() {
     protected fun findDefaultItem(id: String, list: List<BaseNode>) {
         val idSplit = id.split(".")
         when (idSplit.size) {
-            0 -> {
+            0,1 -> {
                 val item = list.firstNode(id)
                 val position = list.indexOf(item)
                 setDefault(item.data,position)
-
             }
             2 -> {
                 val firstNode = list.firstNode(idSplit[0])

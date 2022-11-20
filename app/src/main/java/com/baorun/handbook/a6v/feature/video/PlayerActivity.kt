@@ -12,18 +12,21 @@ import android.os.IBinder
 import android.util.PlatformUtil
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import cn.jzvd.Jzvd
 import cn.jzvd.JzvdStd
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_BELONG
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_ID
 import com.baorun.handbook.a6v.Constant.KEY_BUNDLE_PATH
+import com.baorun.handbook.a6v.R
 import com.baorun.handbook.a6v.databinding.ActivityPlayerBinding
 import com.baorun.handbook.a6v.feature.collect.CollectionViewModel
 import com.baorun.handbook.a6v.feature.search.SearchActivity
 import com.baorun.handbook.a6v.utils.goActivity
 import com.baorun.handbook.a6v.utils.showToast
 import com.baorun.handbook.a6v.widget.JZMediaSystemAssertFolder
+import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ThreadUtils
 import com.blankj.utilcode.util.ThreadUtils.runOnUiThread
 import com.gxa.lib.platformadapter.supplierconfigsdk.common.IGearCallback
@@ -66,6 +69,16 @@ open abstract class PlayerActivity : AppCompatActivity() {
         viewBinding = ActivityPlayerBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
 
+        viewBinding.backTv.apply {
+            val drawable =  ContextCompat.getDrawable(this@PlayerActivity, R.drawable.ic_back)!!
+            drawable.setBounds(0,0,30,30)
+            compoundDrawablePadding = 10
+            setCompoundDrawables(drawable,null,null,null)
+            setOnClickListener {
+                finish()
+            }
+        }
+
         initPlayer()
 
         viewBinding.player.setUp(
@@ -100,23 +113,25 @@ open abstract class PlayerActivity : AppCompatActivity() {
             viewBinding.collectLayout.collectIv.isSelected = it
         }
 
+        // 监听屏保
+        val intentFilter = IntentFilter()
+        intentFilter.apply {
+            addAction(ACTION)
+        }
+        registerReceiver(receiver, intentFilter)
+
         PlatformUtil.getInstance(this).registerScreenMuteStatusChanged {
             if(it){
                 runOnUiThread {
                     Jzvd.goOnPlayOnPause()
                 }
             }else{
-               runOnUiThread {
-                    Jzvd.goOnPlayOnResume()
+                runOnUiThread {
+                    Jzvd.goOnPlayOnPause()
                 }
             }
         }
 
-        val intentFilter = IntentFilter()
-        intentFilter.apply {
-            addAction(ACTION)
-        }
-        registerReceiver(receiver, intentFilter)
     }
 
     private fun registerAudioFocus() {
@@ -173,8 +188,6 @@ open abstract class PlayerActivity : AppCompatActivity() {
             intent?.let {
 
                 val key = intent.getStringExtra("action")
-                val key2 = intent.extras?.getString("action")
-//                showToast("action is ${it.action},value1 is $key,value2 is $key2")
                 // 进入屏保
                 if ("enter" == key) {
                     runOnUiThread {
