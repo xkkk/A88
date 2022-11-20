@@ -9,6 +9,7 @@ import android.media.AudioFocusRequest
 import android.media.AudioManager
 import android.os.Bundle
 import android.os.IBinder
+import android.util.PlatformUtil
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -23,6 +24,7 @@ import com.baorun.handbook.a6v.feature.search.SearchActivity
 import com.baorun.handbook.a6v.utils.goActivity
 import com.baorun.handbook.a6v.utils.showToast
 import com.baorun.handbook.a6v.widget.JZMediaSystemAssertFolder
+import com.blankj.utilcode.util.ThreadUtils
 import com.blankj.utilcode.util.ThreadUtils.runOnUiThread
 import com.gxa.lib.platformadapter.supplierconfigsdk.common.IGearCallback
 
@@ -37,20 +39,7 @@ open abstract class PlayerActivity : AppCompatActivity() {
     protected lateinit var viewBinding: ActivityPlayerBinding
     private lateinit var am: AudioManager
     private lateinit var audioFocus: AudioFocusRequest
-    private var screenSaveStateListener: IGearCallback = object : IGearCallback {
-        override fun asBinder(): IBinder? {
-            return null;
-        }
 
-        override fun onGearChanged(p0: Int) {
-        }
-
-        override fun onSpeedChanged(p0: Int) {
-        }
-
-        override fun onBackaccChanged(p0: Int) {
-        }
-    }
     private val receiver: ScreenSaverReceiver by lazy {
         ScreenSaverReceiver()
     }
@@ -111,7 +100,17 @@ open abstract class PlayerActivity : AppCompatActivity() {
             viewBinding.collectLayout.collectIv.isSelected = it
         }
 
-//        PlatformUtil.getInstance(this).registerSpeedChangedListener(screenSaveStateListener)
+        PlatformUtil.getInstance(this).registerScreenMuteStatusChanged {
+            if(it){
+                runOnUiThread {
+                    Jzvd.goOnPlayOnPause()
+                }
+            }else{
+               runOnUiThread {
+                    Jzvd.goOnPlayOnResume()
+                }
+            }
+        }
 
         val intentFilter = IntentFilter()
         intentFilter.apply {
@@ -175,7 +174,7 @@ open abstract class PlayerActivity : AppCompatActivity() {
 
                 val key = intent.getStringExtra("action")
                 val key2 = intent.extras?.getString("action")
-                showToast("action is ${it.action},value1 is $key,value2 is $key2")
+//                showToast("action is ${it.action},value1 is $key,value2 is $key2")
                 // 进入屏保
                 if ("enter" == key) {
                     runOnUiThread {
