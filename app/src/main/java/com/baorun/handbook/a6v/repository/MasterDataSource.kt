@@ -51,7 +51,7 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                 750,
                 434,
                 "前雨刷",
-                arrayListOf(R.drawable.img_vision_2_1_m),
+                arrayListOf(R.drawable.img_vision_2_1_m,R.drawable.img_vision_2_2_m),
             ),
             Hotspots(
                 813,
@@ -73,6 +73,7 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                     R.drawable.img_vision_1_2_m,
                     R.drawable.img_vision_1_3_m,
                     R.drawable.img_vision_1_4_m,
+                    R.drawable.img_vision_1_5_m,
                 )
             ),
             Hotspots(
@@ -90,7 +91,15 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                 636,
                 303,
                 "后雨刷",
-                arrayListOf(R.drawable.img_vision_5_1_m)
+                arrayListOf(
+                    R.drawable.img_vision_5_1_m,
+                    R.drawable.img_vision_5_2_m,
+                    R.drawable.img_vision_5_3_m,
+                    R.drawable.img_vision_5_4_m,
+                    R.drawable.img_vision_5_5_m,
+                    R.drawable.img_vision_5_6_m,
+                    R.drawable.img_vision_5_7_m,
+                )
             ),
             Hotspots(
                 605,

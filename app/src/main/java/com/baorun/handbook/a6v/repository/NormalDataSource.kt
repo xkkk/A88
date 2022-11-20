@@ -288,7 +288,8 @@ class NormalDataSource : DataRepositorySource {
                     arrayListOf(
                         R.drawable.img_vision_v2_1,
                         R.drawable.img_vision_v2_2,
-                        R.drawable.img_vision_v2_3
+                        R.drawable.img_vision_v2_3,
+                        R.drawable.img_vision_v2_4
                     )
                 ),
                 Hotspots(960, 495, "空调控制面板", arrayListOf(R.drawable.img_vision_v4_1)),
@@ -301,7 +302,8 @@ class NormalDataSource : DataRepositorySource {
                         R.drawable.img_vision_v5_2,
                         R.drawable.img_vision_v5_3,
                         R.drawable.img_vision_v5_4,
-                        R.drawable.img_vision_v5_5
+                        R.drawable.img_vision_v5_5,
+                        R.drawable.img_vision_v5_6,
                     )
                 )
             )
@@ -336,7 +338,8 @@ class NormalDataSource : DataRepositorySource {
                     R.drawable.img_vision_v6_3,
                     R.drawable.img_vision_v6_4,
                     R.drawable.img_vision_v6_5,
-                    R.drawable.img_vision_v6_6
+                    R.drawable.img_vision_v6_6,
+                    R.drawable.img_vision_v6_7,
                 )
             ),
             Hotspots(
