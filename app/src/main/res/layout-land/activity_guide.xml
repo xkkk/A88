@@ -32,6 +32,7 @@
         android:fadingEdge="none"
         app:layout_constrainedWidth="true"
         app:layout_constrainedHeight="true"
+        android:background="@color/background_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/recyclerView"

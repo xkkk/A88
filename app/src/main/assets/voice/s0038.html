@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0318.png" alt=""></div>
+							<div class="text">
+								<h4>并线辅助帮助</h4>
+								<p>开启和关闭</p>
+								<p class="textindent1">
+									整车电源在“ON”挡位或发动机启动后，通过音响系统“设置→ADiGO智能驾驶→ADiGO主动安全辅助→盲区监测”，点击“盲区监测”右侧<img
+										src="../public/img/0133.png" style="width:40px;margin:-4px 4px;">软按键设置开启或关闭。</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0132.png" alt=""></div>
+							<div class="text">
+								<h4>报警方式</h4>
+								<p class="textindent1">盲区监测系统通过外后视镜上的黄色<img src="../public/img/0275.png" alt=""
+										style="width:40px ;">指示灯对驾驶员进行提醒，指示灯能根据外界光照条件自动调节亮度。</p>
+								<p class="textindent1">盲区风险存在的时候开启响应侧转向会通过报警音作为补充提醒。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

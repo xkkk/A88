@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA88-0022.png" alt=""></div>
+							<div class="text">
+								<div class="wenzi1">
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">将驾驶员座椅调整至合适位置，确保方向盘和胸部之间的距离不小于25cm。</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA88-0101.png" alt=""></div>
+							<div class="text">
+								<div class="wenzi1">
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">向下推锁止手柄①，解锁方向盘。</span></p>
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">根据需求上、下、前、后调整方向盘至合适位置，确保能够看到组合仪表及所有指示灯。</span></p>
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">向上拉锁止手柄①，锁定方向盘，确保其已牢固锁止。</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="switch-tab">
+								<a href="javaScript:;" class="btnhref">
+									<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span
+											class="fuhao">+</span></div>
+								</a>
+								<div class="switch-drop btnshow">
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">行驶时驾驶员双手应一直握在方向盘外圈（9点和3点位置）。</span></p>
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">调整方向盘后，必须锁定方向盘，防止车辆行驶时方向盘移位。</span></p>
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">车辆必须在停止时，才能调整方向盘，避免发生交通事故。</span>
+									</p>
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">为保障安全，方向盘应正对胸部，否则发生事故时安全气囊不能提供有效保护。</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

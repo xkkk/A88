@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="text" style="width: 100%;">
+								<h5>电动调节</h5>
+								<div class="imageText clear align">
+									<div class="img"><img src="" data-original="../public/img/OMA88-0175.png"
+											alt="loading"></div>
+									<div class="text">
+										<div class="wenzi1">
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">按选择键①的“L”端或“R”端，选择左侧或右侧外后视镜。</span></p>
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">按调节按键②，调节选中的外后视镜至合适的后视角度。</span></p>
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">调节完外后视镜后，恢复选择键①为平整状态。</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="text" style="width: 100%;">
+								<h5>电动折叠</h5>
+								<div class="imageText clear align">
+									<div class="img"><img src="../public/img/OMA88-0176.png" alt="loading"></div>
+									<div class="text">
+										<div class="wenzi1">
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">按一下折叠按键③，外后视镜电动折叠。</span></p>
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">再按一下折叠按键③，外后视镜电动展开。</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

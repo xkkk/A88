@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0131.png" alt=""></div>
+							<div class="text">
+								<h4>如何使用集成巡航辅助功能（ICA）</h4>
+								<p>操作按键</p>
+								<p><span class="span-number">① </span><span class="span-content"><img
+											src="../public/img/0297.png" alt="" style="width:40px ;">：减速键</span></p>
+								<p><span class="span-number">② </span><span class="span-content"><img
+											src="../public/img/0267.png" alt="" style="width:36px ;">: 恢复/同步/加速键</span>
+								</p>
+								<p><span class="span-number">③ </span><span class="span-content"><img
+											src="../public/img/0247.png" alt=""
+											style="width:28px ;    margin: 0px 5px -1px 5px;">：调整车距时距</span></p>
+								<p><span class="span-number">④ </span><span class="span-content"><img
+											src="../public/img/0271.png" alt=""
+											style="width:30px ;">：启动关闭ICA/切换至ICA</span></p>
+								<p><span class="span-number">⑤ </span><span class="span-content"><img
+											src="../public/img/0069.png" alt=""
+											style="width:40px ;">：启动关闭ACC/切换至ACC</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0131.png" alt=""></div>
+							<div class="text">
+								<h4>操作说明</h4>
+								<p class="textindent1">短按方向盘左侧<img src="../public/img/0271.png" alt=""
+										style="width:30px ;">按键开启ICA。</p>
+								<p class="textindent1">开启ICA后，按ACC的操作方式即可打开或激活ICA。在ACC关闭、开启或激活时，均可切换巡航模式。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

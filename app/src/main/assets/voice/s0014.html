@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA88-0353.png" alt=""></div>
+							<div class="text">
+								<div class="wenzi1">
+									<p outputclass="10">① SOS按键：长按（3s），广汽传祺车联网启动手动紧急求助功能，呼叫广汽救援中心或者紧急联系号码。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="switch-tab">
+								<a href="javaScript:;" class="btnhref">
+									<div class="tips tishi">
+										<i class="icon icon-tip"></i>提示
+										<span class="fuhao">+</span>
+									</div>
+								</a>
+								<div class="switch-drop btnshow">
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">紧急联系人电话号码在车辆销售时，经您同意写入您指定的紧急联系人电话号码。</span></p>
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">如果需要更改紧急联系人电话号码，可通过&lt;广汽传祺>APP更改或请前往广汽传祺特约店更改。</span></p>
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">请在有需要时才使用紧急联系按键。</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

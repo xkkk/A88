@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA88-0136.png" alt=""></div>
+							<div class="text">
+								<div class="wenzi1">
+									<p class="textindent"><span class="figno">①</span><img
+											style="width:20px;margin:0px 2px -7px 12px;"
+											src="../public/img/0096.png" />：闭锁按键</p>
+									<p class="textindent"><span class="figno">②</span><img
+											style="width:30px;margin:-10px 9px -10px 15px;"
+											src="../public/img/0278.png" />：解锁按键</p>
+									<p class="textindent"><span class="figno">③</span><img
+											style="width:38px;margin:10px 3px -3px 12px;"
+											src="../public/img/0136.png" />：后背门解锁按键</p>
+									<p class="textindent"><span class="figno">④</span><img
+											style="width:25px;margin:10px 3px -6px 12px;"
+											src="../public/img/137.png" />：电动左滑移门开启/关闭键</p>
+									<p class="textindent"><span class="figno">⑤</span><img
+											style="width:25px;margin:10px 3px -6px 12px;"
+											src="../public/img/138.png" />：电动右滑移门开启/关闭键</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="text" style="width: 100%;">
+								<h4><img style="width:26px;    margin: 0px 10px -5px 5px;"
+										src="../public/img/0096.png" />按键操作</h4>
+								<p><span class="span-number" style="width: 2%;">–</span><span class="span-content"
+										style="width: 97%;">0.5s内连续按下该按键，可实现寻车功能，转向信号灯快速闪烁3次。</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

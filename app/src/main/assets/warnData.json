@@ -1,311 +1,237 @@
 {
 	"dataType": "告警模块",
-	"data": [
-		{
-			"parentId": "gj_arr1",
-			"belong": "gj_arr1",
-			"id": "gj_1",
-			"name": "请检查安全气囊",
-			"htmlUrl": "/s0002.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr2",
-			"belong": "gj_arr2",
-			"id": "gj_5",
-			"name": "请补充制动液",
-			"htmlUrl": "/s0003.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr3",
-			"belong": "gj_arr3",
-			"id": "gj_16",
-			"name": "请检查ESP",
-			"htmlUrl": "/s0004.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr4",
-			"belong": "gj_arr4",
-			"id": "gj_37",
-			"name": "请检查制动助力系统",
-			"htmlUrl": "/s0005.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr5",
-			"belong": "gj_arr5",
-			"id": "gj_22",
-			"name": "请检查自适应车灯",
-			"htmlUrl": "/s0006.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr6",
-			"belong": "gj_arr6",
-			"id": "gj_36",
-			"name": "请检查EPS",
-			"htmlUrl": "/s0007.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr7",
-			"belong": "gj_arr7",
-			"id": "gj_60",
-			"name": "请检查四驱系统",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr8",
-			"belong": "gj_arr8",
-			"id": "gj_670",
-			"name": "请检查智能远光灯系统",
-			"htmlUrl": "/s0008.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr9",
-			"belong": "gj_arr9",
-			"id": "gj_179",
-			"name": "请检查车道偏离辅助系统",
-			"htmlUrl": "/s0009.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr10",
-			"belong": "gj_arr10",
-			"id": "gj_85",
-			"name": "请检查胎压监测系统",
-			"htmlUrl": "/s0010.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr11",
-			"belong": "gj_arr11",
-			"id": "gj_94",
-			"name": "请在平地检查电子驻车",
-			"htmlUrl": "/s0011.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr12",
-			"belong": "gj_arr12",
-			"id": "gj_102",
-			"name": "传感器故障请手动控制雨刮和灯光",
-			"htmlUrl": "/s0012.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr13",
-			"belong": "gj_arr13",
-			"id": "gj_6104",
-			"name": "请检查位置灯",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr14",
-			"belong": "gj_arr14",
-			"id": "gj_105",
-			"name": "请检查日间行车灯",
-			"htmlUrl": "/s0013.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr15",
-			"belong": "gj_arr15",
-			"id": "gj_114",
-			"name": "请检查倒车灯",
-			"htmlUrl": "/s0014.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr16",
-			"belong": "gj_arr16",
-			"id": "gj_115",
-			"name": "请检查刹车灯",
-			"htmlUrl": "/s0015.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr17",
-			"belong": "gj_arr17",
-			"id": "gj_108",
-			"name": "请检查全景泊车系统",
-			"htmlUrl": "/s0016.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr18",
-			"belong": "gj_arr18",
-			"id": "gj_284",
-			"name": "请检查巡航系统",
-			"htmlUrl": "/s0017.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr19",
-			"belong": "gj_arr19",
-			"id": "gj_140",
-			"name": "请检查前碰缓解系统",
-			"htmlUrl": "/s0018.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr20",
-			"belong": "gj_arr20",
-			"id": "gj_171",
-			"name": "请检查RAEB系统",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr21",
-			"belong": "gj_arr21",
-			"id": "gj_220",
-			"name": "请检查驾驶员状态监测系统",
-			"htmlUrl": "/s0019.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr22",
-			"belong": "gj_arr22",
-			"id": "gj_11",
-			"name": "请检查排放系统",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr23",
-			"belong": "gj_arr23",
-			"id": "gj_12",
-			"name": "请检查发动机",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr24",
-			"belong": "gj_arr24",
-			"id": "gj_336",
-			"name": "颗粒捕集器超载 请到4S店维护",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr25",
-			"belong": "gj_arr25",
-			"id": "gj_29",
-			"name": "请检查变速器",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr26",
-			"belong": "gj_arr26",
-			"id": "gj_241",
-			"name": "请检查换挡手柄",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr27",
-			"belong": "gj_arr27",
-			"id": "gj_242",
-			"name": "请检查电子换挡器",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr28",
-			"belong": "gj_arr28",
-			"id": "gj_307",
-			"name": "请检查换挡器",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr29",
-			"belong": "gj_arr29",
-			"id": "gj_270",
-			"name": "安全停车，联系检查",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr30",
-			"belong": "gj_arr30",
-			"id": "gj_280",
-			"name": "混合动力系统故障，请在安全的地方停车，请参见用户手册",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr31",
-			"belong": "gj_arr31",
-			"id": "gj_290",
-			"name": "请检查盲区监测系统",
-			"htmlUrl": "/s0020.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr32",
-			"belong": "gj_arr32",
-			"id": "gj_300",
-			"name": "请检查换挡执行器",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr33",
-			"belong": "gj_arr33",
-			"id": "gj_310",
-			"name": "动力电池冷却警告，请前往经销店",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		},
-		{
-			"parentId": "gj_arr34",
-			"belong": "gj_arr34",
-			"id": "gj_321",
-			"name": "ETC系统故障",
-			"htmlUrl": "/s0001.html",
-			"description": "",
-			"children": []
-		}
-	]
+	"data": [{
+		"parentId": "gj_arr1",
+		"belong": "gj_arr1",
+		"id": "gj_1",
+		"name": "请检查安全气囊",
+		"htmlUrl": "/s0001.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr2",
+		"belong": "gj_arr2",
+		"id": "gj_2",
+		"name": "安全停车，联系检查",
+		"htmlUrl": "/s0002.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr3",
+		"belong": "gj_arr3",
+		"id": "gj_3",
+		"name": "请补充制动液",
+		"htmlUrl": "/s0003.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr4",
+		"belong": "gj_arr4",
+		"id": "gj_4",
+		"name": "请检查ESP",
+		"htmlUrl": "/s0004.html",
+		"description": "",
+		"children": []
+	},
+	{
+		"parentId": "gj_arr5",
+		"belong": "gj_arr5",
+		"id": "gj_5",
+		"name": "请检查ESP",
+		"htmlUrl": "/s0004.html",
+		"description": "",
+		"children": []
+	},
+	{
+		"parentId": "gj_arr6",
+		"belong": "gj_arr6",
+		"id": "gj_6",
+		"name": "请检查ESP",
+		"htmlUrl": "/s0004.html",
+		"description": "",
+		"children": []
+	},
+	{
+		"parentId": "gj_arr7",
+		"belong": "gj_arr7",
+		"id": "gj_7",
+		"name": "请检查自适应车灯",
+		"htmlUrl": "/s0005.html",
+		"description": "",
+		"children": []
+	},{
+		"parentId": "gj_arr8",
+		"belong": "gj_arr8",
+		"id": "gj_8",
+		"name": "请检查EPS",
+		"htmlUrl": "/s0004.html",
+		"description": "",
+		"children": []
+	}, 
+	{
+		"parentId": "gj_arr9",
+		"belong": "gj_arr9",
+		"id": "gj_9",
+		"name": "请检查智能远光灯系统",
+		"htmlUrl": "/s0006.html",
+		"description": "",
+		"children": []
+	}, 
+	{
+		"parentId": "gj_arr10",
+		"belong": "gj_arr10",
+		"id": "gj_10",
+		"name": "智能远光灯系统暂不可用",
+		"htmlUrl": "/s0007.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr11",
+		"belong": "gj_arr11",
+		"id": "gj_11",
+		"name": "请检查车道偏移辅助系统",
+		"htmlUrl": "/s0008.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr12",
+		"belong": "gj_arr12",
+		"id": "gj_12",
+		"name": "请检查胎压监测系统",
+		"htmlUrl": "/s0009.html",
+		"description": "",
+		"children": []
+	},{
+		"parentId": "gj_arr13",
+		"belong": "gj_arr13",
+		"id": "gj_13",
+		"name": "请在平地检查电子驻车",
+		"htmlUrl": "/s0010.html",
+		"description": "",
+		"children": []
+	},
+	{
+		"parentId": "gj_arr14",
+		"belong": "gj_arr14",
+		"id": "gj_14",
+		"name": "传感器故障请手动控制雨刮和灯光",
+		"htmlUrl": "/s0011.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr15",
+		"belong": "gj_arr15",
+		"id": "gj_15",
+		"name": "请检查日间行车灯",
+		"htmlUrl": "/s0012.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr16",
+		"belong": "gj_arr16",
+		"id": "gj_16",
+		"name": "请检查倒车灯",
+		"htmlUrl": "/s0013.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr17",
+		"belong": "gj_arr17",
+		"id": "gj_17",
+		"name": "请检查刹车灯",
+		"htmlUrl": "/s0014.html",
+		"description": "",
+		"children": []
+	},{
+		"parentId": "gj_arr18",
+		"belong": "gj_arr18",
+		"id": "gj_18",
+		"name": "请检查全景泊车系统",
+		"htmlUrl": "/s0015.html",
+		"description": "",
+		"children": []
+	},  {
+		"parentId": "gj_arr19",
+		"belong": "gj_arr19",
+		"id": "gj_19",
+		"name": "请检查前碰缓解系统",
+		"htmlUrl": "/s0016.html",
+		"description": "",
+		"children": []
+	}, 
+	{
+		"parentId": "gj_arr20",
+		"belong": "gj_arr20",
+		"id": "gj_20",
+		"name": "请检查巡航系统",
+		"htmlUrl": "/s0017.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr21",
+		"belong": "gj_arr21",
+		"id": "gj_21",
+		"name": "请检查APA系统",
+		"htmlUrl": "/s0018.html",
+		"description": "",
+		"children": []
+	},{
+		"parentId": "gj_arr22",
+		"belong": "gj_arr22",
+		"id": "gj_22",
+		"name": "安全停车，紧急离车！",
+		"htmlUrl": "/s0019.html",
+		"description": "",
+		"children": []
+	},
+	 {
+		"parentId": "gj_arr23",
+		"belong": "gj_arr23",
+		"id": "gj_23",
+		"name": "请检查自动变道系统",
+		"htmlUrl": "/s0020.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr24",
+		"belong": "gj_arr24",
+		"id": "gj_24",
+		"name": "请检查驾驶员状态监测系统",
+		"htmlUrl": "/s0021.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr25",
+		"belong": "gj_arr25",
+		"id": "gj_25",
+		"name": "请检查排放系统",
+		"htmlUrl": "/s0022.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr26",
+		"belong": "gj_arr26",
+		"id": "gj_26",
+		"name": "请检查发动机",
+		"htmlUrl": "/s0023.html",
+		"description": "",
+		"children": []
+	}, {
+		"parentId": "gj_arr27",
+		"belong": "gj_arr27",
+		"id": "gj_27",
+		"name": "颗粒捕集器超载请到4S店维护",
+		"htmlUrl": "/s0024.html",
+		"description": "",
+		"children": []
+	},
+	{
+		"parentId": "gj_arr28",
+		"belong": "gj_arr28",
+		"id": "gj_28",
+		"name": "请检查变速器",
+		"htmlUrl": "/s0025.html",
+		"description": "",
+		"children": []
+	}]
 }

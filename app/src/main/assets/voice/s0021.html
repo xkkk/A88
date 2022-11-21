@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="text" style="width: 100%;">
+								<h4>如何开启限速标志识别？</h4>
+								<p class="textindent1">
+									限速标志识别简称TSR。TSR通过安装在前风窗玻璃上的智能前向摄像头探测前方道路上的限速牌，同时融合音响系统导航透出的数据，为驾驶员提供限速信息，在超过限速值时提醒驾驶员已超速。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0316.png" alt=""></div>
+							<div class="text">
+								<h4>开启和关闭</h4>
+								<p class="textindent1">通过音响系统“设置→ADiGO智能驾驶→ADiGO主动安全辅助→限速标志识别”，开启或关闭限速标志识别功能。</p>
+								<p class="textindent1">
+									此功能开启后，若导航或智能前向摄像头识别到前方道路限速标志，会在组合仪表上显示限速标志值；若当前仪表车速超过限速值一定阈值，组合仪表上限速标志图标会持续闪烁。</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

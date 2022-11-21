@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<!-- <div class="img"><img src="../public/img/question19.png" alt=""></div> -->
+							<div class="text" style="width: 100%;">
+								<h4>主动制动辅助帮助</h4>
+								<p class="textindent1">
+									根据安装在前保险杠上的毫米波雷达和前风窗玻璃上的智能前向摄像头探测前方的物体，车辆对即将发生的碰撞准备进入紧急制动状态，在制动时提供辅助，并触发主动制动辅助功能。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0226.png" alt=""></div>
+							<div class="text">
+								<p>开启和关闭</p>
+								<p><span class="span-number">–</span><span
+										class="span-content">整车电源在“ON”挡位时，前碰预警功能与主动制动辅助自动开启。</span></p>
+								<p><span class="span-number">–</span><span
+										class="span-content">通过音响系统“设置→ADiGO智能驾驶→ADiGO主动安全辅助→前碰撞预警”，短按右侧<img
+											src="../public/img/0133.png"
+											style="width:40px;margin:-4px 4px;">软按键设置“前碰撞预警”与“主动制动辅助”的开启或关闭。</span>
+								</p>
+								<p><span class="span-number">–</span><span
+										class="span-content">在关闭前碰撞预警与主动制动辅助时，多功能触摸显示屏会弹出二次确认窗口，点击“确认”或“取消”确认开关操作。</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

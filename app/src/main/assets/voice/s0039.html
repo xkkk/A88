@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0129.png" alt=""></div>
+							<div class="text">
+								<h4>如何使用电子驻车</h4>
+								<p>施加静态驻车制动</p>
+								<p><span class="span-number">–</span><span
+										class="span-content">车辆静止时，沿-箭头-方向上提电子驻车制动系统按键或按下P挡按键，按键指示灯及组合仪表中<img
+											src="../public/img/0006.png" alt=""
+											style="width:40px ;">指示灯点亮，表示电子驻车制动已经施加。</span></p>
+								<p><span class="span-number">–</span><span
+										class="span-content">当换挡杆从非“P”挡换入“P”挡时，电子驻车制动将自动施加。</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0130.png" alt=""></div>
+							<div class="text">
+								<h4>解除静态驻车制动</h4>
+								<p><span class="span-number">–</span><span
+										class="span-content">整车电源处于“ON”挡且挡位不在P挡时，踩下制动踏板，按压EPB电子驻车按键，按键指示灯熄灭，仪表中<img
+											src="../public/img/0006.png" alt=""
+											style="width:40px ;">指示灯熄灭，表示电子驻车制动已经释放。</span></p>
+								<p><span class="span-number">–</span><span
+										class="span-content">整车电源处于“ON”挡，关上车门，系上安全带，挡位在D或者R挡，踩下油门踏板EPB自动释放，仪表中<img
+											src="../public/img/0006.png" alt=""
+											style="width:40px ;">指示灯熄灭，表示电子驻车制动已经释放。</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

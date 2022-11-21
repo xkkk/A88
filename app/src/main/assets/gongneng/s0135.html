@@ -7,39 +7,195 @@
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>A6V</title>
+	<title>A88</title>
 	<link rel="stylesheet" type="text/css" href="../public/iconfont/iconfont.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
 </head>
 
 <body>
 	<div id="shanghua">
-		<h4>6.4.16 车内后排监控雷达系统*</h4>
-		<div class="imageText clear align">
-			<div class="img"><img src="../public/img/OMA60-0371.png"></div>
-			<div class="text">
-				<div class="wenzi1">
-					<p class="textindent">
-						车内后排监控雷达系统通过安装在车辆顶部的毫米波雷达，检测车辆后排是否有生命微动信号。当车辆停放和锁好后，10分钟内，雷达将进入工作状态，如检测到生命体征，喇叭将发出声音提醒，位置灯会闪烁，驾驶员手机会收到报警文字推送，让生命不被遗忘，提高乘员安全。
-					</p>
-				</div>
+		<h4>6.4.15 座舱监控系统*</h4>
+		<p class="textindent">
+			座舱监控系统通过安装在驾驶员左前方（A柱）和内后视镜罩盖上的两个摄像头，部分车型配备后排摄像头，分别识别车内驾乘人员的面部特征和行为动作，不同配置车型功能与识别范围可能不同。实现的功能：分神提醒、疲劳缓解、智能通风、通话降音、手势切歌、手势切地图、儿童关怀、比心收藏、高速路口分心提醒。未来将通过OTA进一步实现扩展功能。
+		</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="textindent">部分车型搭载智能驾驶舱配置，除车内人员主动拍摄和保存的照片之外，系统所采集的所有影像信息不会进行保存和上传。</p>
 			</div>
 		</div>
 		<p class="spaceKey">&nbsp;</p>
 		<h5>开启和关闭</h5>
-		<p class="textindent">整车电源在“ON”挡位，通过音响系统，可设置开启或关闭，系统默认为开启。</p>
+		<div class="imageText clear align">
+			<p class="textindent">整车电源处于“ON”挡，可通过音响主机应用菜单界面点击“智能感知”APP进入，通过软按键设置相应监控功能的细分提醒开启或关闭。</p>
+		</div>
+		<p class="spaceKey">&nbsp;</p>
+		<h5>提醒方式</h5>
+		<p class="line clear"><span class="heng">1.</span><span class="neirong">疲劳缓解</span></p>
+		<p class="textindent">座舱监控系统可检测到驾驶员疲劳分别为：轻度疲劳、中度疲劳、重度疲劳。</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">轻度疲劳触发时，语音提醒驾驶员安全驾驶。</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">中度疲劳触发时，语音提醒“主人，注意到您已经很疲惫了。为您播放歌曲提提神，您看好吗?”
+				并弹框提示，用户点击确定或超时未点击弹框，播放醒神音乐；用户点击取消，不作任何响应。</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">重度疲劳触发时，语音提醒“主人，您已经打瞌睡了。为了您的驾驶安全，我为您开启提神模式好吗?”
+				”并弹框提示，用户点击确定或超时未点击弹框，播放醒神音乐，同时开启空调，打开AC制冷，用户点击取消，不作任何响应。</span></p>
+
+		<p class="line clear"><span class="heng">2.</span><span class="neirong">分神提醒</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">如果座舱监控系统检测到驾驶员处于分心状态，会通过语音提醒驾驶员“主人，请集中注意力哦”。</span></p>
 		<div class="switch-tab">
 			<a href="javaScript:;" class="btnhref">
-				<div class="tips jinggao">
-					<i class="icon icon-gaojing1"></i>警告
-					<span class="fuhao">+</span>
+				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="textindent">语音提醒不会重复提醒，在第一次提醒之后，15min内不会再次激活报警。</p>
+			</div>
+		</div>
+		<p class="spaceKey">&nbsp;</p>
+		<p class="line clear"><span class="heng">3.</span><span class="neirong">通话降音</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">主驾通话但未使用车载蓝牙：弹框提示“为了您的安全，请使用车载蓝牙通话”（弹框约5s后消失）。</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">副驾通话但未使用车载蓝牙：弹框提示“为您提供一个舒适的通话环境”（弹框约5s后消失）、调低音量、关闭副驾防夹车窗。</span>
+		</p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">主驾、副驾都在通话，且车载蓝牙在使用：弹框提示“车机在蓝牙通话状态中，暂时无法为您调节媒体音量，为您关闭车窗”（弹框约5s后消失）。</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">通话结束后，如果响应时降低了媒体音量，将车窗、音量恢复至响应前状态，用户若有手动调整，则不恢复。</span></p>
+
+		<p class="line clear"><span class="heng">4.</span><span class="neirong">智能通风</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">智能通风触发时，语音提醒“主人，检测到车内有乘员抽烟，我为您通风换气好吗？”并弹框提示。用户点击确定或超时未点击弹框，如果没有下雨或车速小于60km/h，车窗适应车速开启不同开度，空调开启并设置为外循环、打开离子净化功能；用户点击取消，不作任何响应。若下雨，车窗不做响应，仅有空调响应（后排乘员仅部分车型支持）。</span>
+		</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">智能通风触发后，一段时间内没有再检测到抽烟，恢复车窗、空调原有状态。</p>
+		<p class="line clear"><span class="heng">5.</span><span class="neirong">比心收藏</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">音响系统处于音乐播放界面时，食指和拇指交叉做出比心动作之后，自动收藏歌曲。</span></p>
+		<p class="line clear"><span class="heng">6.</span><span class="neirong">手势切歌</span></p>
+		<p class="textindent">播放音乐时，在车内中部及后排摄像头*的可视范围内，若驾乘人员掌心背心/掌背朝左右：</p>
+		<p class="line clear"><span class="heng">–</span><span
+			class="neirong">从右往左滑动手掌，音乐自动跳到上一首进行播放。</span></p>
+			<p class="line clear"><span class="heng">–</span><span
+				class="neirong">从左往右滑动手掌，音乐自动跳到下一首进行播放。</span></p>
+		<p class="line clear"><span class="heng">7.</span><span class="neirong">手势切地图</span></p>
+		<p class="textindent">使用车载导航时，在车内中部摄像头的可视范围内，若驾乘人员掌心背心/掌背朝左右：</p>
+		<p class="line clear"><span class="heng">–</span><span
+			class="neirong">从右往左滑动手掌，地图界面从音响系统显示屏切换至组合仪表显示屏。</span></p>
+			<p class="line clear"><span class="heng">8.</span><span class="neirong">后排影像</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">方便驾驶员在音响系统显示屏上查看到后排情况，以保证驾驶员行车安全。</span></p>
+				<p class="line clear"><span class="heng">9.</span><span class="neirong">儿童音频推送（仅适用于配备后排摄像头的车型）</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">后排有儿童落座时，自动推荐播放儿歌标签歌单（熄火前只触发1次）。</span></p>
+				<p class="line clear"><span class="heng " style="width: 40px;">10.</span><span class="neirong">前排儿童提醒</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">车辆行驶时，检测到前排有儿童落座，语音提醒前排儿童后排落座（熄火前只触发1次）。</span></p>
+				<p class="line clear"><span class="heng"style="width: 40px;">11.</span><span class="neirong">高速路口分心提醒</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">驾驶员在高速路上行驶，地图引导准备下高速路口时，检测到驾驶员视线没有看向外后视镜、没有看向车机导航并且没有打转向灯，通过TTS播报和弹窗对驾驶员进行提醒。</span></p>
+		<p class="spaceKey">&nbsp;</p>
+		<h5>工作条件</h5>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">面部能清晰被系统检测到。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">系统完成初始化。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">车机供电正常。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">疲劳、分神提醒与主驾打电话提醒，需驾驶时车速大于30km/h。</span>
+		</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">当座舱监控系统对驾乘人员进行面部或行为检测时，需要在摄像头有效范围内操作（即摄像头可清楚识别到驾乘人员的全脸特征和腰部以上行为动作）。</span></p>
+				<p class="line clear"><span class="heng">–</span><span class="neirong">如果因操作范围无效导致无法识别，请您调整位置或姿势。</span>
+					<p class="line clear"><span class="heng">–</span><span class="neirong">提醒方式可能根据用户体验与技术发展做适当优化调整。</span>
+
+				</p>
+			</div>
+		</div>
+		<p class="spaceKey">&nbsp;</p>
+		<h5>错误报警</h5>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">可能发生错误警报的情况：车辆处于弯道、驾驶员在转向过程中、进出隧道、摄像头被遮挡。</span></p>
+		<p class="line clear"><span class="heng">–</span><span
+				class="neirong">在某些情况下：强烈的太阳光直射面部、座椅或方向盘调整导致面部监测丢失等，性能可能会下降。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">系统使用红外摄像头，可能会被某些墨镜干扰导致性能下降。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">如果摄像头受到干扰，系统的性能将下降。</span></p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="textindent">若满足以下任一条件，系统将自动返回正常工作状态：</p>
+				<p class="line clear"><span class="heng">–</span><span class="neirong">摄像头重新识别到驾驶员面部信息。</span></p>
+				<p class="line clear"><span class="heng">–</span><span class="neirong">关闭整车电源并重新启动。</span></p>
+			</div>
+		</div>
+		<p class="spaceKey">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips zhuyi"><i class="icon icon-eye"></i>注意<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="textindent">在功能进入工作模式后，由于疲劳算法的特性，疲劳监测需要1min时间完成初始化，期间功能不会工作。</p>
+			</div>
+		</div>
+		<p class="spaceKey">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips zhuyi"><i class="icon icon-eye"></i>注意<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="line clear"><span class="heng">–</span><span class="neirong">请遵守国家道路交通安全法及相关实施条例，安全驾驶。</span>
+				</p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">请勿遮挡左前方（A柱）的驾驶员监测摄像头和内后视镜上方的车内监控摄像头。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">请勿使用装饰件等覆盖左前方A柱与内后视镜上方罩盖、或在左前方A柱与内后视镜上方罩盖安装任何其它零部件。左前方A柱与内后视镜上方罩盖内含精密的探测器件，进行上述操作可能使器件损坏或无法正确探测驾驶员的实时状态。
+					</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">座舱监测系统功能依赖于清晰的驾乘人员状态图像，在某些情况下：强烈的太阳光直射、座椅或方向盘调整、前排座椅对后排人员面部的遮挡，导致驾乘人员监测数据不完整，面部可能导致性能下降。</span>
+				</p>
+			</div>
+		</div>
+		<p class="spaceKey">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips zhuyi"><i class="icon icon-eye"></i>注意<span class="fuhao">+</span></div>
+			</a>
+			<div class="switch-drop btnshow">
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">驾驶员响应功能打开检测后，需要一定时间完成初始化工作，期间监测功能不会工作。</span></p>
+				<p class="line clear"><span class="heng">–</span><span class="neirong">请勿疲劳驾驶。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">目前，智能座舱展示的仅为部分功能，后续您可进入应用商城更新该APP，增加新的功能，并对现有功能优化、升级。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">若发现摄像头未工作，关闭整车电源后，请重新启动车辆，系统仍无法正常工作，建议及时前往广汽传祺特约店进行检修。</span></p>
+			</div>
+		</div>
+		<p class="spaceKey">&nbsp;</p>
+		<div class="switch-tab">
+			<a href="javaScript:;" class="btnhref">
+				<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span class="fuhao">+</span>
 				</div>
 			</a>
 			<div class="switch-drop btnshow">
-				<p class="textindent">因单雷达系统同时监测二排、三排座椅，有一定的漏报风险，不能取代驾驶员对车内环境的判断，请驾驶员检查后排乘员实际情况后锁车。</p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">即使配备了座舱监控系统，您仍有集中精力谨慎驾驶车辆的责任。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">如果您感觉累了，请按需要进行定期地休息，不要等待系统来警告您。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">某些特殊的情况下可能会导致系统发出警告，即使您并不感觉疲倦，比如：连续闭眼一定时间。</span></p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">系统无法保证对每一个驾驶员都能准确识别，某些驾驶员的面部特征可能无法被准确获取。</span></p>
+				<p class="line clear"><span class="heng">–</span><span class="neirong">系统并不能在所有情况下识别出需要休息的情况。</span></p>
 			</div>
 		</div>
-
+		<p class="spaceKey">&nbsp;</p>
+		<p class="spaceKey">&nbsp;</p>
 		<p class="spaceKey">&nbsp;</p>
 		<div style="width:100%;">
 			<p class="dibu">— 页面到底了 —</p>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0077.png" alt=""></div>
+							<div class="text">
+								<h4>如何调节座椅？</h4>
+								<p>电动座椅*</p>
+								<p>座椅前、后调节：</p>
+								<p><span class="span-number">– </span><span
+										class="span-content">沿-箭头①-或-箭头②-方向推动开关，可调节座椅向前或向后滑动。</span></p>
+								<p>座椅升、降调节（仅驾驶员座椅）：</p>
+								<p><span class="span-number">– </span><span
+										class="span-content">沿-箭头③-或-箭头④-方向掰动开关，可调节座椅升高或降低。</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0077.png" alt=""></div>
+							<div class="text">
+								<p>坐垫前端升、降调节（仅驾驶员座椅）：</p>
+								<p><span class="span-number">– </span><span
+										class="span-content">沿-箭头⑤-或-箭头⑥-方向掰动开关，可调节坐垫前端升高或降低。</span></p>
+								<p>靠背前、后调节：</p>
+								<p><span class="span-number">– </span><span
+										class="span-content">沿-箭头⑦-或-箭头⑧-方向掰动开关，可调节座椅靠背向前或向后。</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0078.png" alt=""></div>
+							<div class="text">
+								<h4>驾驶员座椅腰靠调节*</h4>
+								<p><span class="span-number">– </span><span
+										class="span-content">沿-箭头①-、-箭头②-、-箭头③-、-箭头④-方向按压开关，可分别开启向上支撑、向下收缩、向前支撑、向后收缩。</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

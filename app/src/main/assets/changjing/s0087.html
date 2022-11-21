@@ -7,46 +7,49 @@
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>A6V</title>
+	<title>A88</title>
 	<link rel="stylesheet" type="text/css" href="../public/iconfont/iconfont.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
 </head>
 
 <body>
 	<div id="shanghua">
-		<h4>轮胎气压监测系统</h4>
-		<p class="textindent">胎压监测系统监测轮胎压力和温度信息，并在组合仪表上显示当前的轮胎压力和温度信息。当轮胎出现低压、高压、快速漏气和高温异常状况时，组合仪表会显示报警信息。</p>
-		<p class="textindent">
-			若车辆静置超过7天或断开过蓄电池，整车电源在“ON”挡位时，组合仪表上显示的压力值和温度值都是“---”，车辆行驶车速超过25km/h几分钟后，组合仪表上显示当前的轮胎压力和温度值。</p>
-		<p class="spaceKey">&nbsp;</p>
-		<h5>报警说明</h5>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">若轮胎压力值高于330kPa时，胎压监测系统指示灯点亮，同时仪表显示屏文字报警显示为该轮胎压力高；轮胎压力值低于300kPa时，故障消除，胎压故障灯熄灭。</span></p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">若轮胎压力值低于正常设定值75%时，胎压监测系统指示灯点亮，同时仪表显示屏文字报警显示为该轮胎压力低；轮胎压力（冷态胎压）充气至正常设定值时，故障消除，胎压故障灯熄灭。</span>
-		</p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">若轮胎压力值持续减小超过30kPa/min时，胎压监测系统指示灯点亮，同时仪表显示屏文字报警显示为该轮胎漏气；整车电源重新上电，故障消除，胎压故障灯熄灭。</span></p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">若轮胎温度值高于85°C时，胎压监测系统指示灯点亮，同时仪表显示屏文字报警显示为该轮胎温度高；轮胎温度降至80°C时，故障消除，胎压故障灯熄灭。</span></p>
+		<h4>座椅振动提示*</h4>
+		<p class="textindent">座椅振动提示系统通过主驾座椅坐垫内部的振动电机，向驾驶员发出触觉提示。当车辆的座椅振动提示功能开启后，车辆处于行驶状态且具有一定碰撞风险时，系统会触发座椅振动提示。</p>
 
+
+		<p class="spaceKey">&nbsp;</p>
+		<h5>开启/关闭座椅振动提示</h5>
+		<!-- <img src="../public/img/OMA88-0186.png" class="imgBig"> -->
+		<p class="textindent">
+			车辆的座椅振动提示功能默认是关闭状态，整车电源在“ON”挡位时，通过音响系统“设置→ADiGO智能驾驶→ADiGO驾驶辅助→提示类型”，可设置提示类型为“提示音“或“提示音和座椅振动”。</p>
+		<p class="textindent">
+			当设置项为“提示音”，表明系统的座椅振动提示功能关闭，在必要时仅有提示音发出；当设置项为“提示音和座椅振动”，系统会开启座椅振动提示功能，行车过程若存在风险，车辆发出提示音的同时，会伴随座椅振动。</p>
 		<div class="switch-tab">
 			<a href="javaScript:;" class="btnhref">
 				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
 			</a>
 			<div class="switch-drop btnshow">
-				<p class="textindent">若更换备用轮胎后或在其它地方更换新轮胎后，由于胎压传感器缺失，继续行驶时轮胎气压低警告不会消除，请勿误解轮胎气压不正常。</p>
+				<p class="textindent">该设置有记忆功能，车辆启动后，提示类型的选择状态，将与上次车辆下电时的状态相同。</p>
 			</div>
 		</div>
 		<p class="spaceKey">&nbsp;</p>
+		<h5>触发座椅振动提示</h5>
+		<p class="textindent">以下情况可能会触发座椅振动提示，驾驶员在发现座椅振动触发时，应及时观察路况，并接管控制车辆：</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">行车过程与前方车辆/行人存在碰撞风险。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">行车过程车辆非预期的偏离车道行驶，即将越过车道线。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">盲区存在车辆，但是驾驶员仍然打转向灯企图变道。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">集成巡航辅助功能因驾驶员长时间脱手驾驶，触发接管提示。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">倒车过程中，车辆两侧有车辆或行人接近，存在碰撞风险。</span></p>
 		<div class="switch-tab">
 			<a href="javaScript:;" class="btnhref">
-				<div class="tips zhuyi"><i class="icon icon-eye"></i>注意<span class="fuhao">+</span></div>
+				<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span class="fuhao">+</span>
+				</div>
 			</a>
 			<div class="switch-drop btnshow">
-				<p class="textindent">
-					若更换轮胎内的轮胎压力传感器或者调换轮胎位置，在确保符合该车型的胎压传感器已经正确安装的情况下，您无需到本公司汽车销售服务店进行重新学习标定，胎压监测系统会在接下来的几个驾驶循环中自动完成学习标定。
-				</p>
+				<p class="line clear"><span class="heng">–</span><span
+						class="neirong">座椅振动提示功能仅仅是一种辅助提示功能，驾驶员不可对座椅振动提示产生依赖，应及时对车辆潜在风险做出反应。</span></p>
+				<p class="line clear"><span class="heng">–</span><span class="neirong">驾驶员始终对车辆的安全负有责任。</span></p>
 			</div>
 		</div>
 		<p class="spaceKey">&nbsp;</p>

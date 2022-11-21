@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="text" style="width: 100%;">
+								<h5>自动驻车（AUTO HOLD）</h5>
+								<p class="textindent">开启和关闭</p>
+								<div class="imageText clear align">
+									<div class="img"><img src="../public/img/OMA88-7012.png" alt="loading"></div>
+									<div class="text">
+										<div class="wenzi1">
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">车辆启动、驾驶员侧车门关闭且驾驶员安全带系上时，按压自动驻车按键，按键指示灯点亮，自动驻车功能开启。再次按压该按键，按键指示灯熄灭，自动驻车功能关闭。</span>
+											</p>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="text">
+								<h4>激活</h4>
+								<p class="textindent">当该功能开启时，在走停工况支持自动保持和释放制动器。当驾驶员刹停车辆，将自行驻车，可避免起步时发生溜车。</p>
+							</div>
+							<div class="text">
+								<h4>退出</h4>
+								<p class="textindent">以下情况自动驻车将退出，驻车制动器不会锁止：</p>
+								<p class="textindent1">1. 起步时踩下加速踏板。</p>
+								<p class="textindent1">2. 车辆行驶过程中关闭整车电源。</p>
+								<p class="textindent1">3. 手动释放电子驻车。</p>
+								<p class="textindent1">4. 踩下制动踏板时，按压自动驻车按键。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

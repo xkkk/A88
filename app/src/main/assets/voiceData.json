@@ -4,8 +4,8 @@
 		{
 			"parentId": "yy_arr1",
 			"belong": "yy_arr1",
-			"id": "yy_cruise_control",
-			"name": "定速巡航帮助",
+			"id": "yy_adaptive_cruise",
+			"name": "自适应巡航帮助",
 			"htmlUrl": "/s0001.html",
 			"description": "",
 			"children": []
@@ -13,8 +13,8 @@
 		{
 			"parentId": "yy_arr2",
 			"belong": "yy_arr2",
-			"id": "yy_adaptive_cruise",
-			"name": "自适应巡航帮助",
+			"id": "yy_lane_assist",
+			"name": "车道保持辅助帮助",
 			"htmlUrl": "/s0002.html",
 			"description": "",
 			"children": []
@@ -22,8 +22,8 @@
 		{
 			"parentId": "yy_arr3",
 			"belong": "yy_arr3",
-			"id": "yy_lane_assist",
-			"name": "车道保持辅助帮助",
+			"id": "yy_front_collision_warning",
+			"name": "前碰撞预警帮助",
 			"htmlUrl": "/s0003.html",
 			"description": "",
 			"children": []
@@ -31,8 +31,8 @@
 		{
 			"parentId": "yy_arr4",
 			"belong": "yy_arr4",
-			"id": "yy_front_collision_warning",
-			"name": "前碰撞预警帮助",
+			"id": "yy_front_traffic_jam",
+			"name": "交通拥堵辅助帮助",
 			"htmlUrl": "/s0004.html",
 			"description": "",
 			"children": []
@@ -40,8 +40,8 @@
 		{
 			"parentId": "yy_arr5",
 			"belong": "yy_arr5",
-			"id": "yy_traffic_jam",
-			"name": "交通拥堵辅助帮助",
+			"id": "yy_uphill_assist",
+			"name": "上坡辅助帮助",
 			"htmlUrl": "/s0005.html",
 			"description": "",
 			"children": []
@@ -49,8 +49,8 @@
 		{
 			"parentId": "yy_arr6",
 			"belong": "yy_arr6",
-			"id": "yy_uphill_assist",
-			"name": "上坡辅助帮助",
+			"id": "yy_panoramic_parking",
+			"name": "全景泊车帮助",
 			"htmlUrl": "/s0006.html",
 			"description": "",
 			"children": []
@@ -58,8 +58,8 @@
 		{
 			"parentId": "yy_arr7",
 			"belong": "yy_arr7",
-			"id": "yy_panoramic_parking",
-			"name": "全景泊车帮助",
+			"id": "yy_replace_the_remote_key_battery",
+			"name": "钥匙电量不足怎么办？",
 			"htmlUrl": "/s0007.html",
 			"description": "",
 			"children": []
@@ -67,8 +67,8 @@
 		{
 			"parentId": "yy_arr8",
 			"belong": "yy_arr8",
-			"id": "yy_replace_the_remote_key_battery",
-			"name": "钥匙电量不足怎么办？",
+			"id": "yy_install_child_seat",
+			"name": "如何安装儿童座椅？",
 			"htmlUrl": "/s0008.html",
 			"description": "",
 			"children": []
@@ -76,8 +76,8 @@
 		{
 			"parentId": "yy_arr9",
 			"belong": "yy_arr9",
-			"id": "yy_install_child_seat",
-			"name": "如何安装儿童座椅？",
+			"id": "yy_install_open_the_engine_hood",
+			"name": "如何打开发动机舱盖？",
 			"htmlUrl": "/s0009.html",
 			"description": "",
 			"children": []
@@ -85,9 +85,310 @@
 		{
 			"parentId": "yy_arr10",
 			"belong": "yy_arr10",
-			"id": "yy_open_the_engine_hood",
-			"name": "如何打开发动机舱盖？",
+			"id": "yy_child_safety_lock",
+			"name": "如何激活儿童安全锁？",
 			"htmlUrl": "/s0010.html",
+			"description": "",
+			"children": []
+		},
+		
+		{
+			"parentId": "yy_arr12",
+			"belong": "yy_arr12",
+			"id": "yy_replace_the_windshield_wiper",
+			"name": "如何更换前挡风窗雨刮？",
+			"htmlUrl": "/s0012.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr13",
+			"belong": "yy_arr13",
+			"id": "yy_fog_lamp",
+			"name": "如何打开雾灯？",
+			"htmlUrl": "/s0013.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr14",
+			"belong": "yy_arr14",
+			"id": "yy_emergency_help",
+			"name": "怎样手动紧急求助?",
+			"htmlUrl": "/s0014.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr15",
+			"belong": "yy_arr15",
+			"id": "yy_adjust_the_steering_wheel_position",
+			"name": "如何调整方向盘位置？",
+			"htmlUrl": "/s0015.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr16",
+			"belong": "yy_arr16",
+			"id": "yy_adjust_the_head_restraint",
+			"name": "如何调整头枕高度？",
+			"htmlUrl": "/s0016.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr17",
+			"belong": "yy_arr17",
+			"id": "yy_automatic_parking_operation",
+			"name": "如何开启自动驻车？",
+			"htmlUrl": "/s0017.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr18",
+			"belong": "yy_arr18",
+			"id": "yy_adjust_the_rearview_mirror",
+			"name": "如何调节后视镜？",
+			"htmlUrl": "/s0018.html",
+			"description": "",
+			"children": []
+		},
+	
+		{
+			"parentId": "yy_arr20",
+			"belong": "yy_arr20",
+			"id": "yy_remote_key_search",
+			"name": "如何使用遥控钥匙寻车",
+			"htmlUrl": "/s0020.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr21",
+			"belong": "yy_arr21",
+			"id": "yy_speed_limit_sign_recognition",
+			"name": "如何开启限速标志识别？",
+			"htmlUrl": "/s0021.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr22",
+			"belong": "yy_arr22",
+			"id": "yy_bluetooth_key",
+			"name": "如何使用蓝牙钥匙？",
+			"htmlUrl": "/s0022.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr23",
+			"belong": "yy_arr23",
+			"id": "yy_seat_heating",
+			"name": "如何使用座椅加热？",
+			"htmlUrl": "/s0023.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr24",
+			"belong": "yy_arr24",
+			"id": "yy_adjust_the_seat",
+			"name": "如何调节座椅？",
+			"htmlUrl": "/s0024.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr25",
+			"belong": "yy_arr25",
+			"id": "yy_using_the_steering_wheel_keys",
+			"name": "如何使用方向盘按键？",
+			"htmlUrl": "/s0025.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr26",
+			"belong": "yy_arr26",
+			"id": "yy_use_air_conditioning",
+			"name": "如何使用空调？",
+			"htmlUrl": "/s0026.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr27",
+			"belong": "yy_arr27",
+			"id": "yy_atmosphere_lamp",
+			"name": "如何开启智能氛围灯",
+			"htmlUrl": "/s0027.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr28",
+			"belong": "yy_arr28",
+			"id": "yy_gear_lever",
+			"name": "如何使用档位杆",
+			"htmlUrl": "/s0028.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr29",
+			"belong": "yy_arr29",
+			"id": "yy_active_brake_assist",
+			"name": "主动制动辅助帮助",
+			"htmlUrl": "/s0029.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr30",
+			"belong": "yy_arr30",
+			"id": "yy_accompany_me_home",
+			"name": "如何使用伴我回家功能？",
+			"htmlUrl": "/s0030.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr31",
+			"belong": "yy_arr31",
+			"id": "yy_driving_mode",
+			"name": "如何使用驾驶模式？",
+			"htmlUrl": "/s0031.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr32",
+			"belong": "yy_arr32",
+			"id": "yy_clean_the_windshield",
+			"name": "如何清洗挡风玻璃？",
+			"htmlUrl": "/s0032.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr33",
+			"belong": "yy_arr33",
+			"id": "yy_high_beam",
+			"name": "如何打开远光灯？",
+			"htmlUrl": "/s0033.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr34",
+			"belong": "yy_arr34",
+			"id": "yy_interior_lamp",
+			"name": "如何打开车内照明灯？",
+			"htmlUrl": "/s0034.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr35",
+			"belong": "yy_arr35",
+			"id": "yy_lane_departure",
+			"name": "车道偏离帮助",
+			"htmlUrl": "/s0035.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr36",
+			"belong": "yy_arr36",
+			"id": "yy_ramp_assist",
+			"name": "坡道辅助帮助",
+			"htmlUrl": "/s0036.html",
+			"description": "",
+			"children": []
+		},
+	
+		{
+			"parentId": "yy_arr38",
+			"belong": "yy_arr38",
+			"id": "yy_parallel_auxiliary",
+			"name": "并线辅助帮助",
+			"htmlUrl": "/s0038.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr39",
+			"belong": "yy_arr39",
+			"id": "yy_electronic_parking",
+			"name": "如何使用电子驻车",
+			"htmlUrl": "/s0039.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr40",
+			"belong": "yy_arr40",
+			"id": "yy_keyless_entry_function",
+			"name": "如何使用无匙进入功能",
+			"htmlUrl": "/s0040.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr41",
+			"belong": "yy_arr41",
+			"id": "yy_one_touch_start_function",
+			"name": "如何使用一键启动功能",
+			"htmlUrl": "/s0041.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr42",
+			"belong": "yy_arr42",
+			"id": "yy_ica",
+			"name": "如何使用集成巡航辅助功能（ICA）",
+			"htmlUrl": "/s0042.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr43",
+			"belong": "yy_arr43",
+			"id": "yy_adjust_the_sound",
+			"name": "如何调节音响功能（音效、声场位置等）",
+			"htmlUrl": "/s0043.html",
+			"description": "",
+			"children": []
+		},
+	
+		{
+			"parentId": "yy_arr45",
+			"belong": "yy_arr45",
+			"id": "yy_automatic_headlamp",
+			"name": "如何打开自动前大灯功能",
+			"htmlUrl": "/s0045.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr46",
+			"belong": "yy_arr46",
+			"id": "yy_air_conditioning_system",
+			"name": "如何使用空调系统（双区温控、空气净化、除霜除雾等）",
+			"htmlUrl": "/s0046.html",
+			"description": "",
+			"children": []
+		},
+		{
+			"parentId": "yy_arr47",
+			"belong": "yy_arr47",
+			"id": "yy_using_mobile_app",
+			"name": "如何使用手机APP",
+			"htmlUrl": "/s0047.html",
 			"description": "",
 			"children": []
 		}

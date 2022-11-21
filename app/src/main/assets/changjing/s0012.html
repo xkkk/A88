@@ -1,65 +1,95 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>A58</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../public/iconfont/iconfont.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../public/css/all.css" />
+    <style>
+      .lingxing {
+        width: 20px;
+        margin: 0px 5px;
+      }
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>A6V</title>
-	<link rel="stylesheet" type="text/css" href="../public/iconfont/iconfont.css" />
-	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
-</head>
+      h5 {
+        margin-bottom: 5px;
+      }
 
-<body>
-	<div id="shanghua">
-		<h4>仪表台按键开启和关闭</h4>
-		<h5>仪表台按键开启后背门</h5>
-		<div class="imageText clear align">
-			<div class="img"><img src="../public/img/OMA6V-0093.png"></div>
-			<div class="text">
-				<div class="wenzi1">
-					<p class="textindent">长按仪表台后背门按键，后背门会电动开启/关闭。在后背门开启过程中，短按该按键，后背门会暂停开启/关闭。</p>
-				</div>
-			</div>
-		</div>
-		<div class="switch-tab">
-			<a href="javaScript:;" class="btnhref">
-				<div class="tips zhuyi">
-					<i class="icon icon-eye"></i>注意
-					<span class="fuhao">+</span>
-				</div>
-			</a>
-			<div class="switch-drop btnshow">
-				<p class="textindent">
-					主驾位置按键为不带方向的信号，后背门会根据当前状态及上一次作动方向，确认相关开闭方向，比如上次是开启过程中暂停，那么下次长按主驾位置按键，后背门会关闭；上次是关闭过程中暂停，那么下次长按主驾位置按键，后背门会开启。
-				</p>
-			</div>
-		</div>
-		<p class="spaceKey">&nbsp;</p>
+      .textindent {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
 
-		<div class="switch-tab">
-			<a href="javaScript:;" class="btnhref">
-				<div class="tips tishi">
-					<i class="icon icon-tip"></i>提示
-					<span class="fuhao">+</span>
-				</div>
-			</a>
-			<div class="switch-drop btnshow">
-				<p class="textindent">通过音响系统“设置→车身附件→车锁→后背门电动开启”设置为开启或关闭；关闭后后背门电动功能失效，需手动关闭后背门。</p>
-			</div>
-		</div>
-		<p class="spaceKey">&nbsp;</p>
-		<p class="spaceKey">&nbsp;</p>
-		<p class="spaceKey">&nbsp;</p>
-		<div style="width:100%;">
-			<p class="dibu">— 页面到底了 —</p>
-		</div>
-	</div>
-</body>
-<script src="../public/js/jquery.min.js" type="text/javascript"></script>
-<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
-<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
-
+  <body>
+    <div id="shanghua">
+      <h4>内部按键开启</h4>
+      <div class="imageText clear align">
+        <div class="img">
+          <img src="../public/img/OMA88-0158.png" alt="loading" />
+        </div>
+        <div class="text">
+          <div class="wenzi1">
+            <p class="line clear">
+              <span class="heng">–</span
+              ><span class="neirong">短按后背门内侧按键，后背门电动关闭。 </span>
+            </p>
+            <p class="line clear">
+              <span class="heng">–</span
+              ><span class="neirong">后背门运行过程中，短按后背门内侧按键，暂停后背门开启/关闭。
+                </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p>后背门第二高度设置：</p>
+      <p class="textindent">当后背门开启高度在55%~98%之间，长按后背门内侧开关2s，后背门第二高度设置成功，蜂鸣器鸣叫两声。
+        </p>
+      <p class="spaceKey">&nbsp;</p>
+      <div class="switch-tab">
+        <a href="javaScript:;" class="btnhref">
+          <div class="tips zhuyi">
+            <i class="icon icon-eye"></i>注意<span class="fuhao">+</span>
+          </div>
+        </a>
+        <div class="switch-drop btnshow">
+          <p class="textindent">该按键开关为不带方向的信号，后背门根据当前状态及上一次动作方向，确认相关开闭方向。如上次是开启过程中暂停，下次短按该按键，后背门关闭；上次是关闭过程中暂停，下次短按该按键，后背门开启。
+            
+          </p>
+        </div>
+      </div>
+      <p class="spaceKey">&nbsp;</p>
+      <div class="switch-tab">
+        <a href="javaScript:;" class="btnhref">
+          <div class="tips tishi">
+            <i class="icon icon-eye"></i>提示<span class="fuhao">+</span>
+          </div>
+        </a>
+        <div class="switch-drop btnshow">
+          <p class="textindent">若后背门无法电动开启/关闭时，请留意电动后背门主开关是否开启。如电动后背门主开关开启仍无法正常使用时，请及时前往广汽传祺特约店进行检修。   
+          </p>
+        </div>
+      </div>
+      <p class="spaceKey">&nbsp;</p>
+      <p class="spaceKey">&nbsp;</p>
+      <p class="spaceKey">&nbsp;</p>
+      <p class="spaceKey">&nbsp;</p>
+      <div style="width: 100%">
+        <p class="dibu">— 页面到底了 —</p>
+      </div>
+    </div>
+  </body>
+  <script src="../public/js/jquery.min.js" type="text/javascript"></script>
+  <script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+  <script src="../public/js/xiaoguo.js" type="text/javascript"></script>
 </html>

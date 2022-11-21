@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0225.png" alt=""></div>
+							<div class="text">
+								<h4>如何开启智能氛围灯</h4>
+								<p class="textindent1">通过音响系统主界面“车模”或应用菜单“我的车”进入我的车功能界面，选择“灯光效果→氛围灯”软按键进入内饰氛围灯效果设置界面。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0225.png" alt=""></div>
+							<div class="text">
+								<h4>操作界面：</h4>
+								<p><span class="span-number">1.</span><span class="span-content">氛围灯功能开关</span></p>
+								<p><span class="span-number">–</span><span class="span-content">点击“内饰氛围灯”右侧<img
+											src="../public/img/0133.png"
+											style="width:40px;margin:-4px 4px;">软按键，可开启或关闭内饰氛围灯功能。</span></p>
+								<p><span class="span-number">–</span><span
+										class="span-content">在氛围灯功能关闭时其他参数不可调节；在氛围灯功能开启时，整车电源在“ON”挡位，氛围灯常亮。</span></p>
+								<p><span class="span-number">2.</span><span class="span-content">氛围灯亮度调节</span></p>
+								<p><span class="span-number">–</span><span
+										class="span-content">可根据个人需求，点击或左右滑动氛围灯亮度进度条调节氛围灯亮度。</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0225.png" alt=""></div>
+							<div class="text">
+								<p><span class="span-number">3.</span><span class="span-content">跟随驾驶模式开关</span></p>
+								<p><span class="span-number">–</span><span
+										class="span-content">开启跟随驾驶模式，氛围灯颜色与驾驶模式关联，切换驾驶模式时，氛围灯颜色自动切换。</span></p>
+								<p><span class="span-number">4.</span><span class="span-content">音乐律动模式</span></p>
+								<p><span class="span-number">–</span><span
+										class="span-content">开启音乐律动模式，在播放音乐时，氛围灯亮度随音乐节奏进行律动。</span></p>
+								<p><span class="span-number">5.</span><span class="span-content">氛围灯颜色</span></p>
+								<p><span class="span-number">–</span><span
+										class="span-content">拖动或点击颜色条，可选择氛围灯颜色。</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top:750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

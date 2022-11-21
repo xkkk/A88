@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="text" style="width: 100%;">
+								<h4>车道偏离帮助</h4>
+								<p class="textindent1">车道偏离系统是为了减少由于无意识的车道偏离而导致的事故发生。</p>
+								<p class="textindent1">
+									车道偏离系统通过安装在前挡风玻璃上的摄像头探测道路上的车道标志线和道路边沿，通过安装在车身前部的毫米波雷达探测道路护栏等。对驾驶员驾车行为及车辆运动状态进行分析，在驾驶员因疲劳、走神或打电话等而导致车辆无意识地偏离车道时发出警告或干预方向盘进行纠偏辅助。通常在前轮越过车道标线或将越过/撞上路沿时给予警告或干预方向盘。
+								</p>
+								<p class="textindent1">
+									在驾驶员选择辅助模式为“转向”、“转向和警告”并达到车道偏离系统工作条件时，系统会监测方向盘上的力矩。当驾驶员较长时间双手脱离方向盘时，系统将向驾驶员发出报警。</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="text" style="width: 100%;">
+								<h4>开启和关闭</h4>
+								<p class="textindent1">通过音响系统“设置→ADiGO智能驾驶→ADiGO主动安全辅助→车道偏离辅助”，点击“车道偏离辅助”右侧<img
+										src="../public/img/0133.png" style="width:40px;margin:-4px 4px;">软按键开启或关闭。</p>
+								<p class="textindent1">功能开启时，可以看到按钮变为开启状态，仪表亮起车道偏离系统指示灯<img
+										style="width:28px;margin:-6px 4px;"
+										src="../public/img/0100.png" />；功能关闭时，可以看到按钮变为关闭状态，仪表的车道偏离系统指示灯熄灭。</p>
+								<p class="textindent1">系统具有开关状态记忆功能，车辆启动后，开关状态将与上次车辆熄火时的状态相同。</p>
+								<p class="textindent1">&nbsp;</p>
+								<h4>选择车道偏离辅助模式</h4>
+								<p class="textindent1">整车电源在“ON”挡位，通过音响系统“设置→ADiGO智能驾驶→ADiGO主动安全辅助→车道偏离辅助”，选择车道偏离辅助模式。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+	<script type="text/javascript" src="../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page-redian">
+		<div class="main-box flex-middle" style="opacity:1;">
+			<div class="detail-swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0050.png" alt=""></div>
+							<div class="text" style="    width: 44%;">
+								<h4>如何使用方向盘按键？</h4>
+								<p>方向盘按键</p>
+								<p><span class="span-number">①</span><span class="span-content">喇叭按键：按<img
+											style="width:35px;margin:0px 5px 3px 5px;"
+											src="../public/img/0159.png" />按键，喇叭鸣笛；松手后，喇叭停止鸣笛。</span></p>
+								<p><span class="span-number">②</span><span class="span-content">音响系统控制按键</span></p>
+								<p><span class="span-number">•</span><span class="span-content">语音键</span></p>
+								<p><span class="span-number">•</span><span class="span-content">自定义按键*</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="img"><img src="../public/img/OMA58-0050.png" alt=""></div>
+							<div class="text" style="    width: 44%;">
+								<p><span class="span-number">③</span><span
+										class="span-content">左侧按键包含组合仪表显示屏控制按键*、巡航控制按键*：</span></p>
+								<p><span class="span-number">–</span><span class="span-content">组合仪表显示屏控制按键：</span></p>
+								<p><span class="span-number">•</span><span class="span-content">仪表主题切换*</span></p>
+								<p><span class="span-number">•</span><span class="span-content">行车信息操作</span></p>
+								<p><span class="span-number">•</span><span class="span-content">报警信息操作</span></p>
+								<p><span class="span-number">–</span><span class="span-content">巡航控制按键*：</span></p>
+								<p><span class="span-number">•</span><span class="span-content">自适应巡航控制按键</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dots-new flex-center"></div>
+			</div>
+			<p style="color: #fff;position: absolute;top: 750px;right: 120px;z-index: 1000;font-size: 30px;">详细内容请查看用户手册
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../public/js/swiper.js"></script>
+<script>
+	function jsfun() {
+		var detailSwiper = new Swiper('.detail-swiper', {
+			pagination: {
+				el: '.swiper-dots-new',
+				clickable: true
+			},
+		})
+	}
+	$(function () {
+		jsfun()
+	})
+</script>
+
+</html>

@@ -7,170 +7,49 @@
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>A6V</title>
+	<title>A88</title>
 	<link rel="stylesheet" type="text/css" href="../public/iconfont/iconfont.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
 </head>
 
 <body>
 	<div id="shanghua">
-		<h4>6.4.15 座舱监控系统*</h4>
+		<h4>6.4.14 座椅振动提示*</h4>
+		<p class="textindent">座椅振动提示系统通过主驾座椅坐垫内部的振动电机，向驾驶员发出触觉提示。当车辆的座椅振动提示功能开启后，车辆处于行驶状态且具有一定碰撞风险时，系统会触发座椅振动提示。</p>
+
+
+		<p class="spaceKey">&nbsp;</p>
+		<h5>开启/关闭座椅振动提示</h5>
+		<!-- <img src="../public/img/OMA88-0186.png" class="imgBig"> -->
 		<p class="textindent">
-			座舱监控系统通过安装在驾驶员左前方（A柱）和内后视镜罩盖上的两个摄像头，分别监控车内驾乘人员的面部特征和行为动作，实现的功能：分神提醒、疲劳监测、智能通风、通话降音、视线亮屏、手势切歌。未来将通过OTA进一步实现智能儿童关怀、儿童看护模式、安心下车、远程查看、旅程记录等。
-		</p>
+			车辆的座椅振动提示功能默认是关闭状态，整车电源在“ON”挡位时，通过音响系统“设置→ADiGO智能驾驶→ADiGO驾驶辅助→提示类型”，可设置提示类型为“提示音“或“提示音和座椅振动”。</p>
+		<p class="textindent">
+			当设置项为“提示音”，表明系统的座椅振动提示功能关闭，在必要时仅有提示音发出；当设置项为“提示音和座椅振动”，系统会开启座椅振动提示功能，行车过程若存在风险，车辆发出提示音的同时，会伴随座椅振动。</p>
 		<div class="switch-tab">
 			<a href="javaScript:;" class="btnhref">
 				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
 			</a>
 			<div class="switch-drop btnshow">
-				<p class="textindent">部分车型搭载智能驾驶舱配置，除车内人员主动拍摄和保存的照片之外，系统所采集的所有影像信息不会进行保存和上传</p>
+				<p class="textindent">该设置有记忆功能，车辆启动后，提示类型的选择状态，将与上次车辆下电时的状态相同。</p>
 			</div>
 		</div>
 		<p class="spaceKey">&nbsp;</p>
-		<h5>开启和关闭</h5>
-		<!--<img src="../public/img/OMA60-0300.png" class="imgBig lazy" width="100" height="100" data-original="../public/img/OMA60-0300.png" alt="loading" style="height:75%;">-->
-		<img src="../public/img/OMA60-0186.png" class="imgBig">
-		<p class="textindent">整车电源处于“ON”挡，可通过音响主机应用菜单界面点击“智能感知”APP进入，通过软按键设置相应监控功能的细分提醒开启或关闭。</p>
-		<p class="spaceKey">&nbsp;</p>
-		<h5>提醒方式</h5>
-		<p>1. 分神提醒</p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">如果座舱监控系统检测到驾驶员处于分心状态，会通过语音提醒驾驶员“主人，请集中注意力哦”。</span></p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">主驾通话但未使用车载蓝牙，语音提醒“为了您的安全，请使用车载蓝牙通话”并弹框提示（弹框5s后消失）。</span></p>
+		<h5>触发座椅振动提示</h5>
+		<p class="textindent">以下情况可能会触发座椅振动提示，驾驶员在发现座椅振动触发时，应及时观察路况，并接管控制车辆：</p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">行车过程与前方车辆/行人存在碰撞风险。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">行车过程车辆非预期的偏离车道行驶，即将越过车道线。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">盲区存在车辆，但是驾驶员仍然打转向灯企图变道。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">集成巡航辅助功能因驾驶员长时间脱手驾驶，触发接管提示。</span></p>
+		<p class="line clear"><span class="heng">–</span><span class="neirong">倒车过程中，车辆两侧有车辆或行人接近，存在碰撞风险。</span></p>
 		<div class="switch-tab">
 			<a href="javaScript:;" class="btnhref">
-				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
-			</a>
-			<div class="switch-drop btnshow">
-				<p class="textindent">语音提醒不会重复提醒，在第一次提醒之后，6min内不会再次激活报警。</p>
-			</div>
-		</div>
-		<p class="spaceKey">&nbsp;</p>
-		<p>2. 疲劳提醒</p>
-		<p class="textindent1">座舱监控系统可检测到驾驶员疲劳分别为：轻度疲劳、中度疲劳、重度疲劳。</p>
-		<p class="line clear"><span class="heng">–</span><span class="neirong">轻度疲劳触发时，语音提醒驾驶员安全驾驶。</span></p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">中度疲劳触发时，语音提醒“主人，注意到您已经很疲惫了。为您播放歌曲提提神，您看好吗?”
-				并弹框提示，点击确定或超时未点击弹框，播放醒神音乐；点击取消，不作任何响应。</span>
-		</p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">重度疲劳触发时，语音提醒“主人，您已经打瞌睡了。为了您的驾驶安全，我为您开启醒神模式好吗?”并弹框提示，点击确定或超时未点击弹框，播放醒神音乐，同时开启空调，打开AC制冷，伴随红色氛围灯提醒；点击取消，不作任何响应。</span>
-		</p>
-		<p class="spaceKey">&nbsp;</p>
-		<p>3. 智能通风</p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">抽烟触发时，语音提醒“检测到前排人员在抽烟，自动开启通风换气”并弹框提示。点击确定或超时未点击弹框，如果没有下雨，天窗*关闭时设置为起翘状态，车窗开启，空调开启并设置为外循环、打开等离子功能；点击取消，不作何响应。若下雨，天窗*、车窗不做响应，仅有空调响应。</span>
-		</p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">智能通风触发后，一段时间内没有再监测到抽烟，恢复车窗、天窗、空调原有状态。</span></p>
-		<p class="spaceKey">&nbsp;</p>
-		<p>4. 通话降音</p>
-		<!--<p class="textindent">座舱监控系统可检测到驾驶员疲劳分别为：轻度疲劳、中度疲劳、重度疲劳。</p>-->
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">副驾通话但未使用车载蓝牙：弹框提示“为您提供一个舒适的通话环境”（弹框5s后消失）、系统将会自动调低媒体音量、关闭副驾防夹车窗和天窗*。</span></p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">主驾、副驾都在通话，且车载蓝牙在使用：弹框提示“车机在蓝牙通话状态中，暂时无法为您调节媒体音，为您关闭车窗天窗*”（弹框5s后消失）、系统将会自动关闭全部防夹车窗和天窗*。</span>
-		</p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">通话结束后，如果响应时降低了媒体音量，将车窗、天窗*、音量恢复至响应前状态，若有手动调整，则不恢复。</span></p>
-		<p class="spaceKey">&nbsp;</p>
-		<p>5.情绪音乐</p>
-		<p class="textindent1">当驾乘人员唤醒语音助手，并告知有听歌需求且未指定歌曲信息时，该座舱监控系统根据驾乘人员的面部状态特征分析驾驶员当前情绪是自然、开心、不开心，分别播报如下语音并播放对应类型的歌曲：
-		</p>
-		<p class="textindent1">– 自然：“好的主人，语言的尽头是音乐，好好倾听它吧”。</p>
-		<p class="textindent1">– 开心：“好的主人，音乐是我们最简单的快乐，畅游音乐海洋吧。</p>
-		<p class="textindent1">– 不开心：“好的主人，音乐是所有不开心的治愈良药，好好享受吧”。</p>
-		<p class="spaceKey">&nbsp;</p>
-		<p>6. 视线亮屏</p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">当屏幕处于黑屏状态，检测到驾驶员注视屏幕1s以上时，自动亮屏；若视线离开，自动熄灭屏幕。</span></p>
-		<p class="spaceKey">&nbsp;</p>
-		<p>7. 手势切歌</p>
-		<p class="textindent1">当音乐开启时，在车内监控摄像头的可视范围内，若驾乘人员，五指指向车前方：</p>
-		<p class="textindent1">– 从右往左滑动手掌，音乐自动跳到上一首进行播放。</p>
-		<p class="textindent1">– 从左往右滑动手掌，音乐自动跳到下一首进行播放。</p>
-		<p class="spaceKey">&nbsp;</p>
-		<h5>工作条件</h5>
-		<p class="line clear"><span class="heng">–</span><span class="neirong">面部能清晰被系统检测到。</span></p>
-		<p class="line clear"><span class="heng">–</span><span class="neirong">系统完成初始化。</span></p>
-		<p class="line clear"><span class="heng">–</span><span class="neirong">车机供电正常。</span></p>
-		<p class="line clear"><span class="heng">–</span><span class="neirong">疲劳、分神提醒与主驾打电话提醒，需驾驶时车速大于30km/h。</span></p>
-		<div class="switch-tab">
-			<a href="javaScript:;" class="btnhref">
-				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
+				<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span class="fuhao">+</span>
+				</div>
 			</a>
 			<div class="switch-drop btnshow">
 				<p class="line clear"><span class="heng">–</span><span
-						class="neirong">当座舱监控系统对驾乘人员进行面部或行为检测时，需要在摄像头有效范围内操作（即摄像头可清楚识别到驾乘人员的全脸特征和腰部以上行为动作）。</span></p>
-				<p class="line clear"><span class="heng">–</span><span class="neirong">如果因操作范围无效导致无法识别，请您调整位置或姿势。</span>
-				</p>
-			</div>
-		</div>
-		<p class="spaceKey">&nbsp;</p>
-		<h5>错误报警</h5>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">可能发生错误警报的情况：车辆处于弯道、驾驶员在转向过程中、进出隧道、摄像头被遮挡。</span></p>
-		<p class="line clear"><span class="heng">–</span><span
-				class="neirong">在某些情况下：强烈的太阳光直射面部、座椅或方向盘调整导致面部监测丢失等，性能可能会下降。</span></p>
-		<p class="line clear"><span class="heng">–</span><span class="neirong">系统使用红外摄像头，可能会被某些墨镜干扰导致性能下降。</span></p>
-		<p class="line clear"><span class="heng">–</span><span class="neirong">如果摄像头受到干扰，系统的性能将下降。</span></p>
-		<div class="switch-tab">
-			<a href="javaScript:;" class="btnhref">
-				<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span></div>
-			</a>
-			<div class="switch-drop btnshow">
-				<p>若满足以下任一条件，系统将自动返回正常工作状态：</p>
-				<p>– 摄像头重新识别到驾驶员面部信息。</p>
-				<p>– 关闭整车电源并重新启动。</p>
-				
-				<p class="textindent">目前，智能座舱展示的仅为部分功能，后续您可进入应用商城更新该APP，增加新的功能，并对现有功能优化、升级。</p>
-			</div>
-		</div>
-		<p class="spaceKey">&nbsp;</p>
-		<div class="switch-tab">
-			<a href="javaScript:;" class="btnhref">
-				<div class="tips zhuyi"><i class="icon icon-eye"></i>注意<span class="fuhao">+</span></div>
-			</a>
-			<div class="switch-drop btnshow">
-				<p class="textindent">在功能进入工作模式后，由于疲劳算法的特性，疲劳监测需要1min时间完成初始化，期间功能不会工作。</p>
-				<p class="line clear"><span class="heng">–</span><span class="neirong">请勿疲劳驾驶。</span>
-				</p>
-				<p class="line clear"><span class="heng">–</span><span
-						class="neirong">若发现摄像头未工作，下电后，请重新启动车辆，系统仍无法正常工作，建议及时前往广汽传祺特约店进行检修。</span>
-				</p>
-			</div>
-		</div>
-		<p class="spaceKey">&nbsp;</p>
-		<div class="switch-tab">
-			<a href="javaScript:;" class="btnhref">
-				<div class="tips zhuyi"><i class="icon icon-eye"></i>注意<span class="fuhao">+</span></div>
-			</a>
-			<div class="switch-drop btnshow">
-				<p class="line clear"><span class="heng">–</span><span class="neirong">请遵守国家道路交通安全法及相关实施条例，安全驾驶。</span>
-				</p>
-				<p class="line clear"><span class="heng">–</span><span
-						class="neirong">请勿遮挡左前方（A柱）的驾驶员监测摄像头和内后视镜上方的车内监控摄像头。</span></p>
-				<p class="line clear"><span class="heng">–</span><span
-						class="neirong">请勿使用装饰件等覆盖左前方A柱与内后视镜上方罩盖、或在左前方A柱与内后视镜上方罩盖安装任何其它零部件。左前方A柱与内后视镜上方罩盖内含精密的探测器件，进行上述操作可能使器件损坏或无法正确探测驾驶员的实时状态。</span>
-				</p>
-			</div>
-		</div>
-		<p class="spaceKey">&nbsp;</p>
-		<div class="switch-tab">
-			<a href="javaScript:;" class="btnhref">
-				<div class="tips jinggao"><i class="icon icon-gaojing1"></i>警告<span class="fuhao">+</span></div>
-			</a>
-			<div class="switch-drop btnshow">
-				<p class="line clear"><span class="heng">–</span><span
-						class="neirong">即使配备了座舱监控系统，您仍有集中精力谨慎驾驶车辆的责任。</span></p>
-				<p class="line clear"><span class="heng">–</span><span
-						class="neirong">如果您感觉累了，请按需要进行定期地休息，不要等待系统来警告您。</span></p>
-				<p class="line clear"><span class="heng">–</span><span
-						class="neirong">某些特殊的情况下可能会导致系统发出警告，即使您并不感觉疲倦，比如：连续闭眼一定时间。</span></p>
-				<p class="line clear"><span class="heng">–</span><span
-						class="neirong">系统无法保证对每一个驾驶员都能准确识别，某些驾驶员的面部特征可能无法被准确获取。</span></p>
-				<p class="line clear"><span class="heng">–</span><span class="neirong">系统并不能在所有情况下识别出需要休息的情况。</span></p>
+						class="neirong">座椅振动提示功能仅仅是一种辅助提示功能，驾驶员不可对座椅振动提示产生依赖，应及时对车辆潜在风险做出反应。</span></p>
+				<p class="line clear"><span class="heng">–</span><span class="neirong">驾驶员始终对车辆的安全负有责任。</span></p>
 			</div>
 		</div>
 		<p class="spaceKey">&nbsp;</p>
