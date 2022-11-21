@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <com.baorun.handbook.a6v.widget.JzvdStdAssert
+    <com.baorun.handbook.a88.widget.JzvdStdAssert
         android:id="@+id/player"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />

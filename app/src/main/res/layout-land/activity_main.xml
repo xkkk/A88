@@ -20,7 +20,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+        <com.baorun.handbook.a88.widget.HomeTabWidgetView
             android:id="@+id/tabScene"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:text="@string/home_tab_scene" />
-        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+        <com.baorun.handbook.a88.widget.HomeTabWidgetView
             android:id="@+id/tabVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             app:layout_constraintStart_toEndOf="@id/tabScene"
             app:layout_constraintTop_toTopOf="@id/tabScene"
             app:text="@string/home_tab_video" />
-        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+        <com.baorun.handbook.a88.widget.HomeTabWidgetView
             android:id="@+id/tabGuide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
             app:layout_constraintTop_toBottomOf="@id/tabScene"
             app:text="@string/home_tab_guide" />
 
-        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+        <com.baorun.handbook.a88.widget.HomeTabWidgetView
             android:id="@+id/tabIndicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -189,7 +189,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+        <com.baorun.handbook.a88.widget.HomeTabWidgetView
             android:id="@+id/tabQuestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:text="@string/home_tab_question" />
 
-        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+        <com.baorun.handbook.a88.widget.HomeTabWidgetView
             android:id="@+id/tabWarning"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
             app:layout_constraintTop_toBottomOf="@id/tabQuestion"
             app:text="@string/home_tab_warning" />
 
-        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+        <com.baorun.handbook.a88.widget.HomeTabWidgetView
             android:id="@+id/tabMaintenance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -223,7 +223,7 @@
             app:layout_constraintTop_toTopOf="@id/tabQuestion"
             app:text="@string/home_tab_maintenance" />
 
-        <com.baorun.handbook.a6v.widget.HomeTabWidgetView
+        <com.baorun.handbook.a88.widget.HomeTabWidgetView
             android:id="@+id/tabMine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
