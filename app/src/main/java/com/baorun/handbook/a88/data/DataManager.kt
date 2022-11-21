@@ -42,7 +42,7 @@ object DataManager : DataRepositorySource {
         return if (isMaster) arrayOf(
             R.drawable.img_vision_out_1_m,
             R.drawable.img_vision_out_2_m
-        ) else arrayOf(R.drawable.img_vision_out_1, R.drawable.img_vision_out_2)
+        ) else arrayOf(R.drawable.img_vision_out_1_m, R.drawable.img_vision_out_2_m)
     }
 
     fun getVisionIn(): Array<Int> {

@@ -80,7 +80,7 @@ class AnswerActivity: BaseActivity<ActivityAnswerBinding>() {
 
     private fun loadUrl(url:String){
         if(DataManager.isMaster){
-            viewBinding.webView.loadUrl("file:///android_asset/wenti-master$url")
+            viewBinding.webView.loadUrl("file:///android_asset/wenti$url")
         }else{
             viewBinding.webView.loadUrl("file:///android_asset/wenti$url")
         }

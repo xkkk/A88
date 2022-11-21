@@ -476,9 +476,6 @@ class NormalDataSource : DataRepositorySource {
             "sp_2" -> R.drawable.assets_video_preview_2
             "sp_3" -> R.drawable.assets_video_preview_3
             "sp_4" -> R.drawable.assets_video_preview_4
-            "sp_5" -> R.drawable.assets_video_preview_5
-            "sp_6" -> R.drawable.assets_video_preview_6
-            "sp_7" -> R.drawable.assets_video_preview_7
             "sp_8" -> R.drawable.assets_video_preview_8
             else -> -1
         }
