@@ -8,6 +8,7 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
@@ -21,20 +22,31 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="item-box flex-item">
-							<div class="img"><img src="../public/img/OMA58-0077.png" alt=""></div>
-							<div class="text">
-								<h4>如何调节座椅？</h4>
-								<p>电动座椅*</p>
-								<p>座椅前、后调节：</p>
-								<p><span class="span-number">– </span><span
-										class="span-content">沿-箭头①-或-箭头②-方向推动开关，可调节座椅向前或向后滑动。</span></p>
-								<p>座椅升、降调节（仅驾驶员座椅）：</p>
-								<p><span class="span-number">– </span><span
-										class="span-content">沿-箭头③-或-箭头④-方向掰动开关，可调节座椅升高或降低。</span></p>
+							<div class="text" style="width: 100%;">
+								<h5>电动座椅</h5>
+								<div class="imageText clear align">
+									<div class="img"><img class="lazy" width="100" height="100"
+											src="../public/img/OMA88-0184.png"></div>
+									<div class="text">
+										<div class="wenzi1">
+											<p outputclass="10">座椅前、后调节：</p>
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">沿-箭头①-或-箭头②-方向推动开关，可调节座椅向前或向后滑动。</span></p>
+											<p outputclass="10">坐垫前端升、降调节（仅驾驶员座椅）：</p>
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">沿-箭头③-或-箭头④-方向掰动关，可调节坐垫升高或降低。</span></p>
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">沿-箭头⑤-或-箭头⑥-方向掰动开关，可调节座椅升高或降低。</span></p>
+											<p outputclass="10">靠背前、后调节：</p>
+											<p class="line clear"><span class="heng">–</span><span
+													class="neirong">沿-箭头⑦-或-箭头⑧-方向掰动开关，可调节座椅靠背向前或向后。</span></p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<!-- <div class="swiper-slide">
 						<div class="item-box flex-item">
 							<div class="img"><img src="../public/img/OMA58-0077.png" alt=""></div>
 							<div class="text">
@@ -46,10 +58,10 @@
 										class="span-content">沿-箭头⑦-或-箭头⑧-方向掰动开关，可调节座椅靠背向前或向后。</span></p>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<div class="swiper-slide">
 						<div class="item-box flex-item">
-							<div class="img"><img src="../public/img/OMA58-0078.png" alt=""></div>
+							<div class="img"><img src="../public/img/OMA88-0185.png" alt=""></div>
 							<div class="text">
 								<h4>驾驶员座椅腰靠调节*</h4>
 								<p><span class="span-number">– </span><span
@@ -67,6 +79,8 @@
 	</div>
 </body>
 <script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
 <script>
 	function jsfun() {
 		var detailSwiper = new Swiper('.detail-swiper', {

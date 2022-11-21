@@ -88,8 +88,8 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
     override fun getVisionOut2HotspotList(): HotSpotWrapper {
         return HotSpotWrapper(1920,1080, listOf(
             Hotspots(
-                636,
-                303,
+                673,
+                392,
                 "后雨刷",
                 arrayListOf(
                     R.drawable.img_vision_5_1_m,
@@ -102,8 +102,8 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                 )
             ),
             Hotspots(
-                605,
-                603,
+                621,
+                595,
                 "掀背门",
                 arrayListOf(
                     R.drawable.img_vision_6_1_m,
@@ -113,8 +113,8 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                 )
             ),
             Hotspots(
-                995,
-                552,
+                1007,
+                501,
                 "油箱盖板",
                 arrayListOf(
                     R.drawable.img_vision_7_1_m,

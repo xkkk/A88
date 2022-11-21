@@ -8,6 +8,7 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
@@ -21,34 +22,45 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="item-box flex-item">
-							<div class="img"><img src="../public/img/OMA58-0216.png" alt=""></div>
-							<div class="text">
-								<h4>如何使用座椅加热？</h4>
-								<p>座椅通风*/加热*</p>
-								<p class="textindent1">整车电源切换至“ON”挡，点击音响系统主界面底部座椅通风/加热图标，弹出座椅通风/加热设置界面。</p>
-								<p>① 加热</p>
-								<p><span class="span-number">–</span><span
-										class="span-content">点击“加热”，默认打开加热3挡，通过点击按键1/2/3切换、激活加热挡位。</span></p>
-								<p><span class="span-number">–</span><span
-										class="span-content">座椅加热温度有3个挡位，其中3挡温度最高，2挡次之，1挡温度较低。</span></p>
+							<div class="text" style="width: 100%;">
+								<h5>座椅通风/加热</h5>
+								<div class="imageText clear align">
+									<div class="img"><img class="lazy" width="100" height="100"
+											src="../public/img/OMA88-0008.png"></div>
+									<div class="text">
+										<div class="wenzi1">
+											<p class="textindent">整车电源切换至“ON”挡，点击音响系统显示屏右下方<img
+													src="../public/img/0048.png"
+													style="width:32px;margin:-4px 4px;"><img
+													src="../public/img/0047.png"
+													style="width:32px;margin:-4px 4px;">软按键，弹出座椅通风/加热设置界面。</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="item-box flex-item">
-							<div class="img"><img src="../public/img/OMA58-0216.png" alt=""></div>
+							<div class="img"><img src="../public/img/OMA88-0008.png" alt=""></div>
 							<div class="text">
-								<p>② 通风</p>
-								<p><span class="span-number">–</span><span
-										class="span-content">点击“通风”，默认打开通风3挡，通过点击按键1/2/3切换通风挡位。</span></p>
-								<p><span class="span-number">–</span><span
-										class="span-content">座椅通风有3个挡位，其中3挡风量最高，2挡次之，1挡风量较低。</span></p>
-								<p>③ 智能</p>
-								<p><span class="span-number">–</span><span
-										class="span-content">点击“智能”，打开座椅通风加热智能模式。</span></p>
-								<p>④ 关闭</p>
-								<p><span class="span-number">–</span><span
-										class="span-content">点击“关闭”，即可关闭座椅通风/加热功能。</span></p>
+								<p outputclass="10">① 加热</p>
+								<p class="line clear"><span class="heng">–</span><span class="neirong">
+										点击“加热”，默认打开加热3挡，通过点击按键1/2/3切换、激活加热挡位。
+									</span></p>
+								<p outputclass="10">② 通风</p>
+								<p class="line clear"><span class="heng">–</span><span
+										class="neirong">点击“通风”，默认打开通风3挡，通过点击按键1/2/3切换通风挡位。</span>
+								</p>
+								<p class="line clear"><span class="heng">–</span><span
+										class="neirong">座椅通风有3个挡位，其中3挡风量最高，2挡次之，1挡风量较低。</span>
+								</p>
+								<p outputclass="10">③ 智能</p>
+								<p class="line clear"><span class="heng">–</span><span
+										class="neirong">点击“智能”，打开座椅通风加热智能模式。</span></p>
+								<p outputclass="10">④ 关闭</p>
+								<p class="line clear"><span class="heng">–</span><span
+										class="neirong">点击“关闭”，即可关闭座椅通风/加热功能。</span></p>
 							</div>
 						</div>
 					</div>
@@ -61,6 +73,8 @@
 	</div>
 </body>
 <script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
 <script>
 	function jsfun() {
 		var detailSwiper = new Swiper('.detail-swiper', {

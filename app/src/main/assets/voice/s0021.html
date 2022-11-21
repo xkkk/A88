@@ -8,6 +8,7 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
@@ -22,8 +23,8 @@
 					<div class="swiper-slide">
 						<div class="item-box flex-item">
 							<div class="text" style="width: 100%;">
-								<h4>如何开启限速标志识别？</h4>
-								<p class="textindent1">
+
+								<p class="textindent">
 									限速标志识别简称TSR。TSR通过安装在前风窗玻璃上的智能前向摄像头探测前方道路上的限速牌，同时融合音响系统导航透出的数据，为驾驶员提供限速信息，在超过限速值时提醒驾驶员已超速。
 								</p>
 							</div>
@@ -31,13 +32,27 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="item-box flex-item">
-							<div class="img"><img src="../public/img/OMA58-0316.png" alt=""></div>
+							<div class="img"><img src="../public/img/OMA88-0048.png" alt=""></div>
 							<div class="text">
 								<h4>开启和关闭</h4>
-								<p class="textindent1">通过音响系统“设置→ADiGO智能驾驶→ADiGO主动安全辅助→限速标志识别”，开启或关闭限速标志识别功能。</p>
-								<p class="textindent1">
+								<p class="textindent">通过音响系统“设置→ADiGO智能驾驶→ADiGO主动安全辅助”界面，点击“限速标志识别”右侧<img
+										src="../public/img/0133.png" style="width:40px;margin:-4px 4px;">软按键设置开启或关闭。</p>
+								<p class="textindent">
 									此功能开启后，若导航或智能前向摄像头识别到前方道路限速标志，会在组合仪表上显示限速标志值；若当前仪表车速超过限速值一定阈值，组合仪表上限速标志图标会持续闪烁。</p>
 
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item-box flex-item">
+							<div class="switch-tab">
+								<a href="javaScript:;" class="btnhref">
+									<div class="tips tishi"><i class="icon icon-tip"></i>提示<span class="fuhao">+</span>
+									</div>
+								</a>
+								<div class="switch-drop btnshow">
+									<p class="textindent">系统具有开关状态记忆功能，车辆启动后，开关状态将与上次车辆下电时的状态相同。</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -50,6 +65,8 @@
 	</div>
 </body>
 <script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
 <script>
 	function jsfun() {
 		var detailSwiper = new Swiper('.detail-swiper', {

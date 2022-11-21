@@ -8,6 +8,7 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>语音功能</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/all.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/swiper.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
@@ -21,26 +22,32 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="item-box flex-item">
-							<div class="img"><img src="../public/img/OMA58-0304.png" alt=""></div>
-							<div class="text">
-								<h4>如何使用蓝牙钥匙？</h4>
-								<p>无钥匙进入</p>
-								<p class="textindent1">
-									当被动解闭锁功能开启时，携带智能蓝牙钥匙靠近车辆2m范围内，碰触门把手相应解闭锁位置，可以实现被动解闭锁功能。
-								</p>
+							<div class="text" style="width: 100%;">
+								<h5>无钥匙进入</h5>
+								<div class="imageText clear align">
+									<div class="img"><img src="../public/img/OMA88-0320.png"></div>
+									<div class="text">
+										<div class="wenzi1">
+											<p class="textindent">
+												当被动解闭锁功能开启时，携带智能蓝牙钥匙靠近车辆2m范围内，碰触门把手相应解闭锁位置，可以实现被动解闭锁功能。</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="item-box flex-item">
-							<div class="img"><img src="../public/img/OMA58-0053.png" alt=""></div>
+							<div class="img"><img src="../public/img/OMA88-0139.png" alt=""></div>
 							<div class="text">
-								<h4>如何使用蓝牙钥匙？</h4>
-								<p><span class="span-number">–</span><span
-										class="span-content">当整车电源在“OFF”挡位时，携带智能蓝牙钥匙走近车门，触碰解锁区域，有效感应后所有车门将解锁。</span></p>
-								<p><span class="span-number">–</span><span
-										class="span-content">当整车电源在“OFF”挡位时，携带智能蓝牙钥匙离开车内，将所有车门关闭后，触碰解锁/闭锁区域，有效感应后所有车门将闭锁。</span>
-								</p>
+								<div class="wenzi1">
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">当整车电源在“OFF”挡位时，携带智能蓝牙钥匙走近车门，将手伸入前车门把手内侧解锁区域，有效感应后所有车门解锁。</span>
+									</p>
+									<p class="line clear"><span class="heng">–</span><span
+											class="neirong">当整车电源在“OFF”挡位时，携带智能蓝牙钥匙离开车内，将所有车门关闭后，按压闭锁按钮，有效感应后所有车门闭锁。</span>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -49,7 +56,7 @@
 							<div class="text" style="width: 100%;">
 								<h4>一键启动</h4>
 								<p class="textindent1">
-									带着已激活智能蓝牙钥匙功能的手机并进行蓝牙连接情况下，进入车内踩下制动踏板，按下一键启动开关，启动发动机。
+									带着已激活智能蓝牙钥匙功能的手机并进行蓝牙连接情况下，进入车内踩下制动踏板，一键启动开关指示灯变为绿色后，按下一键启动开关，启动车辆。
 								</p>
 							</div>
 						</div>
@@ -63,6 +70,8 @@
 	</div>
 </body>
 <script type="text/javascript" src="../public/js/swiper.js"></script>
+<script src="../public/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="../public/js/xiaoguo.js" type="text/javascript"></script>
 <script>
 	function jsfun() {
 		var detailSwiper = new Swiper('.detail-swiper', {

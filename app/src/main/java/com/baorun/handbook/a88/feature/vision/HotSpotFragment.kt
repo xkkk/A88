@@ -53,8 +53,8 @@ class HotSpotFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         when (type) {
-            TYPE_IN_1 -> initView(mViewModel.getVisionIn1HotspotList(), R.drawable.img_vision_in_1)
-            TYPE_IN_2 -> initView(mViewModel.getVisionIn2HotspotList(), R.drawable.img_vision_in_2)
+            TYPE_IN_1 -> initView(mViewModel.getVisionIn1HotspotList(), DataManager.getVisionIn()[0])
+            TYPE_IN_2 -> initView(mViewModel.getVisionIn2HotspotList(), DataManager.getVisionIn()[1])
             TYPE_OUT_1 -> initView(
                 mViewModel.getVisionOut1HotspotList(),
                 DataManager.getVisionOut()[0]
