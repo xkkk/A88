@@ -6,7 +6,6 @@ import com.baorun.handbook.a88.data.ChildrenData
 import com.baorun.handbook.a88.data.DataRepositorySource
 import com.baorun.handbook.a88.data.HotSpotWrapper
 import com.baorun.handbook.a88.data.Hotspots
-import com.blankj.utilcode.util.LogUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -150,8 +149,7 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                     506,
                     "仪表盘左侧开关",
                     arrayListOf(
-                        R.drawable.img_vision_v1_1_m,
-                        R.drawable.img_vision_v1_2_m
+                        R.drawable.img_vision_v1_1_m
                     )
                 ),
                 Hotspots(

@@ -56,12 +56,12 @@ class TipsDialog:DialogFragment() {
        lifecycleScope.launchWhenCreated {
            val pair = DataManager.getIndicatorData(type, id)
            pair?.let {
-               if(it.name.contains("depzy")){
-                   val lp = viewBinding.iconIv.layoutParams as ConstraintLayout.LayoutParams
-                   lp.width = SizeUtils.px2dp(211f)/2
-                   lp.height = SizeUtils.px2dp(84f)/2
-                   viewBinding.iconIv.layoutParams = lp
-               }
+//               if(it.name.contains("depzy")){
+//                   val lp = viewBinding.iconIv.layoutParams as ConstraintLayout.LayoutParams
+//                   lp.width = SizeUtils.px2dp(211f)/2
+//                   lp.height = SizeUtils.px2dp(84f)/2
+//                   viewBinding.iconIv.layoutParams = lp
+//               }
                viewBinding.iconIv.setImageResource(requireActivity().getResource(it.name))
                viewBinding.titleTv.text = it.title
                viewBinding.contentTv.text = it.content.text

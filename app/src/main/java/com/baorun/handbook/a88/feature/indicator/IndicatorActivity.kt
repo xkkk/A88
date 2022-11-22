@@ -40,9 +40,7 @@ class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
     override fun initView() {
 
         loadBackground()
-        //默认红色
-        loadLayer(viewBinding.background, R.drawable.img_indicator_bg_red)
-        resetView(IndicatorStyle.RED)
+
         viewBinding.radioGroup.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId) {
                 R.id.redRb -> {
@@ -88,7 +86,9 @@ class IndicatorActivity : BaseActivity<ActivityIndicatorBinding>() {
                     viewBinding.rootView.background = resource
                     hotspotLayoutWidth = viewBinding.rootView.measuredWidth
                     hotspotLayoutHeight = viewBinding.rootView.measuredHeight
-
+                    //默认红色
+                    loadLayer(viewBinding.background, R.drawable.img_indicator_bg_red)
+                    resetView(IndicatorStyle.RED)
                 }
 
                 override fun onResourceCleared(placeholder: Drawable?) {

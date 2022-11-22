@@ -75,9 +75,9 @@ interface DataRepositorySource {
     fun getRedIndicatorHotspotList(): HotSpotWrapper {
         return HotSpotWrapper(
             1054, 491, listOf(
-                Hotspots( "1", Hotspots.Point(57, 240), "r_cdxt",),
+                Hotspots( "1", Hotspots.Point(57, 240), "r_cdxt"),
                 Hotspots("2", Hotspots.Point(83, 99),"r_jyyld"),
-                Hotspots("3",Hotspots.Point(249, 99),"r_fdjlqy", ),
+                Hotspots("3",Hotspots.Point(249, 99),"r_fdjlqy"),
                 Hotspots("4", Hotspots.Point(213, 99),"r_srs"),
                 Hotspots("5", Hotspots.Point(793, 99),"r_epb"),
                 Hotspots("6", Hotspots.Point(831, 99),"r_ebd"),
