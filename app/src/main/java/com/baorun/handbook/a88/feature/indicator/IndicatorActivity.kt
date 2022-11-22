@@ -1,5 +1,6 @@
 package com.baorun.handbook.a88.feature.indicator
 
+import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.view.View
 import android.widget.FrameLayout
