@@ -111,7 +111,7 @@ data class IndicatorData(val id: String, val name:String,val title: String, val 
 }
  */
 val originRedIndicatorHotspotList = listOf(
-    Hotspot(127, 133, "1"),
+    Hotspot(127, 123, "1"),
     Hotspot(179, 133, "2"),
     Hotspot(241,464, "3"),
     Hotspot(269, 131, "4"),
@@ -122,7 +122,7 @@ val originRedIndicatorHotspotList = listOf(
     Hotspot(976, 132, "9"),
     Hotspot(718, 131, "10"),
     Hotspot(313, 133, "11"),
-    Hotspot(852, 133, "12"),
+    Hotspot(852, 123, "12"),
     Hotspot(852, 133, "13"),
 )
 

@@ -146,8 +146,8 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                     )
                 ),
                 Hotspots(
-                    291,
-                    500,
+                    523,
+                    506,
                     "仪表盘左侧开关",
                     arrayListOf(
                         R.drawable.img_vision_v1_1_m,
@@ -155,8 +155,8 @@ class MasterDataSource(val dataSource: NormalDataSource):DataRepositorySource by
                     )
                 ),
                 Hotspots(
-                    523,
-                    506,
+                    291,
+                    500,
                     "左前门开关",
                     arrayListOf(
                         R.drawable.img_vision_v2_1_m,
