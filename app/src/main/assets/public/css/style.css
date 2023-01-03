@@ -2,12 +2,26 @@
     公共样式
 ============================================================================ */
 
-::-webkit-scrollbar {width: 4px;height: 4px;}
-::-webkit-scrollbar-thumb{background: rgba(255,255,255,.2);border-radius: 2px;}
-html,body{width: 100%;height: 100%;overflow: hidden;font-family: "Microsoft Yahei";}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 2px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Microsoft Yahei";
+}
 
 body {
-	 /* background: #1e1e1e;  */
+    /* background: #1e1e1e;  */
 }
 
 .textindent1 {
@@ -18,39 +32,132 @@ body {
    视觉索引---------------------热点内容
 ============================================================================ */
 /*热点page*/
-.page-redian{width:100%;height:100%;padding:0;margin:0;overflow:hidden;background-repeat:no-repeat;background-position:0px 50px;}
+.page-redian {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 0px 50px;
+}
 
 /*热点main-box*/
-.page-redian .main-box{width:100%;height:100%;border:0;padding:0;margin:0;}
+.page-redian .main-box {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
 
 /*热点内容 左右间距 128-140*/
-.detail-swiper{width: 100%;height: 100%;}
-.detail-swiper .item-box{height: 100%;padding: 0px 0px 0px 140px;}
+.detail-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.detail-swiper .item-box {
+    height: 100%;
+    padding: 0px 0px 0px 140px;
+}
+
 /*照片垂直水平居中*/
-.detail-swiper .img{width: 43%;margin: 0px 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
-.detail-swiper .img img{width: 100%;}
+.detail-swiper .img {
+    width: 43%;
+    margin: 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.detail-swiper .img img {
+    width: 100%;
+}
+
 /*文字垂直水平居中*/
-.detail-swiper .text{width: 43%;color: #fff; margin-right: 120px;}
+.detail-swiper .text {
+    width: 43%;
+    color: #fff;
+    margin-right: 120px;
+}
+
 /*热点标题28px*/
-.detail-swiper .text h4{font-size:30px;margin-bottom: 8px;}
+.detail-swiper .text h4 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
 /*热点标题24px */
-.detail-swiper .text p{font-size:26px;color: rgba(255,255,255,.9);letter-spacing: 2px;line-height:1.6;}
+.detail-swiper .text p {
+    font-size: 26px;
+    color: rgba(255, 255, 255, .9);
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
 
 /*文档里面的图片 待修改*/
-.detail-swiper .text p img{vertical-align:middle;margin:0 5px 5px 5px;}
+.detail-swiper .text p img {
+    vertical-align: middle;
+    margin: 0 5px 5px 5px;
+}
 
 /*热点内容-轮播金色小横条*/
-.detail-swiper .swiper-dots-new{position:absolute;width: 100%;height:4px;bottom:100px;z-index:9999;}
-.detail-swiper .swiper-dots-new .swiper-pagination-bullet{display: block;width: 68px;height:4px;border-radius: 0%;margin: 0 4px;background: url(../img/slider_normal.png);opacity:1;}
-.detail-swiper .swiper-dots-new .swiper-pagination-bullet-active{background: url(../img/slider_selected.png);}
+.detail-swiper .swiper-dots-new {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 100px;
+    z-index: 9999;
+}
+
+.detail-swiper .swiper-dots-new .swiper-pagination-bullet {
+    display: block;
+    width: 68px;
+    height: 4px;
+    border-radius: 0%;
+    margin: 0 4px;
+    background: url(../img/slider_normal.png);
+    opacity: 1;
+}
+
+.detail-swiper .swiper-dots-new .swiper-pagination-bullet-active {
+    background: url(../img/slider_selected.png);
+}
 
 
 /*热点--数字*/
-.span-number{display:inline-block;width: 4%;float: left; font-size: 26px;}
+.span-number {
+    display: inline-block;
+    width: 4%;
+    float: left;
+    font-size: 26px;
+}
+
 /*文字*/
-.span-content{display:inline-block;width:93%;float:left;}
+.span-content {
+    display: inline-block;
+    width: 93%;
+    /* float: left; */
+}
+
 /*空行*/
-.textindent{text-indent:40px;}
+.textindent {
+    text-indent: 40px;
+}
 
 /*禁止文本被复制*/
-:not(input){-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+:not(input) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
